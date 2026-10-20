@@ -133,10 +133,10 @@ theorem split_cover (b : Board) (s l r : FastState) (h : split b s = some (l, r)
             · exact List.mem_append_right _ ((List.mem_erase_of_ne hiv).mpr hi)
       · right
         refine ⟨hw.1, ?_⟩
-        intro i hi
-        rcases List.mem_append.mp (hw.2 hi) with hi | hi
+        intro i hiw
+        rcases List.mem_append.mp (hw.2 hiw) with hi | hi
         · exact List.mem_append_left _ hi
-        · have hiv : i ≠ v := by intro he; subst i; exact hv hi
+        · have hiv : i ≠ v := by intro he; subst i; exact hv hiw
           exact List.mem_append_right _ ((List.mem_erase_of_ne hiv).mpr hi)
 
 theorem split_rank (b : Board) (s l r : FastState) (h : split b s = some (l, r)) :
