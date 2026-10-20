@@ -52,11 +52,11 @@ theorem insert_spec {α : Type} (valid : α → Bool) (score : α → Int)
       · exact ⟨x, rfl, Int.le_refl _⟩
   | some y =>
     by_cases hxy : score y ≤ score x
-    · simp only [insert, if_pos hxy]
+    · simp only [insert, ite_eq_left hxy]
       refine ⟨?_, ?_, x, rfl, Int.le_refl _⟩
       · intro z hz; cases hz; exact hx
       · intro z hz; cases hz; exact ⟨x, rfl, hxy⟩
-    · simp only [insert, if_neg hxy]
+    · simp only [insert, ite_eq_right hxy]
       refine ⟨ho, keeps_refl score (some y), y, rfl, ?_⟩
       exact Int.le_of_lt (Int.lt_of_not_ge hxy)
 
@@ -71,11 +71,11 @@ theorem consider_spec {α : Type} (valid : α → Bool) (score : α → Int)
       (valid x = true → Dominates score (consider valid score x old) x) := by
   by_cases hx : valid x = true
   · unfold consider
-    rw [if_pos hx]
+    rw [ite_eq_left hx]
     have hs := insert_spec valid score x old hx ho
     exact ⟨hs.1, hs.2.1, fun _ => hs.2.2⟩
   · unfold consider
-    rw [if_neg hx]
+    rw [ite_eq_right hx]
     exact ⟨ho, keeps_refl score old, fun h => False.elim (hx h)⟩
 
 /-- Every obligation refers to the game's independent validity and score. -/
@@ -152,7 +152,7 @@ theorem search_spec {State World : Type} (p : Problem State World)
     · have hc := consider_spec p.valid p.score (p.candidate s) old ho
       cases hs : p.split s with
       | none =>
-        simp only [hs]
+        simp only
         refine ⟨hc.1, hc.2.1, ?_⟩
         intro w hw hv
         have hl := p.leaf_cover s hs w hw hv
@@ -160,7 +160,7 @@ theorem search_spec {State World : Type} (p : Problem State World)
         exact ⟨x, hx, Int.le_trans hl.2 hcx⟩
       | some pair =>
         obtain ⟨l, r⟩ := pair
-        simp only [hs]
+        simp only
         have hd := p.split_rank s l r hs
         have hl := ih l (consider p.valid p.score (p.candidate s) old) (by omega) hc.1
         have hright := ih r (search p n l (consider p.valid p.score (p.candidate s) old))

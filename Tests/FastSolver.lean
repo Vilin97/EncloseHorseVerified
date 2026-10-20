@@ -19,7 +19,20 @@ def testFastFixtures : IO Unit := do
 
 -- Run these checks through the native FastBench executable; avoid interpreting the search during compilation.
 
+private def negativeEnclosure : Board := Board.ofRows ["~~~", "~H~", "~S~", "~~~"] 0
+private def impossibleBoard : Board := Board.ofRows ["H"] 0
+
+-- Escaping for zero points is not accepted in place of a legitimate negative enclosure.
+example : solveFast negativeEnclosure = some [] := by decide +kernel
+example : score negativeEnclosure [] = -3 := by decide +kernel
+-- A seed that places a wall on the horse is discarded before exact search.
+example : solveFastWithSeed negativeEnclosure (some [4]) = some [] := by decide +kernel
+example : solveFast impossibleBoard = none := by decide +kernel
+
 #print axioms EncloseHorse.BranchBound.search_spec
 #print axioms EncloseHorse.solveFast_optimal
 #print axioms EncloseHorse.solveFastWithSeed_optimal
 #print axioms EncloseHorse.solveFast_optimal_physical
+
+#print axioms EncloseHorse.solveFastWithSeed_eq_none_iff
+#print axioms EncloseHorse.solveFast_eq_none_iff
