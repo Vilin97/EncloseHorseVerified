@@ -53,7 +53,7 @@ M > k C + Q.
 
 Indeed, `k <= s` gives `M - kC >= 2C = 2Q+2 > Q`.
 
-For an empty universe the original instance is trivially YES and may be mapped to the fixed YES board `[water; horse; water]` with a full water border and target `1`. Equivalently, the uniform construction below also preserves its answer. For `u >= 1`, its target `T` is strictly positive.
+For an empty universe the original instance is trivially YES and may be mapped to the fixed 3-by-3 YES board with rows `~~~`, `~H~`, `~~~` and target `1`. Equivalently, the uniform construction below also preserves its answer. For `u >= 1`, its target `T` is strictly positive.
 
 ## 4. The intended graph
 
