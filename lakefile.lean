@@ -6,3 +6,6 @@ package «EncloseHorseVerified» where
 lean_lib EncloseHorseVerified
 lean_exe encloseHorse where
   root := `Main
+
+lean_exe fastBench where
+  root := `FastBench
