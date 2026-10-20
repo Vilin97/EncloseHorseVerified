@@ -17,9 +17,7 @@ theorem Board.openCell_antitone (b : Board) {small large : Placement}
   simp only [Board.openCell, Bool.and_eq_true] at h ⊢
   refine ⟨h.1, ?_⟩
   have hn : v ∉ large := by
-    intro hv
-    have hc : large.contains v = true := List.contains_iff_mem.mpr hv
-    simp [hc] at h
+    simpa [Bool.not_eq_true', List.contains_eq_mem] using h.2
   have hn' : v ∉ small := fun hv => hn (hs hv)
   simp [List.contains_eq_mem, hn']
 
@@ -37,6 +35,7 @@ theorem reach_antitone (b : Board) {small large : Placement}
   intro v hv
   apply (mem_reach_iff b small v).mpr
   have hp := (mem_reach_iff b large v).mp hv
+  clear hv
   induction hp with
   | refl => exact .refl
   | @step u v hp he ih => exact .step ih (b.edge_antitone hs u v he)
