@@ -1,0 +1,95 @@
+Head: 1a8dbd7b51e47c01fbcf3e4b07efd98822179950
+Run: 39472207435
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/18] Built EncloseHorseVerified.FiniteSearch (652ms)
+✔ [3/18] Built EncloseHorseVerified.Reachability (751ms)
+✔ [4/18] Built EncloseHorseVerified.FiniteSearch:c.o (227ms)
+✔ [5/18] Built EncloseHorseVerified.Reachability:c.o (248ms)
+✔ [6/18] Built EncloseHorseVerified.Game (731ms)
+✔ [7/18] Built EncloseHorseVerified.Solver (589ms)
+✔ [8/18] Built EncloseHorseVerified.Game:c.o (569ms)
+✔ [9/18] Built EncloseHorseVerified.Levels (721ms)
+✔ [10/18] Built EncloseHorseVerified.Solver:c.o (155ms)
+✔ [11/18] Built EncloseHorseVerified.Levels:c.o (287ms)
+✔ [12/18] Built Main (1.1s)
+✔ [13/18] Built Main:c.o (235ms)
+✔ [14/18] Built EncloseHorseVerified.Tactic (1.6s)
+✔ [15/18] Built EncloseHorseVerified.Widget (1.9s)
+✔ [16/18] Built encloseHorse:exe (764ms)
+✔ [17/18] Built EncloseHorseVerified (913ms)
+Build completed successfully (18 jobs).
+⚠ [2/2] Built EncloseHorseVerified.FastSearch (565ms)
+warning: EncloseHorseVerified/FastSearch.lean:55:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:59:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:74:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:78:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:155:19: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/FastSearch.lean:163:19: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (2 jobs).
+✖ [6/8] Running EncloseHorseVerified.Bounds
+error: no such file or directory (error code: 2)
+  file: /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/EncloseHorseVerified/Bounds.lean
+⚠ [7/8] Replayed EncloseHorseVerified.FastSearch
+warning: EncloseHorseVerified/FastSearch.lean:55:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:59:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:74:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:78:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:155:19: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/FastSearch.lean:163:19: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [8/8] Running EncloseHorseVerified.FastSolver
+error: EncloseHorseVerified/FastSolver.lean: bad import 'EncloseHorseVerified.Bounds'
+Some required targets logged failures:
+- EncloseHorseVerified.Bounds
+- EncloseHorseVerified.FastSolver
+error: build failed
