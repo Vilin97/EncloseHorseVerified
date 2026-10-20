@@ -37,8 +37,9 @@ private def pathTo (b : Board) (walls : Placement) (goal : Nat → Bool) : Optio
   pathLoop b walls goal (b.size + 1) [(b.horse, [b.horse])] [b.horse]
 
 private def guidedPivot (b : Board) (s : FastState) : Option Nat :=
+  let forced := reach b (s.placed ++ s.remaining)
   let goal := if enclosed b s.placed then
-      (fun v => decide ((b.tileAt v).points < 0))
+      (fun v => decide ((b.tileAt v).points < 0) && !forced.contains v)
     else b.onEdge
   match pathTo b s.placed goal with
   | none => none
