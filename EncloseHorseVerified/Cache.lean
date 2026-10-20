@@ -111,6 +111,7 @@ theorem legal_eq {b : Board} (c : GraphCache b) (walls : Placement) :
     c.legal walls = decide (EncloseHorse.legal b walls) := by
   apply Bool.eq_iff_iff.mpr
   simp only [legal, decide_eq_true_eq, EncloseHorse.legal, c.candidates_eq]
+  exact ⟨fun h => decide_eq_true h, fun h => of_decide_eq_true h⟩
 
 def admissible {b : Board} (c : GraphCache b) (walls : Placement) : Bool :=
   c.legal walls && c.enclosed walls
@@ -120,6 +121,7 @@ theorem admissible_eq {b : Board} (c : GraphCache b) (walls : Placement) :
   apply Bool.eq_iff_iff.mpr
   simp only [admissible, Bool.and_eq_true, c.legal_eq, c.enclosed_eq,
     decide_eq_true_eq, EncloseHorse.admissible]
+  exact ⟨fun h => decide_eq_true h, fun h => of_decide_eq_true h⟩
 
 def positiveValue {b : Board} (c : GraphCache b) (cells : List Nat) : Int :=
   (cells.map (fun i => max (c.tileAt i).points 0)).sum
