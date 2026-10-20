@@ -4,6 +4,9 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -61,6 +64,8 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: tools/package-lock.json
+      - name: Audit small hardness reduction boards
+        run: node scripts/audit_hardness_reduction.mjs
       - name: Install UI test dependencies
         working-directory: tools
         run: |
