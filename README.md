@@ -68,11 +68,11 @@ A solution **must enclose the horse**. The solver therefore optimizes among encl
 
 ## Practical exact search and complexity
 
-The default Lean solver explores wall decisions on demand. It chooses a cell on an escape path, tries including or excluding it, and prunes using proved reachability bounds. Its signed upper bound retains penalties for bees that every completion must reach. Blocking all remaining candidates detects impossible branches. A checked incumbent, including the current placement in the infoview, can improve pruning without affecting the theorem. The original exhaustive solver remains available for comparison.
+The default Lean solver explores wall decisions on demand and builds a proved cache of the board's static graph once per solve. It chooses a cell on an escape path, tries including or excluding it, and prunes using proved reachability bounds. Its signed upper bound retains penalties for bees that every completion must reach. Blocking all remaining candidates detects impossible branches. A checked incumbent, including the current placement in the infoview, can improve pruning without affecting the theorem. The original exhaustive solver remains available for comparison.
 
 The decision problem is **NP-complete for variable-size boards using only grass, water, one horse, cherries, and bees; no portals are required**. The [complete reduction from planar Steiner Tree](docs/NP_Hardness_No_Portals.md) gives both directions and an explicit polynomial board-size bound. A second [Set Cover reduction](docs/NP_Hardness.md) covers generalized portal groups. These are mathematical proofs; `Hardness.lean` checks the portal construction, arithmetic lemmas, and concrete examples, but the complete complexity reductions are **not fully formalized in Lean**. The solver's global optimality and pruning theorems are fully checked in Lean.
 
-Thus a polynomial-time exact optimizer for every board in this family would imply P = NP. This leaves plenty of room for practical algorithms. [Native benchmark records](docs/Performance.md) distinguish completed tutorial searches from daily timeouts; no daily Lean optimum certificate is claimed from a timeout. The optional [Clingo exact solver](scripts/ASP_REFERENCE.md) completed three real daily levels:
+Thus a polynomial-time exact optimizer for every board in this family would imply P = NP. This leaves plenty of room for practical algorithms. The measured cached Lean search completed the five tutorials in **<1, 18, 150, 487, and 10 ms**. All three seeded daily cases still hit 90-second limits. [Full native benchmark records](docs/Performance.md) retain the exact source commits and timeouts; no daily Lean optimum certificate is claimed from those runs. The optional [Clingo exact solver](scripts/ASP_REFERENCE.md) completed three real daily levels:
 
 | Daily level | Grid | Grass candidates | Wall budget | Score | Clingo time |
 |---|---:|---:|---:|---:|---:|
@@ -101,11 +101,11 @@ lake env lean Tests/Fixtures.lean
 lake env lean Tests/Tactic.lean
 lake env lean Tests/Trust.lean
 lake env lean Demo.lean
-lake exe encloseHorse --json > /tmp/enclose-results.json
+lake exe encloseHorse --all --json > /tmp/enclose-results.json
 python3 scripts/verify_fixtures.py --lean-json /tmp/enclose-results.json
 ```
 
-The compiled Lean solver is tested on three unmodified real official levels, including portals and apples. All five official witness placements have kernel-checked legality, enclosure, and exact-score proofs. The first tutorial also has an explicit kernel-checked global-optimality theorem. An independent Python exhaustive solver checks all five optima and independently recomputes Lean outputs with set-based BFS.
+The compiled Lean solver is tested on all five unmodified real official tutorial levels, including portals and apples. All five official witness placements have kernel-checked legality, enclosure, and exact-score proofs. The first tutorial also has an explicit kernel-checked global-optimality theorem. An independent Python exhaustive solver checks all five optima and independently recomputes Lean outputs with set-based BFS.
 
 | Official tutorial | Wall budget | Optimum | Placements |
 |---|---:|---:|---:|
@@ -125,7 +125,7 @@ The compiled Lean solver is tested on three unmodified real official levels, inc
 | `Game.lean` | Terrain, parser, legality, score, physical-placement correspondence |
 | `FiniteSearch.lean` | Complete bounded-subset enumeration and maximum-selection proof |
 | `Solver.lean` | Exhaustive reference, global optimality, impossibility theorem |
-| `Bounds.lean`, `FastSearch.lean`, `FastSolver.lean` | Proved pruning and dynamic exact search |
+| `Bounds.lean`, `Cache.lean`, `FastSearch.lean`, `FastSolver.lean` | Proved pruning and dynamic exact search |
 | `Hardness.lean`, `docs/NP_Hardness*.md` | Reduction components and complete mathematical hardness proofs |
 | `DailyLevels.lean`, `scripts/solve_asp.py` | Archived daily fixtures and practical ASP reference |
 | `Tactic.lean` | `enclose_horse` and `#solve_enclosure` |

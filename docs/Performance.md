@@ -50,6 +50,36 @@ See [machine-readable baseline](../data/native-search-baseline.json) and [native
 
 The uniform Lean theorem proves that every completed search result is optimal under the independent game specification. Invoking the tactic additionally kernel-checks a particular solver equation. Native timings do not include constructing such an individual kernel certificate.
 
+## Budget and incumbent optimization
+
+After adding the proved budget-exhausted leaf rule and a certified cache for the starting incumbent's score, [native run 39474482021](https://github.com/Vilin97/EncloseHorseVerified/actions/runs/39474482021) measured:
+
+| Tutorial | Initial baseline | Budget + seed cache |
+|---|---:|---:|
+| 1 | 6 ms | 3 ms |
+| 2 | 269 ms | 124 ms |
+| 3 | 5,829 ms | 2,118 ms |
+| 4 | 18,306 ms | 6,651 ms |
+| 5 | 276 ms | 109 ms |
+
+All three seeded daily cases again reached their 90-second limits. See [full results](../data/native-search-budget-cache.json). These are separate single runs, so ratios are observations rather than guarantees.
+
+## Proved graph cache
+
+The next optimization constructs the static adjacency matrix, tile array, candidate list and cell list once per solve. All cached evaluators are proved equal to the independent game definitions, and the global optimality/completeness proofs use those equalities. No compiler override or new axiom is involved.
+
+[Native run 39475290779](https://github.com/Vilin97/EncloseHorseVerified/actions/runs/39475290779) measured:
+
+| Tutorial | Initial baseline | Proved graph cache |
+|---|---:|---:|
+| 1 | 6 ms | <1 ms |
+| 2 | 269 ms | 18 ms |
+| 3 | 5,829 ms | 150 ms |
+| 4 | 18,306 ms | 487 ms |
+| 5 | 276 ms | 10 ms |
+
+This run again recorded 90-second timeouts on all three seeded daily cases. The graph cache improves constant factors; it does not remove the exponential search. See [full results](../data/native-search-graph-cache.json). The reported source commit precedes the final small optimization sharing a flood fill inside cached scoring; no additional speedup is claimed for that change without a measurement.
+
 ## Why subset enumeration is insufficient
 
 For `m` grass cells and budget `k`, the exhaustive reference considers

@@ -97,12 +97,18 @@ theorem enclosed_eq {b : Board} (c : GraphCache b) (walls : Placement) :
     c.enclosed walls = EncloseHorse.enclosed b walls := by
   simp only [enclosed, EncloseHorse.enclosed, c.horse_eq, c.reach_eq]
 
+/-- Share the flood fill within scoring instead of recomputing it after the escape check. -/
 def score {b : Board} (c : GraphCache b) (walls : Placement) : Int :=
-  if c.enclosed walls then ((c.reach walls).map (fun i => (c.tileAt i).points)).sum else 0
+  let reached := c.reach walls
+  let isEnclosed := decide (c.horse < b.size) && !reached.any b.onEdge
+  if isEnclosed then (reached.map (fun i => (c.tileAt i).points)).sum else 0
 
 theorem score_eq {b : Board} (c : GraphCache b) (walls : Placement) :
     c.score walls = EncloseHorse.score b walls := by
-  simp only [score, EncloseHorse.score, c.enclosed_eq, c.reach_eq, c.tileAt_eq]
+  change (if c.enclosed walls then
+    ((c.reach walls).map (fun i => (c.tileAt i).points)).sum else 0) =
+      EncloseHorse.score b walls
+  simp only [EncloseHorse.score, c.enclosed_eq, c.reach_eq, c.tileAt_eq]
 
 def legal {b : Board} (c : GraphCache b) (walls : Placement) : Bool :=
   decide (walls.Sublist c.candidates ∧ walls.length ≤ b.budget)

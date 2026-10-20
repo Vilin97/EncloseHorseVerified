@@ -1,0 +1,108 @@
+{
+  "run": "https://github.com/Vilin97/EncloseHorseVerified/actions/runs/39474482021",
+  "sourceCommit": "ba418ad7494e40f47c5279bac1e3911c5b203dd1",
+  "environment": "GitHub Actions ubuntu-24.04 hosted runner, Lean 4.35.0 native executable",
+  "optimizations": [
+    "budget-exhausted leaf pruning",
+    "checked seed score caching"
+  ],
+  "note": "Algorithm correctness is proved in Lean; runtime measurements do not construct individual kernel solver-equation certificates.",
+  "results": [
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 3,
+      "expected": 15,
+      "id": "tutorial-1",
+      "pass": true,
+      "score": 15,
+      "seeded": false,
+      "walls": [
+        23
+      ],
+      "status": "completed"
+    },
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 124,
+      "expected": 17,
+      "id": "tutorial-2",
+      "pass": true,
+      "score": 17,
+      "seeded": false,
+      "walls": [
+        23,
+        40,
+        60
+      ],
+      "status": "completed"
+    },
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 2118,
+      "expected": 12,
+      "id": "tutorial-3",
+      "pass": true,
+      "score": 12,
+      "seeded": false,
+      "walls": [
+        11,
+        24,
+        37,
+        40,
+        51
+      ],
+      "status": "completed"
+    },
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 6651,
+      "expected": 31,
+      "id": "tutorial-4",
+      "pass": true,
+      "score": 31,
+      "seeded": false,
+      "walls": [
+        6,
+        11,
+        26,
+        31,
+        54,
+        58
+      ],
+      "status": "completed"
+    },
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 109,
+      "expected": 39,
+      "id": "tutorial-5",
+      "pass": true,
+      "score": 39,
+      "seeded": false,
+      "walls": [
+        41,
+        52,
+        62
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "daily-2026-01-07",
+      "seeded": true,
+      "status": "timeout",
+      "timeLimitSeconds": 90
+    },
+    {
+      "id": "daily-2026-01-12",
+      "seeded": true,
+      "status": "timeout",
+      "timeLimitSeconds": 90
+    },
+    {
+      "id": "daily-2026-03-10",
+      "seeded": true,
+      "status": "timeout",
+      "timeLimitSeconds": 90
+    }
+  ]
+}

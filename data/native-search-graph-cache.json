@@ -1,0 +1,109 @@
+{
+  "run": "https://github.com/Vilin97/EncloseHorseVerified/actions/runs/39475290779",
+  "sourceCommit": "489004369ce507cf6a58f03580f99de4a864e0ea",
+  "environment": "GitHub Actions ubuntu-24.04 hosted runner, Lean 4.35.0 native executable",
+  "optimizations": [
+    "budget-exhausted leaf pruning",
+    "checked seed score caching",
+    "proved static graph/tile/cell cache"
+  ],
+  "note": "0ms means below the millisecond timer resolution. This run precedes the final shared-flood-fill score optimization. Uniform correctness is proved in Lean; timings do not construct individual kernel solver-equation certificates.",
+  "results": [
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 0,
+      "expected": 15,
+      "id": "tutorial-1",
+      "pass": true,
+      "score": 15,
+      "seeded": false,
+      "walls": [
+        23
+      ],
+      "status": "completed"
+    },
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 18,
+      "expected": 17,
+      "id": "tutorial-2",
+      "pass": true,
+      "score": 17,
+      "seeded": false,
+      "walls": [
+        23,
+        40,
+        60
+      ],
+      "status": "completed"
+    },
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 150,
+      "expected": 12,
+      "id": "tutorial-3",
+      "pass": true,
+      "score": 12,
+      "seeded": false,
+      "walls": [
+        11,
+        24,
+        37,
+        40,
+        51
+      ],
+      "status": "completed"
+    },
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 487,
+      "expected": 31,
+      "id": "tutorial-4",
+      "pass": true,
+      "score": 31,
+      "seeded": false,
+      "walls": [
+        6,
+        11,
+        26,
+        31,
+        54,
+        58
+      ],
+      "status": "completed"
+    },
+    {
+      "algorithm": "verified-dynamic-branch-and-bound",
+      "elapsedMs": 10,
+      "expected": 39,
+      "id": "tutorial-5",
+      "pass": true,
+      "score": 39,
+      "seeded": false,
+      "walls": [
+        41,
+        52,
+        62
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "daily-2026-01-07",
+      "seeded": true,
+      "status": "timeout",
+      "timeLimitSeconds": 90
+    },
+    {
+      "id": "daily-2026-01-12",
+      "seeded": true,
+      "status": "timeout",
+      "timeLimitSeconds": 90
+    },
+    {
+      "id": "daily-2026-03-10",
+      "seeded": true,
+      "status": "timeout",
+      "timeLimitSeconds": 90
+    }
+  ]
+}

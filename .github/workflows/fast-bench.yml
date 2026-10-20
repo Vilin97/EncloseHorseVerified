@@ -30,18 +30,22 @@ jobs:
       - name: Run bounded independent cases
         run: |
           set +e
+          failed=0
           : > /tmp/native-fast-results.txt
           for id in tutorial-1 tutorial-2 tutorial-3 tutorial-4 tutorial-5; do
             timeout 60 .lake/build/bin/fastBench --all --id="$id" >> /tmp/native-fast-results.txt 2>&1
             status=$?
             echo "EXIT $id $status" >> /tmp/native-fast-results.txt
+            if [ "$status" -ne 0 ] && [ "$status" -ne 124 ]; then failed=1; fi
           done
           for id in daily-2026-01-07 daily-2026-01-12 daily-2026-03-10; do
             timeout 90 .lake/build/bin/fastBench --daily --seed --id="$id" >> /tmp/native-fast-results.txt 2>&1
             status=$?
             echo "EXIT $id $status" >> /tmp/native-fast-results.txt
+            if [ "$status" -ne 0 ] && [ "$status" -ne 124 ]; then failed=1; fi
           done
           cat /tmp/native-fast-results.txt
+          exit "$failed"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -27,7 +27,7 @@ jobs:
           set -o pipefail
           {
             lean --version
-            lake build encloseHorse EncloseHorseVerified
+            lake build encloseHorse fastBench EncloseHorseVerified
             while IFS= read -r file; do
               module="${file%.lean}"
               module="${module//\//.}"
@@ -59,7 +59,7 @@ jobs:
             }
       - name: Real-level solver and independent exhaustive checks
         run: |
-          lake exe encloseHorse --json > /tmp/enclose-results.json
+          lake exe encloseHorse --all --json > /tmp/enclose-results.json
           cat /tmp/enclose-results.json
           python3 scripts/verify_fixtures.py --lean-json /tmp/enclose-results.json
       - uses: actions/setup-node@v4
