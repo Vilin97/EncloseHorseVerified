@@ -1,0 +1,55 @@
+Head: 18ba9a9fbe079518d66861c05b9c295f25618894
+Run: 39473663966
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/18] Built EncloseHorseVerified.FiniteSearch (414ms)
+✔ [3/18] Built EncloseHorseVerified.Reachability (517ms)
+✔ [4/18] Built EncloseHorseVerified.FiniteSearch:c.o (114ms)
+✔ [5/18] Built EncloseHorseVerified.Reachability:c.o (123ms)
+✔ [6/18] Built EncloseHorseVerified.Game (469ms)
+✔ [7/18] Built EncloseHorseVerified.Solver (341ms)
+✔ [8/18] Built EncloseHorseVerified.Levels (470ms)
+✔ [9/18] Built EncloseHorseVerified.Game:c.o (419ms)
+✔ [10/18] Built EncloseHorseVerified.Solver:c.o (78ms)
+✔ [11/18] Built EncloseHorseVerified.Levels:c.o (140ms)
+✔ [12/18] Built Main (730ms)
+✔ [13/18] Built Main:c.o (164ms)
+✔ [14/18] Built EncloseHorseVerified.Tactic (1.0s)
+✔ [15/18] Built EncloseHorseVerified.Widget (1.1s)
+✔ [16/18] Built encloseHorse:exe (639ms)
+✔ [17/18] Built EncloseHorseVerified (711ms)
+Build completed successfully (18 jobs).
+✔ [4/4] Built EncloseHorseVerified.Bounds (372ms)
+Build completed successfully (4 jobs).
+✔ [4/4] Built EncloseHorseVerified.DailyLevels (305ms)
+Build completed successfully (4 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (3 jobs).
+Build completed successfully (4 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (5 jobs).
+Build completed successfully (6 jobs).
+Build completed successfully (6 jobs).
+'EncloseHorse.reach_antitone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.enclosed_monotone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.score_le_upperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.score_le_completionBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+[{"id":"daily-2026-01-07","score":66,"walls":[3,7,14,27,35,63,95,101,107,140,153,166]},{"id":"daily-2026-01-12","score":204,"walls":[37,114,133,151,169,228,283,287,301,312,319,337]},{"id":"daily-2026-03-10","score":99,"walls":[56,59,116,134,155,169,172,223,254,261]}]
+'daily20260107_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'daily20260112_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'daily20260310_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+[{"id":"tutorial-1","score":15,"walls":[23]},{"id":"tutorial-2","score":17,"walls":[23,40,60]},{"id":"tutorial-3","score":12,"walls":[11,24,37,40,51]},{"id":"tutorial-4","score":31,"walls":[6,11,26,31,54,58]},{"id":"tutorial-5","score":39,"walls":[41,52,62]}]
+some [23]
+'tactic_finds_official_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_choices: [propext, Quot.sound]
+EncloseHorse.bestBy_spec: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal_physical: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_eq_none_iff: [propext, Quot.sound]
+EncloseHorse.exists_optimal_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_reach_iff: [propext, Quot.sound]
+EncloseHorse.reach_nodup: [propext, Classical.choice, Quot.sound]
+EncloseHorse.enclosed_iff: [propext, Quot.sound]
+'EncloseHorse.solve_optimal_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
