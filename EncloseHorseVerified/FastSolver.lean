@@ -256,10 +256,10 @@ def cachedProblem (b : Board) (cache : Option (ScoreCache b)) :
     score := cachedScore b cache
     bound_sound := by
       intro s w hw hv
-      simpa only [cachedScore_eq] using (problem b).bound_sound s w hw hv
+      simpa only [cachedScore_eq, problem] using (problem b).bound_sound s w hw hv
     leaf_cover := by
       intro s hs w hw hv
-      simpa only [cachedScore_eq] using (problem b).leaf_cover s hs w hw hv
+      simpa only [cachedScore_eq, problem] using (problem b).leaf_cover s hs w hw hv
   }
 
 def initial (b : Board) : FastState := ⟨[], b.candidates⟩
