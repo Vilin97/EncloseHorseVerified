@@ -263,6 +263,7 @@ theorem sameWalls_of_admissible_at_budget (b : Board) (mandatory walls : Placeme
     (fun i hi => hm.1.subset hi)
   have he : b.budget ≤ (canonicalize b mandatory).length := by
     rw [hp.length_eq, hb]
+    exact Nat.le_refl _
   have hh := sameWalls_of_mandatory_budget_full b mandatory walls hs ha he
   intro i
   exact (hc i).symm.trans (hh i)
