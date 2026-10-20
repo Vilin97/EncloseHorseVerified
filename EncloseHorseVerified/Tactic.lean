@@ -1,9 +1,9 @@
 import Lean
-import EncloseHorseVerified.Solver
+import EncloseHorseVerified.FastSolver
 
 /-!
-`enclose_horse` computes an exact solution and constructs a kernel-checked
-application of `solve_optimal`. Computation used to discover a witness is not
+`enclose_horse` computes an exact branch-and-bound solution and constructs a kernel-checked
+application of `solveFast_optimal`. Computation used to discover a witness is not
 trusted: Lean checks the solver equation using `decide +kernel`.
 -/
 namespace EncloseHorse
@@ -11,7 +11,7 @@ open Lean Meta Elab Tactic
 
 private unsafe def evaluateSolutionUnsafe (b : Expr) : MetaM (Option Placement) :=
   do
-    let expr := mkApp (mkConst ``solve) b
+    let expr := mkApp (mkConst ``solveFast) b
     evalExpr (Option Placement) (← inferType expr) expr
 
 @[implemented_by evaluateSolutionUnsafe]
@@ -37,7 +37,7 @@ elab "enclose_horse" : tactic => do
   let wallSyntax ← Term.exprToSyntax (toExpr walls)
   if existential then
     evalTactic (← `(tactic| refine ⟨$wallSyntax, ?_⟩))
-  evalTactic (← `(tactic| apply EncloseHorse.solve_optimal))
+  evalTactic (← `(tactic| apply EncloseHorse.solveFast_optimal))
   evalTactic (← `(tactic| decide +kernel))
 
 /-- Print a solution without adding a theorem. For a checked proof use `enclose_horse`. -/

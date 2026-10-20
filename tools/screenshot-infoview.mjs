@@ -19,6 +19,15 @@ try {
   browser = await chromium.launch({ headless: true });
   const page = await browser.newPage({ viewport: { width: 1360, height: 1000 }, deviceScaleFactor: 1 });
   const errors = [];
+  const solverSeeds = [];
+  page.on('request', request => {
+    if (request.url().endsWith('/lsp') && request.method() === 'POST') {
+      const body = request.postDataJSON();
+      if (body.method === '$/lean/rpc/call' && body.params.method === 'EncloseHorse.Widget.findOptimal') {
+        solverSeeds.push(body.params.params.walls);
+      }
+    }
+  });
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('http://127.0.0.1:8765/');
   await page.getByRole('region', { name: 'Enclose Horse interactive Lean widget' }).waitFor({ timeout: 90000 });
@@ -32,10 +41,15 @@ try {
   await page.getByRole('button', { name: 'row 2 column 7 grass', exact: true }).click();
   await page.getByText('✓ Enclosed', { exact: true }).waitFor({ timeout: 30000 });
   await page.screenshot({ path: path.join(output, 'infoview-manual-play.png'), fullPage: true });
+  // The current manually placed enclosure is forwarded as a checked seed.
+  await page.getByRole('button', { name: 'Find optimal solution', exact: true }).click();
+  await page.getByText('✓ Exact optimum · proved branch-and-bound').waitFor({ timeout: 120000 });
+  if (JSON.stringify(solverSeeds.at(-1)) !== '[23]') throw new Error('Current walls were not passed as solver seed');
   await page.getByRole('button', { name: 'Reset', exact: true }).click();
   await page.getByText('↗ Horse can escape', { exact: true }).waitFor({ timeout: 30000 });
   await page.getByRole('button', { name: 'Find optimal solution', exact: true }).click();
-  await page.getByText('✓ Exact optimum · solve_optimal theorem').waitFor({ timeout: 120000 });
+  await page.getByText('✓ Exact optimum · proved branch-and-bound').waitFor({ timeout: 120000 });
+  if (JSON.stringify(solverSeeds.at(-1)) !== '[]') throw new Error('Reset did not clear the solver seed');
   await page.getByText('15', { exact: true }).last().waitFor();
   await page.screenshot({ path: path.join(output, 'infoview-optimal.png'), fullPage: true });
   // Remove a necessary wall: this must perform a Lean RPC and report an escape.

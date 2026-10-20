@@ -148,9 +148,9 @@ export default function EncloseHorse(props) {
       h('div', { style: { ...style.metric, color: view.enclosed ? '#b2f0b3' : '#ffd5a3' } }, view.enclosed ? '✓ Enclosed' : '↗ Horse can escape')),
     h('div', { style: { display: 'grid', gridTemplateColumns: `repeat(${view.width}, ${tileSize}px)`, gap: 0, width: 'fit-content', padding: 2, background: '#183d39', borderRadius: 3 } }, cells),
     h('div', { style: { display: 'flex', gap: 8, marginTop: 15, alignItems: 'center', flexWrap: 'wrap' } },
-      h('button', { style: style.button, disabled: busy, onClick: () => act([], true) }, busy ? 'Computing in Lean…' : 'Find optimal solution'),
+      h('button', { style: style.button, disabled: busy, onClick: () => act(walls, true) }, busy ? 'Computing in Lean…' : 'Find optimal solution'),
       h('button', { style: { ...style.button, background: 'transparent' }, disabled: busy, onClick: () => act([]) }, 'Reset'),
-      optimal && h('span', { style: { fontSize: 12, color: '#b2f0b3' } }, '✓ Exact optimum · solve_optimal theorem')),
+      optimal && h('span', { style: { fontSize: 12, color: '#b2f0b3' } }, '✓ Exact optimum · proved branch-and-bound')),
     error && h('p', { role: 'alert', style: { color: '#ffb6a8', fontSize: 12 } }, error),
     h('p', { style: { marginBottom: 0, color: '#8aada0', fontSize: 11, lineHeight: 1.5 } }, 'Original enclose.horse artwork · Scores and reachability are evaluated by Lean. Exact search has a general optimality proof; displaying a result does not itself create a theorem. Use the tactic to certify a concrete result.')
   );
