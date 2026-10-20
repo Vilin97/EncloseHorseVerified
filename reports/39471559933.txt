@@ -1,0 +1,52 @@
+Head: 396ecb0a00decf85ad0d983502b104378de46db3
+Run: 39471559933
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/18] Built EncloseHorseVerified.FiniteSearch (586ms)
+✔ [3/18] Built EncloseHorseVerified.Reachability (659ms)
+✔ [4/18] Built EncloseHorseVerified.FiniteSearch:c.o (156ms)
+✔ [5/18] Built EncloseHorseVerified.Reachability:c.o (191ms)
+✔ [6/18] Built EncloseHorseVerified.Game (629ms)
+✔ [7/18] Built EncloseHorseVerified.Levels (464ms)
+✔ [8/18] Built EncloseHorseVerified.Solver (535ms)
+✔ [9/18] Built EncloseHorseVerified.Game:c.o (559ms)
+✔ [10/18] Built EncloseHorseVerified.Levels:c.o (184ms)
+✔ [11/18] Built EncloseHorseVerified.Solver:c.o (105ms)
+✔ [12/18] Built Main (970ms)
+✔ [13/18] Built Main:c.o (178ms)
+✔ [14/18] Built EncloseHorseVerified.Tactic (1.3s)
+✔ [15/18] Built EncloseHorseVerified.Widget (1.4s)
+✔ [16/18] Built encloseHorse:exe (704ms)
+✔ [17/18] Built EncloseHorseVerified (792ms)
+Build completed successfully (18 jobs).
+✖ [4/4] Building EncloseHorseVerified.Bounds (436ms)
+trace: .> LEAN_PATH=/home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/EncloseHorseVerified/Bounds.lean -o /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Bounds.olean -i /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Bounds.ilean -c /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Bounds.c --setup /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Bounds.setup.json --json
+error: EncloseHorseVerified/Bounds.lean:19:25: unsolved goals
+b : Board
+small large : Placement
+hs : small ⊆ large
+v : Nat
+hv : v ∈ large
+hc : List.contains large v = true
+h : (v < b.size ∧ (b.tileAt v != Tile.water) = true) ∧ ¬v ∈ large
+⊢ False
+warning: EncloseHorseVerified/Bounds.lean:22:10: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: EncloseHorseVerified/Bounds.lean:42:38: Application type mismatch: The argument
+  ih
+has type
+  u ∈ reach b large → Reachability.Path (b.edge small) b.horse u
+but is expected to have type
+  Reachability.Path (b.edge small) b.horse ?m.42
+in the application
+  Reachability.Path.step ih
+Some required targets logged failures:
+- EncloseHorseVerified.Bounds
+error: build failed
