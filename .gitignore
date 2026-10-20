@@ -1,0 +1,13 @@
+.lake/
+*.olean
+*.ilean
+*.ir
+*.olean.private
+*.olean.server
+tools/node_modules/
+node_modules/
+tools/infoview/vendor/
+test-results/
+playwright-report/
+__pycache__/
+*.pyc

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "tutorial-1",
+    "source": "https://enclose.horse/tutorial",
+    "script": "https://enclose.horse/tutorial.js",
+    "source_sha256": "7ff79a359bc9391321f0a025ba6dd1f8a31a2ede6659f329e4f2f6096fb28a07",
+    "map": "~~~~~~~~\n~~.~~~~~\n~~~~~...\n~.~...~~\n~...H.~~\n~~....~~\n~~~~~~~~\n~~~~~~~~",
+    "budget": 1,
+    "score": 15,
+    "walls": [
+      23
+    ],
+    "placements": 17,
+    "seconds": 0.0
+  },
+  {
+    "id": "tutorial-2",
+    "source": "https://enclose.horse/tutorial",
+    "script": "https://enclose.horse/tutorial.js",
+    "source_sha256": "7ff79a359bc9391321f0a025ba6dd1f8a31a2ede6659f329e4f2f6096fb28a07",
+    "map": ".~~~.~~~\n~~.~~~~~\n~~~~~...\n~.....~~\n~.~.H.~~\n......~~\n.~~~.~~.\n..~~.~..",
+    "budget": 3,
+    "score": 17,
+    "walls": [
+      23,
+      40,
+      60
+    ],
+    "placements": 3683,
+    "seconds": 0.015
+  },
+  {
+    "id": "tutorial-3",
+    "source": "https://enclose.horse/tutorial",
+    "script": "https://enclose.horse/tutorial.js",
+    "source_sha256": "7ff79a359bc9391321f0a025ba6dd1f8a31a2ede6659f329e4f2f6096fb28a07",
+    "map": "~~..~~~.\n~~..~~~~\n~~~..~..\n.....~.~\n~~.H....\n....~.~~\n.~~.....\n.~~..~.~",
+    "budget": 5,
+    "score": 12,
+    "walls": [
+      11,
+      24,
+      37,
+      40,
+      51
+    ],
+    "placements": 384168,
+    "seconds": 1.171
+  },
+  {
+    "id": "tutorial-4",
+    "source": "https://enclose.horse/tutorial",
+    "script": "https://enclose.horse/tutorial.js",
+    "source_sha256": "7ff79a359bc9391321f0a025ba6dd1f8a31a2ede6659f329e4f2f6096fb28a07",
+    "map": "~~~.~~..\n~.S....~\n.S..~G.~\n...~~...\n.~.~H..~\n~~....C~\n~~.~~...\n.~.~~~.~",
+    "budget": 6,
+    "score": 31,
+    "walls": [
+      6,
+      11,
+      26,
+      31,
+      54,
+      58
+    ],
+    "placements": 1391842,
+    "seconds": 5.345
+  },
+  {
+    "id": "tutorial-5",
+    "source": "https://enclose.horse/tutorial",
+    "script": "https://enclose.horse/tutorial.js",
+    "source_sha256": "7ff79a359bc9391321f0a025ba6dd1f8a31a2ede6659f329e4f2f6096fb28a07",
+    "map": "~~~.~~~~\n~..~.~0~\n~0...~G~\n~.~~.~G~\n~.~.H~~~\n..~~...~\n.....~.~\n~~~..~.~",
+    "budget": 3,
+    "score": 39,
+    "walls": [
+      41,
+      52,
+      62
+    ],
+    "placements": 2626,
+    "seconds": 0.01
+  }
+]

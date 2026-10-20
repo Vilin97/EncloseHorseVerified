@@ -1,0 +1,11 @@
+EncloseHorseVerified is an independent educational implementation and formal
+verification project. It is not affiliated with or endorsed by enclose.horse.
+
+Original game: https://enclose.horse/
+Original tutorial: https://enclose.horse/tutorial
+The five small tutorial board layouts and metadata are attributed in data/README.md.
+They are factual test fixtures; no license to the original game's artwork, source
+code, trademarks, or other content is granted by this project's software license.
+
+The implementation, proofs, widget code, and independent test tools were written
+for this project. The widget uses system text/emoji instead of original assets.

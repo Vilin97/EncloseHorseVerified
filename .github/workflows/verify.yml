@@ -1,0 +1,61 @@
+name: Verify Lean and playable infoview
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan and Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and check kernel proofs
+        run: |
+          lean --version
+          lake build encloseHorse EncloseHorseVerified
+          lake env lean Tests/Rules.lean
+          lake env lean Tests/Fixtures.lean
+          lake env lean Tests/Tactic.lean
+          lake env lean Tests/Trust.lean
+          lake env lean Demo.lean
+      - name: Real-level solver and independent exhaustive checks
+        run: |
+          lake exe encloseHorse --json > /tmp/enclose-results.json
+          cat /tmp/enclose-results.json
+          python3 scripts/verify_fixtures.py --lean-json /tmp/enclose-results.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tools/package-lock.json
+      - name: Install UI test dependencies
+        working-directory: tools
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Play in the real infoview and capture screenshots
+        working-directory: tools
+        run: npm run screenshots
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: infoview-screenshots
+          path: docs/screenshots/
+          if-no-files-found: ignore
+      - name: Publish reproducible screenshots
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/screenshots/
+          if ! git diff --cached --quiet; then
+            git commit -m "Capture tested playable Lean infoview screenshots"
+            git push
+          fi

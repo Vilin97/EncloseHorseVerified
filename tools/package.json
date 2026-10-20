@@ -1,0 +1,15 @@
+{
+  "name": "enclose-horse-infoview-host",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "infoview": "node infoview-server.mjs",
+    "screenshots": "node screenshot-infoview.mjs"
+  },
+  "dependencies": {
+    "@leanprover/infoview": "0.13.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  }
+}

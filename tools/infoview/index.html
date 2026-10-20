@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EncloseHorseVerified · Lean Infoview</title>
+<link rel="stylesheet" href="/dist/index.css">
+<style>
+:root { color-scheme: dark; --vscode-font-family: system-ui; --vscode-editor-font-family: monospace; --vscode-font-size: 13px; --vscode-editor-font-size: 13px; --vscode-foreground: #d8e2e7; --vscode-editor-background:#17212b; --vscode-editor-foreground: #d8e2e7; --vscode-textLink-foreground:#a4d4bd; --vscode-button-background:#294d41; --vscode-button-foreground:#e8fff0; }
+body { margin:0; background:#101820; color:#d8e2e7; font-family:system-ui; }
+header { padding:15px 24px; border-bottom:1px solid #30414b; display:flex; align-items:center; gap:18px; }
+header strong { font-size:18px; } header span { color:#94b3a4; font-size:12px; }
+main { display:grid; grid-template-columns:minmax(390px, 43%) 1fr; min-height:calc(100vh - 57px); }
+#editor { padding:18px 0; background:#17212b; overflow:auto; border-right:1px solid #30414b; }
+#editor-title { padding:0 20px 15px; font-size:12px; color:#93aaba; }
+.line { display:flex; white-space:pre; min-height:23px; font:13px/23px 'DejaVu Sans Mono',monospace; padding:0 14px 0 0; cursor:text; }
+.line .number { display:inline-block; min-width:45px; text-align:right; padding-right:17px; color:#667e8e; user-select:none; }
+.line.selected { background:#264137; border-left:3px solid #90c49a; } .line.selected .number { min-width:42px; }
+#infoview { padding:18px 22px; overflow:auto; }
+#error { color:#ffb6a8; }
+</style>
+<script type="importmap">{"imports":{"@leanprover/infoview":"/dist/index.production.min.js","react":"/dist/react.production.min.js","react/jsx-runtime":"/dist/react-jsx-runtime.production.min.js","react-dom":"/dist/react-dom.production.min.js"}}</script>
+</head><body><header><strong>EncloseHorseVerified</strong><span>Lean 4 · actual infoview · live language server</span></header>
+<main><section id="editor"><div id="editor-title"></div><div id="source"></div></section><section id="infoview"></section></main>
+<script type="module" src="/app.js"></script></body></html>
