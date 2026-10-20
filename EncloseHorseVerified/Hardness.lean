@@ -93,6 +93,19 @@ def reduce (a : CoverInstance) : Board :=
       List.replicate middle.length .water
     budget := a.gateCount }
 
+
+/-- A genuine game-semantics fact used by the portal-group correspondence:
+any two open cells with a matching label share reachability, for paths of
+arbitrary length. The result is about the actual executable board flood fill. -/
+theorem portal_reachable (b : Board) (walls : Placement) (i j label : Nat)
+    (hi : i ∈ reach b walls)
+    (hoi : b.openCell walls i = true) (hoj : b.openCell walls j = true)
+    (hti : b.tileAt i = .portal label) (htj : b.tileAt j = .portal label) :
+    j ∈ reach b walls := by
+  apply (mem_reach_iff b walls j).mpr
+  exact .step ((mem_reach_iff b walls i).mp hi) (by
+    simp [Board.edge, hoi, hoj, Board.portalLinked, hti, htj])
+
 /-- The concrete tile gadget has the advertised signed weight. -/
 theorem beeMotif_points (label : Nat) :
     ((beeMotif label).map Tile.points).sum = -3 := by rfl
