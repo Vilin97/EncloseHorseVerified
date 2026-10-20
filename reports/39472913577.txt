@@ -1,0 +1,132 @@
+Head: 6edc4059c352023058af4574b9f5c5d1382c594f
+Run: 39472913577
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/18] Built EncloseHorseVerified.FiniteSearch (589ms)
+✔ [3/18] Built EncloseHorseVerified.Reachability (745ms)
+✔ [4/18] Built EncloseHorseVerified.FiniteSearch:c.o (383ms)
+✔ [5/18] Built EncloseHorseVerified.Reachability:c.o (308ms)
+✔ [6/18] Built EncloseHorseVerified.Game (738ms)
+✔ [7/18] Built EncloseHorseVerified.Solver (522ms)
+✔ [8/18] Built EncloseHorseVerified.Game:c.o (645ms)
+✔ [9/18] Built EncloseHorseVerified.Solver:c.o (162ms)
+✔ [10/18] Built EncloseHorseVerified.Levels (774ms)
+✔ [11/18] Built EncloseHorseVerified.Levels:c.o (273ms)
+✔ [12/18] Built EncloseHorseVerified.Widget (1.5s)
+✔ [13/18] Built Main (1.3s)
+✔ [14/18] Built EncloseHorseVerified.Tactic (1.5s)
+✔ [15/18] Built Main:c.o (183ms)
+✔ [16/18] Built encloseHorse:exe (682ms)
+✔ [17/18] Built EncloseHorseVerified (1.0s)
+Build completed successfully (18 jobs).
+✔ [4/4] Built EncloseHorseVerified.Bounds (562ms)
+Build completed successfully (4 jobs).
+⚠ [2/2] Built EncloseHorseVerified.FastSearch (596ms)
+warning: EncloseHorseVerified/FastSearch.lean:55:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:59:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:74:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:78:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:155:19: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/FastSearch.lean:163:19: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (2 jobs).
+⚠ [7/8] Replayed EncloseHorseVerified.FastSearch
+warning: EncloseHorseVerified/FastSearch.lean:55:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:59:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:74:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:78:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: EncloseHorseVerified/FastSearch.lean:155:19: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/FastSearch.lean:163:19: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8/8] Built EncloseHorseVerified.FastSolver (567ms)
+warning: EncloseHorseVerified/FastSolver.lean:71:54: This simp argument is unused:
+  hh
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/FastSolver.lean:74:52: This simp argument is unused:
+  hh
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (8 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (3 jobs).
+Build completed successfully (4 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (5 jobs).
+Build completed successfully (6 jobs).
+Build completed successfully (6 jobs).
+'EncloseHorse.reach_antitone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.enclosed_monotone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.score_le_upperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.score_le_completionBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.BranchBound.search_spec' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.solveFast_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFastWithSeed_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFast_optimal_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+[{"id":"tutorial-1","score":15,"walls":[23]},{"id":"tutorial-2","score":17,"walls":[23,40,60]},{"id":"tutorial-3","score":12,"walls":[11,24,37,40,51]},{"id":"tutorial-4","score":31,"walls":[6,11,26,31,54,58]},{"id":"tutorial-5","score":39,"walls":[41,52,62]}]
+some [23]
+'tactic_finds_official_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_choices: [propext, Quot.sound]
+EncloseHorse.bestBy_spec: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal_physical: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_eq_none_iff: [propext, Quot.sound]
+EncloseHorse.exists_optimal_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_reach_iff: [propext, Quot.sound]
+EncloseHorse.reach_nodup: [propext, Classical.choice, Quot.sound]
+EncloseHorse.enclosed_iff: [propext, Quot.sound]
+'EncloseHorse.solve_optimal_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
