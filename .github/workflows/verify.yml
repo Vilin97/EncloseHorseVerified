@@ -65,7 +65,9 @@ jobs:
           cache: npm
           cache-dependency-path: tools/package-lock.json
       - name: Audit small hardness reduction boards
-        run: node scripts/audit_hardness_reduction.mjs
+        run: |
+          node scripts/audit_hardness_reduction.mjs
+          node scripts/audit_planar_hardness.mjs
       - name: Install UI test dependencies
         working-directory: tools
         run: |
