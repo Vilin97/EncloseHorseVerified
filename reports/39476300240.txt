@@ -1,0 +1,90 @@
+Head: 8a4f6baf51cbf2ef13f13668ac365ac25580d921
+Run: 39476300240
+
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/31] Built EncloseHorseVerified.FiniteSearch (922ms)
+✔ [3/31] Built EncloseHorseVerified.FastSearch (963ms)
+✔ [4/31] Built EncloseHorseVerified.Reachability (1.0s)
+✔ [5/31] Built EncloseHorseVerified.FiniteSearch:c.o (256ms)
+✔ [6/31] Built EncloseHorseVerified.Reachability:c.o (255ms)
+✔ [7/31] Built EncloseHorseVerified.FastSearch:c.o (308ms)
+✔ [8/31] Built EncloseHorseVerified.Game (812ms)
+✔ [9/31] Built EncloseHorseVerified.Game:c.o (724ms)
+✔ [10/31] Built EncloseHorseVerified.Levels (940ms)
+✔ [11/31] Built EncloseHorseVerified.DailyLevels (1.0s)
+✔ [12/31] Built EncloseHorseVerified.Bounds (1.2s)
+✔ [13/31] Built EncloseHorseVerified.Levels:c.o (254ms)
+✔ [14/31] Built EncloseHorseVerified.DailyLevels:c.o (208ms)
+✔ [15/31] Built EncloseHorseVerified.Bounds:c.o (175ms)
+✔ [16/31] Built EncloseHorseVerified.Solver (728ms)
+✔ [17/31] Built EncloseHorseVerified.Solver:c.o (101ms)
+✔ [18/31] Built EncloseHorseVerified.Cache (777ms)
+✔ [19/31] Built EncloseHorseVerified.Cache:c.o (255ms)
+✔ [20/31] Built EncloseHorseVerified.FastSolver (681ms)
+✔ [21/31] Built EncloseHorseVerified.FastSolver:c.o (549ms)
+✔ [22/31] Built EncloseHorseVerified.Tactic (1.7s)
+✔ [23/31] Built Main (1.7s)
+✔ [24/31] Built EncloseHorseVerified.Widget (1.0s)
+✔ [25/31] Built Main:c.o (309ms)
+✔ [26/31] Built FastBench (1.7s)
+✔ [27/31] Built FastBench:c.o (296ms)
+✔ [28/31] Built encloseHorse:exe (1.0s)
+✔ [29/31] Built fastBench:exe (881ms)
+✔ [30/31] Built EncloseHorseVerified (1.4s)
+Build completed successfully (31 jobs).
+Build completed successfully (4 jobs).
+Build completed successfully (5 jobs).
+Build completed successfully (4 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (9 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (3 jobs).
+✔ [4/4] Built EncloseHorseVerified.Hardness (2.8s)
+Build completed successfully (4 jobs).
+Build completed successfully (4 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (5 jobs).
+Build completed successfully (10 jobs).
+Build completed successfully (10 jobs).
+'EncloseHorse.reach_antitone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.enclosed_monotone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.score_le_upperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.score_le_completionBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.GraphCache.reach_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.GraphCache.score_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.GraphCache.completionBound_eq' depends on axioms: [propext, Quot.sound]
+[{"id":"daily-2026-01-07","score":66,"walls":[3,7,14,27,35,63,95,101,107,140,153,166]},{"id":"daily-2026-01-12","score":204,"walls":[37,114,133,151,169,228,283,287,301,312,319,337]},{"id":"daily-2026-03-10","score":99,"walls":[56,59,116,134,155,169,172,223,254,261]}]
+'daily20260107_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'daily20260112_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'daily20260310_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.GraphCache.edge_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.GraphCache.reach_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.FastSolver.cachedScore_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.solveFastWithSeed_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFastWithSeed_eq_none_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'fast_seeded_tutorial1_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.BranchBound.search_spec' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.solveFast_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFastWithSeed_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFast_optimal_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFastWithSeed_eq_none_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFast_eq_none_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+[{"id":"tutorial-1","score":15,"walls":[23]},{"id":"tutorial-2","score":17,"walls":[23,40,60]},{"id":"tutorial-3","score":12,"walls":[11,24,37,40,51]},{"id":"tutorial-4","score":31,"walls":[6,11,26,31,54,58]},{"id":"tutorial-5","score":39,"walls":[41,52,62]}]
+some [23]
+'tactic_finds_official_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_choices: [propext, Quot.sound]
+EncloseHorse.bestBy_spec: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal_physical: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_eq_none_iff: [propext, Quot.sound]
+EncloseHorse.exists_optimal_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_reach_iff: [propext, Quot.sound]
+EncloseHorse.reach_nodup: [propext, Classical.choice, Quot.sound]
+EncloseHorse.enclosed_iff: [propext, Quot.sound]
+EncloseHorse.BranchBound.search_spec: [propext, Quot.sound]
+EncloseHorse.solveFastWithSeed_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_optimal_physical: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_eq_none_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFastWithSeed_eq_none_iff: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solve_optimal_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
