@@ -1,0 +1,62 @@
+Head: 441094efa503567c734c5778afd98af4c7297eb2
+Run: 39472194465
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/18] Built EncloseHorseVerified.FiniteSearch (528ms)
+✔ [3/18] Built EncloseHorseVerified.Reachability (656ms)
+✔ [4/18] Built EncloseHorseVerified.FiniteSearch:c.o (168ms)
+✔ [5/18] Built EncloseHorseVerified.Reachability:c.o (178ms)
+✔ [6/18] Built EncloseHorseVerified.Game (600ms)
+✔ [7/18] Built EncloseHorseVerified.Levels (485ms)
+✔ [8/18] Built EncloseHorseVerified.Solver (473ms)
+✔ [9/18] Built EncloseHorseVerified.Game:c.o (594ms)
+✔ [10/18] Built EncloseHorseVerified.Solver:c.o (99ms)
+✔ [11/18] Built EncloseHorseVerified.Levels:c.o (199ms)
+✔ [12/18] Built Main (882ms)
+✔ [13/18] Built Main:c.o (217ms)
+✔ [14/18] Built EncloseHorseVerified.Tactic (1.2s)
+✔ [15/18] Built EncloseHorseVerified.Widget (1.4s)
+✔ [16/18] Built encloseHorse:exe (659ms)
+✔ [17/18] Built EncloseHorseVerified (779ms)
+Build completed successfully (18 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (3 jobs).
+✖ [4/4] Building EncloseHorseVerified.Hardness (2.4s)
+trace: .> LEAN_PATH=/home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/EncloseHorseVerified/Hardness.lean -o /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Hardness.olean -i /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Hardness.ilean -c /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Hardness.c --setup /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Hardness.setup.json --json
+error: EncloseHorseVerified/Hardness.lean:135:5: unknown tactic
+error: EncloseHorseVerified/Hardness.lean:134:22: unsolved goals
+R M C Q u k e r g : Int
+hQ : 0 ≤ Q
+hC : Q < C
+hM : k * C + Q < M
+hk : 0 ≤ k
+he : e ≤ u
+hr : 0 ≤ r
+hg : g ≤ Q
+hscore : R + u * M - k * C ≤ R + e * M - r * C + g
+hC0 : 0 ≤ C
+hkC : 0 ≤ k * C
+hM0 : 0 ≤ M
+hrC : 0 ≤ r * C
+⊢ e = u
+error: EncloseHorseVerified/Hardness.lean:129:21: unsolved goals
+R M C Q u k e r g : Int
+hQ : 0 ≤ Q
+hC : Q < C
+hM : k * C + Q < M
+hk : 0 ≤ k
+he : e ≤ u
+hr : 0 ≤ r
+hg : g ≤ Q
+hscore : R + u * M - k * C ≤ R + e * M - r * C + g
+hC0 : 0 ≤ C
+hkC : 0 ≤ k * C
+hM0 : 0 ≤ M
+hrC : 0 ≤ r * C
+heu : e = u
+⊢ e = u ∧ r ≤ k
+Some required targets logged failures:
+- EncloseHorseVerified.Hardness
+error: build failed
