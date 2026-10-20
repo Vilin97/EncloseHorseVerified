@@ -6,6 +6,8 @@ This document gives a complete mathematical many-one reduction from **Set Cover*
 
 The proof below is an ordinary mathematical proof. `EncloseHorseVerified/Hardness.lean` implements the actual board construction and proves its score-separation arithmetic, with concrete board regression checks. The general board/quotient-graph correspondence, polynomial encoding bound, and NP-completeness framework are **not yet formalized in Lean**. The numerical lemmas alone must not be described as a fully kernel-checked NP-hardness proof.
 
+> **Stronger standard-game theorem:** [NP-completeness without portals](NP_Hardness_No_Portals.md) proves hardness using only the fixed ASCII alphabet `~ . H C S`. The simple portal reduction below is retained for its explicit executable Lean board constructor and three-row geometry. Its own unbounded-label scope does not limit the stronger separate result.
+
 ## 1. The decision problem and encoding
 
 An input consists of:
@@ -242,7 +244,7 @@ Set Cover is NP-complete. Sections 3–9 give a polynomial many-one reduction pr
 
 A polynomial-time exact optimizer for every board in this generalized model would therefore imply `P = NP`.
 
-This result does not prevent large practical speedups. Branch-and-bound, integer programming, graph preprocessing, bitsets, and a verified certificate checker can solve many instances quickly without changing worst-case complexity. It also does not settle any of the following stricter problems:
+The separate [no-portal reduction](NP_Hardness_No_Portals.md) establishes hardness for the ordinary fixed signed-tile alphabet, avoiding this construction's portal assumptions. This result does not prevent large practical speedups. Branch-and-bound, integer programming, graph preprocessing, bitsets, and a verified certificate checker can solve many instances quickly without changing worst-case complexity. It also does not settle any of the following stricter problems:
 
 - grass, water, and one horse only;
 - a fixed bound on the number of portal labels;
