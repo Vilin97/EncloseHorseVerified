@@ -40,12 +40,6 @@ class Board:
             raise ValueError("unsupported tile: only standard-game ASCII is accepted")
         if cells.count("H") != 1:
             raise ValueError("board must contain exactly one horse")
-        groups = defaultdict(int)
-        for char in cells:
-            if char.isdigit() or char.islower():
-                groups[char] += 1
-        if any(count != 2 for count in groups.values()):
-            raise ValueError("each portal label must occur exactly twice")
 
     @property
     def width(self) -> int:
@@ -129,8 +123,11 @@ def asp_program(board: Board) -> str:
             lines.extend((f"step({i},{i + width}).", f"step({i + width},{i})."))
         if char.isdigit() or char.islower():
             portals[char].append(i)
-    for first, second in portals.values():
-        lines.extend((f"step({first},{second}).", f"step({second},{first})."))
+    for group in portals.values():
+        for first in group:
+            for second in group:
+                if first != second:
+                    lines.append(f"step({first},{second}).")
     lines.append("""
 0 { wall(V) : grass(V) } B :- budget(B).
 reach(V) :- horse(V).

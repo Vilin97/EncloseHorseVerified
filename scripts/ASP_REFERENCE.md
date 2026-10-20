@@ -14,7 +14,7 @@ Select one fixture with --id daily-2026-01-12. Add --emit-asp /tmp/level.lp with
 
 ## Encoding and trust
 
-The encoding chooses at most the wall budget from ordinary grass. It derives reach/1 by positive recursion from the horse through four-neighbor edges and matching portal pairs, excluding walls. Reachability is a least fixed point rather than a freely guessed set: an inconvenient bee or a reachable escape cannot simply be omitted. A constraint rejects every model whose reachable component touches the grid boundary. The objective sums signed tile values: horse, grass and portal = 1; cherry = 4; apple = 11; bee = -4.
+The encoding chooses at most the wall budget from ordinary grass. It derives reach/1 by positive recursion from the horse through four-neighbor edges and matching portal labels, excluding walls. Reachability is a least fixed point rather than a freely guessed set: an inconvenient bee or a reachable escape cannot simply be omitted. A constraint rejects every model whose reachable component touches the grid boundary. The objective sums signed tile values: horse, grass and portal = 1; cherry = 4; apple = 11; bee = -4.
 
 For each model, a separately implemented coordinate/queue BFS checks legality, the full reachable component, enclosure and score. This catches translation or witness errors, but does **not** establish an upper bound. Optimality is reported only when Clingo says the search is exhausted and uninterrupted. A timeout is incomplete, even if it found a good incumbent. Unsolvable and negative-optimum levels are handled separately from escape score 0.
 

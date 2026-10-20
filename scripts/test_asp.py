@@ -7,6 +7,7 @@ import itertools
 import json
 from pathlib import Path
 import random
+import re
 import unittest
 
 from solve_asp import Board, evaluate, solve
@@ -49,6 +50,9 @@ class ASPTests(unittest.TestCase):
             (["~~~~~~", "~HCSG~", "~~~~~~"], 0, 12),
             (["~~~~~~~", "~H~GGG~", "~~~~~~~"], 0, 1),  # Disconnected apples are not scored.
             (["~~~~~~~", "~H0~G0~", "~~~~~~~"], 0, 14),  # Portal crosses between islands.
+            (["~~~~~", "~H0~~", "~~~~~"], 0, 2),  # A singleton label is harmless.
+            (["~~~~~~~~~", "~H0~G0~0~", "~~~~~~~~~"], 0, 15),  # All three matching labels link.
+            (["~~~0~~~", "~H0~G0~", "~~~~~~~"], 0, None),  # Triple group reaches a boundary.
             (["~~~0~", "~H.~~", "~0~~~", "~~~~~"], 1, None),  # Portal makes the horse escape.
         ]
         for index, (rows, budget, expected) in enumerate(cases):
@@ -81,8 +85,24 @@ class ASPTests(unittest.TestCase):
             with self.subTest(level=board.level_id):
                 assert_result(self, board, solve(board), exhaustive(board))
 
+    def test_daily_lean_literals_match_json(self) -> None:
+        levels = {entry["date"].replace("-", ""): entry for entry in json.loads((ROOT / "data/daily-levels.json").read_text())}
+        references = {entry["id"]: entry for entry in json.loads((ROOT / "data/daily-asp-results.json").read_text())}
+        source = (ROOT / "EncloseHorseVerified/DailyLevels.lean").read_text()
+        declarations = re.findall(r"def daily(\d{8}) : Board := Board.ofRows\s+(\[.*?\]) (\d+)", source, re.S)
+        witnesses = dict(re.findall(r"def daily(\d{8})Witness : Placement := (\[.*?\])", source))
+        self.assertEqual(len(declarations), len(levels))
+        for date, rows, budget in declarations:
+            level = levels[date]
+            self.assertEqual("\n".join(json.loads(rows)), level["map"])
+            self.assertEqual(int(budget), level["budget"])
+            walls = json.loads(witnesses[date])
+            self.assertEqual(walls, references[level["id"]]["walls"])
+            score, _ = evaluate(Board.from_level(level), walls)
+            self.assertEqual(score, level["reportedOptimalScore"])
+
     def test_input_and_illegal_placement_validation(self) -> None:
-        for rows, budget in ((["H"], -1), (["HH"], 0), (["H0"], 0), (["H." ,"~"], 0), (["H?"], 0)):
+        for rows, budget in ((["H"], -1), (["HH"], 0), (["H"], True), (["H." ,"~"], 0), (["H?"], 0)):
             with self.subTest(rows=rows, budget=budget):
                 with self.assertRaises(ValueError):
                     Board(tuple(rows), budget)
