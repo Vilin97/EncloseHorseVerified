@@ -3,7 +3,7 @@ import EncloseHorseVerified.Game
 import EncloseHorseVerified.Solver
 
 /-!
-# An interactive native Lean infoview
+# An interactive native Lean infoview with the original game sprites
 
 Place the cursor on `#enclose_horse board` in VS Code to open the widget.
 The JavaScript component only draws the board and collects clicks. The Lean RPC

@@ -22,6 +22,11 @@ try {
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('http://127.0.0.1:8765/');
   await page.getByRole('region', { name: 'Enclose Horse interactive Lean widget' }).waitFor({ timeout: 90000 });
+  // The displayed board must load the original atlas, rather than fallback glyphs.
+  const atlas = await page.locator('[data-original-sprite="horse"]').evaluate(el =>
+    getComputedStyle(el).backgroundImage.slice(5, -2));
+  if (!atlas.startsWith('data:image/webp;base64,')) throw new Error('Original sprite atlas is missing');
+  await page.evaluate(async src => { const image = new Image(); image.src = src; await image.decode(); }, atlas);
   await page.screenshot({ path: path.join(output, 'infoview-initial.png'), fullPage: true });
   // The game is manually playable: one click closes the official first tutorial.
   await page.getByRole('button', { name: 'row 2 column 7 grass', exact: true }).click();
@@ -43,6 +48,10 @@ try {
   await page.getByText('0 / 3', { exact: true }).waitFor({ timeout: 30000 });
   await page.getByRole('button', { name: 'row 1 column 6 portal:0', exact: true }).waitFor();
   await page.screenshot({ path: path.join(output, 'infoview-portals.png'), fullPage: true });
+  await page.getByText('#enclose_horse tutorial4', { exact: true }).click();
+  await page.getByText('0 / 6', { exact: true }).waitFor({ timeout: 30000 });
+  await page.getByRole('button', { name: 'row 2 column 5 apple', exact: true }).waitFor();
+  await page.screenshot({ path: path.join(output, 'infoview-items.png'), fullPage: true });
   await page.getByText('#enclose_horse tutorial1', { exact: true }).click();
   await page.getByText('0 / 1', { exact: true }).waitFor({ timeout: 30000 });
   if (errors.length) throw new Error(errors.join('\n'));

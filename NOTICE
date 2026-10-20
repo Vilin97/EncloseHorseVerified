@@ -8,4 +8,7 @@ They are factual test fixtures; no license to the original game's artwork, sourc
 code, trademarks, or other content is granted by this project's software license.
 
 The implementation, proofs, widget code, and independent test tools were written
-for this project. The widget uses system text/emoji instead of original assets.
+for this project. The widget uses the original, unmodified default-theme sprite
+atlas from https://enclose.horse/themes/default.webp?v=4. Original artwork remains
+the property of its respective owners and is not covered by the MIT software
+license. See assets/original/README.md for source, retrieval date, and hash.

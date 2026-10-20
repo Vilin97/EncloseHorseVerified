@@ -11,6 +11,8 @@ A playable implementation of [enclose.horse](https://enclose.horse/) inside the 
 
 All five official tutorial levels are included. Special tiles cannot be walled over. Portal labels are displayed on the board. No npm installation is needed for the VS Code widget.
 
+The board uses the original game's default-theme sprites: animated horses, grass, water and shorelines, golden wheat, cube walls, items, and portals. The small unmodified sprite atlas is embedded for offline rendering; see [`assets/original/README.md`](assets/original/README.md) for provenance and attribution.
+
 ![Playable native Lean infoview](docs/screenshots/infoview-manual-play.png)
 ![Exact optimal solution in the native Lean infoview](docs/screenshots/infoview-optimal.png)
 ![Official portal tutorial in the infoview](docs/screenshots/infoview-portals.png)
@@ -103,4 +105,4 @@ The compiled Lean solver is tested on three unmodified real official levels, inc
 | `Widget.lean`, `widget/encloseHorse.js` | Playable native infoview and Lean RPCs |
 | `Levels.lean`, `Tests/` | Official levels and regression/certificate tests |
 
-The Lean implementation has no external Lean package dependencies. The original game is by the enclose.horse team; this independent educational implementation uses its published rules and five small tutorial fixtures. Original game code and artwork are not included. See [`NOTICE`](NOTICE).
+The Lean implementation has no external Lean package dependencies. The original game is by the enclose.horse team; this independent educational implementation uses its published rules, five small tutorial fixtures, and the original default-theme sprite atlas. No original game engine code is included. Original artwork remains third-party material outside the MIT software license. See [`NOTICE`](NOTICE).
