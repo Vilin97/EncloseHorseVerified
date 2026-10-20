@@ -1,6 +1,6 @@
 # EncloseHorseVerified
 
-A playable implementation of [enclose.horse](https://enclose.horse/) inside the **Lean 4.35.0 infoview**, with an exhaustive exact solver, a solution-finding tactic, and a kernel-checked proof of global optimality.
+A playable implementation of [enclose.horse](https://enclose.horse/) inside the **Lean 4.35.0 infoview**, with a proved exact branch-and-bound solver, a solution-finding tactic, and a kernel-checked proof of global optimality.
 
 ## Play in the infoview
 
@@ -36,25 +36,25 @@ example : Optimal tutorial1 [23] := by
   enclose_horse
 ```
 
-The tactic executes exact search to discover the walls, then constructs `solve_optimal` with a solver equation checked using **`decide +kernel`**. Witness discovery is untrusted; the final theorem is checked by Lean. Fixed-placement goals must specify the solver's selected optimum; use the existential form to let the tactic find it. Ties are deterministic.
+The tactic executes exact search to discover the walls, then constructs `solveFast_optimal` with a solver equation checked using **`decide +kernel`**. Witness discovery is untrusted; the final theorem is checked by Lean. Fixed-placement goals must specify the solver's selected optimum; use the existential form to let the tactic find it. Ties are deterministic.
 
 ## What is proved
 
-The specification is independent of the enumeration:
+The specification is independent of the search algorithm:
 
 ```lean
 Optimal b walls :=
   admissible b walls ∧
   ∀ other, admissible b other → score b other ≤ score b walls
 
-solve_optimal b walls :
-  solve b = some walls → Optimal b walls
+solveFast_optimal b walls :
+  solveFast b = some walls → Optimal b walls
 
-solve_optimal_physical b walls :
-  solve b = some walls → PhysicalOptimal b walls
+solveFast_optimal_physical b walls :
+  solveFast b = some walls → PhysicalOptimal b walls
 ```
 
-`PhysicalOptimal` quantifies over **all distinct legal grass-cell lists within budget, in any order**. Canonicalization preserves their membership, reachability, and score. The search-space completeness proof shows every such placement is represented. `solve_eq_none_iff` proves that failure means no enclosure exists.
+`PhysicalOptimal` quantifies over **all distinct legal grass-cell lists within budget, in any order**. Canonicalization preserves their membership, reachability, and score. The search-space completeness proof shows every such placement is represented. `solveFast_eq_none_iff` and its exhaustive counterpart prove that failure means no enclosure exists.
 
 The executable flood fill is proved equivalent to inductive paths of arbitrary length (`mem_reach_iff`), is duplicate-free (`reach_nodup`), and characterizes boundary escape (`enclosed_iff`). Structural recursion makes concrete solver equations reducible by the kernel.
 
@@ -66,7 +66,31 @@ Standard mode: four-way movement, water barriers, open board edges, an upper bou
 
 A solution **must enclose the horse**. The solver therefore optimizes among enclosures even if all their scores are negative; it returns `none` if no enclosure exists. An escaped placement has game score zero but is not a solution. Optional bonus modes (unicorns, costly walls, lava gates) and preset `W` maps are outside this implementation. The checked parser rejects unsupported symbols.
 
-This is a finite exhaustive algorithm: it always terminates, but its search is exponential. Kernel certification costs more than running compiled search. The small official tutorials are practical examples; large daily puzzles may be expensive.
+## Practical exact search and complexity
+
+The default Lean solver explores wall decisions on demand. It chooses a cell on an escape path, tries including or excluding it, and prunes using proved reachability bounds. Its signed upper bound retains penalties for bees that every completion must reach. Blocking all remaining candidates detects impossible branches. A checked incumbent, including the current placement in the infoview, can improve pruning without affecting the theorem. The original exhaustive solver remains available for comparison.
+
+The decision problem is **NP-complete for variable-size boards using only grass, water, one horse, cherries, and bees; no portals are required**. The [complete reduction from planar Steiner Tree](docs/NP_Hardness_No_Portals.md) gives both directions and an explicit polynomial board-size bound. A second [Set Cover reduction](docs/NP_Hardness.md) covers generalized portal groups. These are mathematical proofs; `Hardness.lean` checks the portal construction, arithmetic lemmas, and concrete examples, but the complete complexity reductions are **not fully formalized in Lean**. The solver's global optimality and pruning theorems are fully checked in Lean.
+
+Thus a polynomial-time exact optimizer for every board in this family would imply P = NP. This leaves plenty of room for practical algorithms. [Native benchmark records](docs/Performance.md) distinguish completed tutorial searches from daily timeouts; no daily Lean optimum certificate is claimed from a timeout. The optional [Clingo exact solver](scripts/ASP_REFERENCE.md) completed three real daily levels:
+
+| Daily level | Grid | Grass candidates | Wall budget | Score | Clingo time |
+|---|---:|---:|---:|---:|---:|
+| 2026-01-07 | 12 × 14 | 104 | 12 | 66 | 1.511 s |
+| 2026-01-12 | 19 × 19 | 171 | 12 | 204 | 0.323 s |
+| 2026-03-10 | 17 × 17 | 184 | 10 | 99 | 1.406 s |
+
+These are measured results from one GitHub Actions runner. They are **external Clingo optimality results**, not Lean optimality certificates or Lean solver timings. Lean separately kernel-checks all three witnesses' legality, enclosure, and scores. The ASP implementation is tested against exhaustive search on 120 random boards and the official tutorials. It distinguishes completed searches, timeouts, and infeasibility.
+
+```sh
+python -m pip install -r scripts/requirements-asp.txt
+python scripts/solve_asp.py data/daily-levels.json --timeout 180 --require-optimal
+lake build fastBench
+lake exe fastBench --all
+lake exe fastBench --daily --seed
+```
+
+All exact algorithms here retain an exponential worst case. Kernel certification can cost substantially more than compiled execution.
 
 ## Validation
 
@@ -91,7 +115,7 @@ The compiled Lean solver is tested on three unmodified real official levels, inc
 | 4 | 6 | 31 | 1,391,842 |
 | 5, portals | 3 | 39 | 2,626 |
 
-`lake exe encloseHorse --all` runs exact Lean search on all five, including the larger benchmarks. `--all --witnesses` checks all stored witnesses quickly. Source URLs and retrieval hashes are recorded in [`data/README.md`](data/README.md).
+`lake exe encloseHorse --all` runs exact Lean search on all five, including the larger benchmarks. Add `--exhaustive` to use the original subset search. `--all --witnesses` checks all stored witnesses quickly. Source URLs and retrieval hashes are recorded in [`data/README.md`](data/README.md).
 
 ## Layout
 
@@ -100,9 +124,12 @@ The compiled Lean solver is tested on three unmodified real official levels, inc
 | `Reachability.lean` | Terminating flood fill and unbounded-path correctness |
 | `Game.lean` | Terrain, parser, legality, score, physical-placement correspondence |
 | `FiniteSearch.lean` | Complete bounded-subset enumeration and maximum-selection proof |
-| `Solver.lean` | Exact solver, global optimality, impossibility theorem |
+| `Solver.lean` | Exhaustive reference, global optimality, impossibility theorem |
+| `Bounds.lean`, `FastSearch.lean`, `FastSolver.lean` | Proved pruning and dynamic exact search |
+| `Hardness.lean`, `docs/NP_Hardness*.md` | Reduction components and complete mathematical hardness proofs |
+| `DailyLevels.lean`, `scripts/solve_asp.py` | Archived daily fixtures and practical ASP reference |
 | `Tactic.lean` | `enclose_horse` and `#solve_enclosure` |
 | `Widget.lean`, `widget/encloseHorse.js` | Playable native infoview and Lean RPCs |
 | `Levels.lean`, `Tests/` | Official levels and regression/certificate tests |
 
-The Lean implementation has no external Lean package dependencies. The original game is by the enclose.horse team; this independent educational implementation uses its published rules, five small tutorial fixtures, and the original default-theme sprite atlas. No original game engine code is included. Original artwork remains third-party material outside the MIT software license. See [`NOTICE`](NOTICE).
+The Lean implementation has no external Lean package dependencies. The original game is by the enclose.horse team; this independent educational implementation uses its published rules, five small tutorial fixtures, three archived daily fixtures, and the original default-theme sprite atlas. No original game engine code is included. Original artwork remains third-party material outside the MIT software license. See [`NOTICE`](NOTICE).

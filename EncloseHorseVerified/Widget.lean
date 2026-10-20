@@ -1,6 +1,6 @@
 import Lean
 import EncloseHorseVerified.Game
-import EncloseHorseVerified.Solver
+import EncloseHorseVerified.FastSolver
 
 /-!
 # An interactive native Lean infoview with the original game sprites
@@ -69,12 +69,12 @@ def evaluate (params : UpdateParams) : RequestM (RequestTask ViewState) :=
       throwThe RequestError ⟨.invalidParams, "Illegal wall placement or wall budget exceeded"⟩
     return view b params.walls
 
-/-- Run exact search. The solver's theorem proves maximality for every board. -/
+/-- Run proved branch-and-bound, checking the current enclosure as an optional seed. -/
 @[server_rpc_method]
 def findOptimal (params : UpdateParams) : RequestM (RequestTask ViewState) :=
   RequestM.asTask do
     let b := params.state.val.board
-    let some walls := solve b
+    let some walls := solveFastWithSeed b (some params.walls)
       | throwThe RequestError ⟨.invalidParams, "This board has no legal enclosure"⟩
     return view b walls
 

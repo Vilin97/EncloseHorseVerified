@@ -4,7 +4,9 @@ verification project. It is not affiliated with or endorsed by enclose.horse.
 Original game: https://enclose.horse/
 Original tutorial: https://enclose.horse/tutorial
 The five small tutorial board layouts and metadata are attributed in data/README.md.
-They are factual test fixtures; no license to the original game's artwork, source
+Three archived daily fixtures and their pinned sources are recorded in
+data/daily-levels.json and scripts/ASP_REFERENCE.md.
+These are factual test fixtures; no license to the original game's artwork, source
 code, trademarks, or other content is granted by this project's software license.
 
 The implementation, proofs, widget code, and independent test tools were written
