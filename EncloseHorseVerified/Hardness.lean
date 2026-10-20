@@ -145,20 +145,22 @@ theorem threshold_forces_cover_counts
   have hM0 : 0 ≤ M := by omega
   have hrC : 0 ≤ r * C := Int.mul_nonneg hr hC0
   have heu : e = u := by
-    by_contra hne
-    have hstep : e + 1 ≤ u := by omega
-    have hmul := Int.mul_le_mul_of_nonneg_right hstep hM0
-    have hmul' : e * M + M ≤ u * M := by
-      simpa only [Int.add_mul, Int.one_mul] using hmul
-    omega
+    by_cases hsame : e = u
+    · exact hsame
+    · have hstep : e + 1 ≤ u := by omega
+      have hmul := Int.mul_le_mul_of_nonneg_right hstep hM0
+      have hmul' : e * M + M ≤ u * M := by
+        simpa only [Int.add_mul, Int.one_mul] using hmul
+      omega
   refine ⟨heu, ?_⟩
   subst e
-  by_contra hnot
-  have hstep : k + 1 ≤ r := by omega
-  have hmul := Int.mul_le_mul_of_nonneg_right hstep hC0
-  have hmul' : k * C + C ≤ r * C := by
-    simpa only [Int.add_mul, Int.one_mul] using hmul
-  omega
+  by_cases hle : r ≤ k
+  · exact hle
+  · have hstep : k + 1 ≤ r := by omega
+    have hmul := Int.mul_le_mul_of_nonneg_right hstep hC0
+    have hmul' : k * C + C ≤ r * C := by
+      simpa only [Int.add_mul, Int.one_mul] using hmul
+    omega
 
 /-- A chosen cover of at most `k` sets meets the threshold; gate rewards only help. -/
 theorem cover_counts_meet_threshold (R M C u k r g : Int)
