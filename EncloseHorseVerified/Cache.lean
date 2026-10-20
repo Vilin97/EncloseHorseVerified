@@ -105,8 +105,10 @@ def score {b : Board} (c : GraphCache b) (walls : Placement) : Int :=
 
 theorem score_eq {b : Board} (c : GraphCache b) (walls : Placement) :
     c.score walls = EncloseHorse.score b walls := by
-  simp only [score, EncloseHorse.score, EncloseHorse.enclosed,
-    c.horse_eq, c.reach_eq, c.tileAt_eq]
+  change (if c.enclosed walls then
+    ((c.reach walls).map (fun i => (c.tileAt i).points)).sum else 0) =
+      EncloseHorse.score b walls
+  simp only [EncloseHorse.score, c.enclosed_eq, c.reach_eq, c.tileAt_eq]
 
 def legal {b : Board} (c : GraphCache b) (walls : Placement) : Bool :=
   decide (walls.Sublist c.candidates ∧ walls.length ≤ b.budget)
