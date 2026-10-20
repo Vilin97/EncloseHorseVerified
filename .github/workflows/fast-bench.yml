@@ -1,0 +1,52 @@
+name: Benchmark verified native search
+on:
+  pull_request:
+    paths:
+      - 'EncloseHorseVerified/Fast*.lean'
+      - 'FastBench.lean'
+      - 'Tests/FastSolver.lean'
+      - 'lakefile.lean'
+      - '.github/workflows/fast-bench.yml'
+  workflow_dispatch:
+concurrency:
+  group: native-fast-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build native benchmark
+        run: |
+          set -o pipefail
+          lake build fastBench 2>&1 | tee /tmp/native-fast-build.txt
+      - name: Run bounded independent cases
+        run: |
+          set +e
+          : > /tmp/native-fast-results.txt
+          for id in tutorial-1 tutorial-2 tutorial-3 tutorial-4 tutorial-5; do
+            timeout 60 .lake/build/bin/fastBench --all --id="$id" >> /tmp/native-fast-results.txt 2>&1
+            status=$?
+            echo "EXIT $id $status" >> /tmp/native-fast-results.txt
+          done
+          for id in daily-2026-01-07 daily-2026-01-12 daily-2026-03-10; do
+            timeout 90 .lake/build/bin/fastBench --daily --seed --id="$id" >> /tmp/native-fast-results.txt 2>&1
+            status=$?
+            echo "EXIT $id $status" >> /tmp/native-fast-results.txt
+          done
+          cat /tmp/native-fast-results.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-fast-benchmark
+          path: |
+            /tmp/native-fast-build.txt
+            /tmp/native-fast-results.txt
+          if-no-files-found: ignore

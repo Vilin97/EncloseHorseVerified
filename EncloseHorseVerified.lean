@@ -1,5 +1,6 @@
 import EncloseHorseVerified.Game
 import EncloseHorseVerified.Solver
+import EncloseHorseVerified.FastSolver
 import EncloseHorseVerified.Tactic
 import EncloseHorseVerified.Levels
 import EncloseHorseVerified.Widget
