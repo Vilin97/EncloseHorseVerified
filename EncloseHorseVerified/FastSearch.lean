@@ -43,7 +43,10 @@ theorem insert_spec {α : Type} (valid : α → Bool) (score : α → Int)
   cases old with
   | none =>
     constructor
-    · intro y hy; simpa [insert] using hy ▸ hx
+    · intro y hy
+      simp only [insert, Option.some.injEq] at hy
+      subst y
+      exact hx
     · constructor
       · intro y hy; contradiction
       · exact ⟨x, rfl, Int.le_refl _⟩
@@ -67,9 +70,12 @@ theorem consider_spec {α : Type} (valid : α → Bool) (score : α → Int)
       Keeps score old (consider valid score x old) ∧
       (valid x = true → Dominates score (consider valid score x old) x) := by
   by_cases hx : valid x = true
-  · simpa only [consider, hx, Bool.true_eq, ↓reduceIte] using
-      (insert_spec valid score x old hx ho)
-  · simp only [consider, hx, ↓reduceIte]
+  · unfold consider
+    rw [if_pos hx]
+    have hs := insert_spec valid score x old hx ho
+    exact ⟨hs.1, hs.2.1, fun _ => hs.2.2⟩
+  · unfold consider
+    rw [if_neg hx]
     exact ⟨ho, keeps_refl score old, fun h => False.elim (hx h)⟩
 
 /-- Every obligation refers to the game's independent validity and score. -/
