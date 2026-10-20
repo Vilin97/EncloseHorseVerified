@@ -25,7 +25,7 @@ A planar embedding can be found in polynomial time, or supplied as part of the s
 
 An empty terminal set is a trivial YES instance. Map it to a fixed 3-by-3 board with rows `~~~`, `~H~`, `~~~`, budget `0`, and threshold `1`. Otherwise choose an arbitrary root terminal `h in T`.
 
-Replace `B` by `min(B,n-1)`. This preserves the answer, because a spanning tree of connected `G` has `n-1` edges and contains every terminal. If `B < t-1`, the source instance is NO: a tree containing `t` distinct terminals has at least `t-1` edges. Map this case to a fixed NO instance, such as the one-cell board `H` with budget `0` and required enclosed score `1`.
+Replace `B` by `min(B,n-1)`. This preserves the answer, because a spanning tree of connected `G` has `n-1` edges and contains every terminal. If `B < t-1`, the source instance is NO: a tree containing `t` distinct terminals has at least `t-1` edges. Map this case to a fixed NO instance that also has a water border: the same 3-by-3 board with rows `~~~`, `~H~`, `~~~`, budget `0`, and required score `2`. Its unique legal placement has enclosed score `1`.
 
 For the remaining cases,
 
