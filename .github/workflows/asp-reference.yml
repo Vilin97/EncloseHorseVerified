@@ -1,0 +1,35 @@
+name: External ASP reference benchmarks
+on:
+  push:
+    branches: [asp-reference]
+  pull_request:
+    paths:
+      - scripts/solve_asp.py
+      - scripts/test_asp.py
+      - scripts/requirements-asp.txt
+      - data/daily-levels.json
+      - .github/workflows/asp-reference.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  asp-reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/requirements-asp.txt
+      - name: Differential tests and three real daily levels
+        run: |
+          set -o pipefail
+          python scripts/test_asp.py --daily --daily-timeout 180 --json-output /tmp/asp-results.json 2>&1 | tee /tmp/asp-reference.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: asp-reference-results
+          path: |
+            /tmp/asp-reference.log
+            /tmp/asp-results.json
