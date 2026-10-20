@@ -1,0 +1,42 @@
+Head: 1fe24ae9cc56b847fe9eae5283cb11e035259bbb
+Run: 39474453839
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/18] Built EncloseHorseVerified.FiniteSearch (554ms)
+✔ [3/18] Built EncloseHorseVerified.Reachability (665ms)
+✔ [4/18] Built EncloseHorseVerified.FiniteSearch:c.o (224ms)
+✔ [5/18] Built EncloseHorseVerified.Reachability:c.o (221ms)
+✔ [6/18] Built EncloseHorseVerified.Game (670ms)
+✔ [7/18] Built EncloseHorseVerified.Solver (523ms)
+✔ [8/18] Built EncloseHorseVerified.Game:c.o (530ms)
+✔ [9/18] Built EncloseHorseVerified.Levels (604ms)
+✔ [10/18] Built EncloseHorseVerified.Solver:c.o (112ms)
+✔ [11/18] Built EncloseHorseVerified.Levels:c.o (192ms)
+✔ [12/18] Built Main (896ms)
+✔ [13/18] Built Main:c.o (197ms)
+✔ [14/18] Built EncloseHorseVerified.Tactic (1.4s)
+✔ [15/18] Built EncloseHorseVerified.Widget (1.5s)
+✔ [16/18] Built encloseHorse:exe (747ms)
+✔ [17/18] Built EncloseHorseVerified (821ms)
+Build completed successfully (18 jobs).
+✔ [4/4] Built EncloseHorseVerified.Bounds (526ms)
+Build completed successfully (4 jobs).
+✖ [5/5] Building EncloseHorseVerified.Cache (548ms)
+trace: .> LEAN_PATH=/home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/EncloseHorseVerified/Cache.lean -o /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Cache.olean -i /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Cache.ilean -c /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Cache.c --setup /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Cache.setup.json --json
+error: EncloseHorseVerified/Cache.lean:111:59: unsolved goals
+b : Board
+c : GraphCache b
+walls : Placement
+⊢ List.Sublist walls b.candidates ∧ List.length walls ≤ b.budget ↔
+    decide (List.Sublist walls b.candidates ∧ List.length walls ≤ b.budget) = true
+error: EncloseHorseVerified/Cache.lean:119:69: unsolved goals
+b : Board
+c : GraphCache b
+walls : Placement
+⊢ EncloseHorse.legal b walls ∧ EncloseHorse.enclosed b walls = true ↔
+    decide (EncloseHorse.legal b walls ∧ EncloseHorse.enclosed b walls = true) = true
+Some required targets logged failures:
+- EncloseHorseVerified.Cache
+error: build failed
