@@ -1,0 +1,43 @@
+Head: 3b9963be4bba13fce4af93da340b4674433eeeed
+Run: 39475286626
+
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/24] Built EncloseHorseVerified.FiniteSearch (705ms)
+✔ [3/24] Built EncloseHorseVerified.FastSearch (753ms)
+✔ [4/24] Built EncloseHorseVerified.Reachability (873ms)
+✔ [5/24] Built EncloseHorseVerified.FiniteSearch:c.o (163ms)
+✔ [6/24] Built EncloseHorseVerified.FastSearch:c.o (168ms)
+✔ [7/24] Built EncloseHorseVerified.Reachability:c.o (184ms)
+✔ [8/24] Built EncloseHorseVerified.Game (602ms)
+✔ [9/24] Built EncloseHorseVerified.Solver (605ms)
+✔ [10/24] Built EncloseHorseVerified.Game:c.o (659ms)
+✔ [11/24] Built EncloseHorseVerified.Solver:c.o (100ms)
+✔ [12/24] Built EncloseHorseVerified.Levels (865ms)
+✔ [13/24] Built EncloseHorseVerified.Bounds (876ms)
+✔ [14/24] Built EncloseHorseVerified.Bounds:c.o (119ms)
+✔ [15/24] Built EncloseHorseVerified.Levels:c.o (179ms)
+✔ [16/24] Built EncloseHorseVerified.FastSolver (637ms)
+✔ [17/24] Built EncloseHorseVerified.FastSolver:c.o (420ms)
+✔ [18/24] Built Main (1.3s)
+✔ [19/24] Built EncloseHorseVerified.Tactic (1.4s)
+✔ [20/24] Built EncloseHorseVerified.Widget (1.4s)
+✔ [21/24] Built Main:c.o (174ms)
+✔ [22/24] Built encloseHorse:exe (652ms)
+✔ [23/24] Built EncloseHorseVerified (826ms)
+Build completed successfully (24 jobs).
+Build completed successfully (4 jobs).
+✖ [5/5] Building EncloseHorseVerified.Cache (551ms)
+trace: .> LEAN_PATH=/home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/EncloseHorseVerified/Cache.lean -o /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Cache.olean -i /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Cache.ilean -c /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Cache.c --setup /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Cache.setup.json --json
+error: EncloseHorseVerified/Cache.lean:107:50: unsolved goals
+b : Board
+c : GraphCache b
+walls : Placement
+⊢ (if (decide (b.horse < b.size) && !(EncloseHorse.reach b walls).any b.onEdge) = true then
+      (List.map (fun i => (b.tileAt i).points) (EncloseHorse.reach b walls)).sum
+    else 0) =
+    if (decide (b.horse < b.size) && !(EncloseHorse.reach b walls).any b.onEdge) = true then
+      (List.map (fun i => (b.tileAt i).points) (EncloseHorse.reach b walls)).sum
+    else 0
+Some required targets logged failures:
+- EncloseHorseVerified.Cache
+error: build failed
