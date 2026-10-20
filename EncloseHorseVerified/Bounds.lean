@@ -180,4 +180,51 @@ theorem score_le_completionBound (b : Board) (mandatory allowed walls : Placemen
   simp only [score, he, ↓reduceIte, completionBound, positiveValue, negativeCost]
   omega
 
+
+/-- Cardinality comparison for a duplicate-free list inside an arbitrary containing list. -/
+theorem nodup_length_le_of_subset (xs ys : List Nat) (hn : xs.Nodup) (hs : xs ⊆ ys) :
+    xs.length ≤ ys.length := by
+  induction xs generalizing ys with
+  | nil => simp
+  | cons a xs ih =>
+    obtain ⟨ha, hn⟩ := List.nodup_cons.mp hn
+    have hay : a ∈ ys := hs List.mem_cons_self
+    have hsub : xs ⊆ ys.erase a := by
+      intro i hi
+      have hia : i ≠ a := by
+        intro hh
+        subst i
+        exact ha hi
+      exact (List.mem_erase_of_ne hia).mpr (hs (List.mem_cons_of_mem a hi))
+    have hh := ih (ys.erase a) hn hsub
+    have he := List.length_erase_of_mem hay
+    have hy : ys.length ≠ 0 := by
+      intro hz
+      have hnil : ys = [] := List.length_eq_zero_iff.mp hz
+      simp [hnil] at hay
+    simp only [List.length_cons]
+    omega
+
+/-- Canonicalization cannot invent a wall outside any set containing the input walls. -/
+theorem canonicalize_subset (b : Board) (placed walls : Placement) (hs : placed ⊆ walls) :
+    canonicalize b placed ⊆ walls := by
+  intro i hi
+  have hm := (List.mem_filter.mp hi).2
+  exact hs (List.contains_iff_mem.mp hm)
+
+theorem canonicalize_length_le_of_subset (b : Board) (placed walls : Placement)
+    (hs : placed ⊆ walls) : (canonicalize b placed).length ≤ walls.length := by
+  apply nodup_length_le_of_subset
+  · exact List.Pairwise.filter _ b.candidates_nodup
+  · exact canonicalize_subset b placed walls hs
+
+/-- A branch already requiring too many distinct buildable walls has no legal completion. -/
+theorem not_admissible_of_mandatory_over_budget (b : Board) (placed walls : Placement)
+    (hs : placed ⊆ walls) (hb : b.budget < (canonicalize b placed).length) :
+    ¬ admissible b walls := by
+  intro hw
+  have hl := canonicalize_length_le_of_subset b placed walls hs
+  have hm := hw.1.2
+  omega
+
 end EncloseHorse
