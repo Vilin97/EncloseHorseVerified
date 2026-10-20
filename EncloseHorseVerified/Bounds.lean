@@ -227,4 +227,44 @@ theorem not_admissible_of_mandatory_over_budget (b : Board) (placed walls : Plac
   have hm := hw.1.2
   omega
 
+
+/-- Once the mandatory distinct walls exhaust the budget, every legal completion
+has exactly those walls; undecided cells can be skipped without searching them. -/
+theorem sameWalls_of_mandatory_budget_full (b : Board) (placed walls : Placement)
+    (hs : placed ⊆ walls) (ha : admissible b walls)
+    (hb : b.budget ≤ (canonicalize b placed).length) :
+    SameWalls (canonicalize b placed) walls := by
+  intro i
+  constructor
+  · exact fun hi => canonicalize_subset b placed walls hs hi
+  · intro hi
+    by_cases hm : i ∈ canonicalize b placed
+    · exact hm
+    · have hn : (i :: canonicalize b placed).Nodup := by
+        apply List.nodup_cons.mpr
+        exact ⟨hm, List.Pairwise.filter _ b.candidates_nodup⟩
+      have hsub : (i :: canonicalize b placed) ⊆ walls := by
+        intro j hj
+        rcases List.mem_cons.mp hj with hji | hj
+        · simpa [hji] using hi
+        · exact canonicalize_subset b placed walls hs hj
+      have hl := nodup_length_le_of_subset
+        (i :: canonicalize b placed) walls hn hsub
+      have hw := ha.1.2
+      simp only [List.length_cons] at hl
+      omega
+
+/-- Canonical legal mandatory walls at the budget leave no physical freedom. -/
+theorem sameWalls_of_admissible_at_budget (b : Board) (mandatory walls : Placement)
+    (hm : legal b mandatory) (hs : mandatory ⊆ walls) (ha : admissible b walls)
+    (hb : mandatory.length = b.budget) : SameWalls mandatory walls := by
+  have hc := canonicalize_sameWalls b mandatory (fun i hi => hm.1.subset hi)
+  have hp := canonicalize_perm b mandatory (b.candidates_nodup.sublist hm.1)
+    (fun i hi => hm.1.subset hi)
+  have he : b.budget ≤ (canonicalize b mandatory).length := by
+    rw [hp.length_eq, hb]
+  have hh := sameWalls_of_mandatory_budget_full b mandatory walls hs ha he
+  intro i
+  exact (hc i).symm.trans (hh i)
+
 end EncloseHorse
