@@ -1,0 +1,40 @@
+Head: f412d1fb6b0bbc09f9da52628136093d47d691e6
+Run: 39474462262
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/24] Built EncloseHorseVerified.FiniteSearch (850ms)
+✔ [3/24] Built EncloseHorseVerified.Reachability (943ms)
+✔ [4/24] Built EncloseHorseVerified.FastSearch (957ms)
+✔ [5/24] Built EncloseHorseVerified.FiniteSearch:c.o (317ms)
+✔ [6/24] Built EncloseHorseVerified.FastSearch:c.o (199ms)
+✔ [7/24] Built EncloseHorseVerified.Reachability:c.o (266ms)
+✔ [8/24] Built EncloseHorseVerified.Game (759ms)
+✔ [9/24] Built EncloseHorseVerified.Solver (595ms)
+✔ [10/24] Built EncloseHorseVerified.Game:c.o (827ms)
+✔ [11/24] Built EncloseHorseVerified.Solver:c.o (224ms)
+✔ [12/24] Built EncloseHorseVerified.Levels (978ms)
+✔ [13/24] Built EncloseHorseVerified.Bounds (965ms)
+✔ [14/24] Built EncloseHorseVerified.Levels:c.o (223ms)
+✔ [15/24] Built EncloseHorseVerified.Bounds:c.o (177ms)
+✖ [16/24] Building EncloseHorseVerified.FastSolver (687ms)
+trace: .> LEAN_PATH=/home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/EncloseHorseVerified/FastSolver.lean -o /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/FastSolver.olean -i /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/FastSolver.ilean -c /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/FastSolver.c --setup /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/FastSolver.setup.json --json
+error: EncloseHorseVerified/FastSolver.lean:259:6: Type mismatch: After simplification, term
+  (problem b).bound_sound s w hw hv
+ has type
+  @LE.le Int Int.instLEInt ((problem b).score w) ((problem b).upper s)
+but is expected to have type
+  @LE.le Int Int.instLEInt (score b w) ((problem b).upper s)
+error: EncloseHorseVerified/FastSolver.lean:262:6: Type mismatch: After simplification, term
+  (problem b).leaf_cover s hs w hw hv
+ has type
+  And ((problem b).valid ((problem b).candidate s) = true)
+    ((problem b).score w ≤ (problem b).score ((problem b).candidate s))
+but is expected to have type
+  And ((problem b).valid ((problem b).candidate s) = true) (score b w ≤ score b ((problem b).candidate s))
+warning: EncloseHorseVerified/FastSolver.lean:303:14: declaration uses `sorry`
+warning: EncloseHorseVerified/FastSolver.lean:332:16: declaration uses `sorry`
+Some required targets logged failures:
+- EncloseHorseVerified.FastSolver
+error: build failed
