@@ -1,0 +1,38 @@
+Head: 6af72e7d28934fdb483470dd92da270b89d541d2
+Run: 39473524946
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/18] Built EncloseHorseVerified.FiniteSearch (603ms)
+✔ [3/18] Built EncloseHorseVerified.Reachability (735ms)
+✔ [4/18] Built EncloseHorseVerified.FiniteSearch:c.o (208ms)
+✔ [5/18] Built EncloseHorseVerified.Reachability:c.o (219ms)
+✔ [6/18] Built EncloseHorseVerified.Game (702ms)
+✔ [7/18] Built EncloseHorseVerified.Solver (651ms)
+✔ [8/18] Built EncloseHorseVerified.Game:c.o (612ms)
+✔ [9/18] Built EncloseHorseVerified.Levels (677ms)
+✔ [10/18] Built EncloseHorseVerified.Solver:c.o (179ms)
+✔ [11/18] Built EncloseHorseVerified.Levels:c.o (293ms)
+✔ [12/18] Built EncloseHorseVerified.Tactic (1.5s)
+✔ [13/18] Built Main (1.4s)
+✔ [14/18] Built EncloseHorseVerified.Widget (1.6s)
+✔ [15/18] Built Main:c.o (200ms)
+✔ [16/18] Built encloseHorse:exe (699ms)
+✔ [17/18] Built EncloseHorseVerified (982ms)
+Build completed successfully (18 jobs).
+✖ [4/4] Building EncloseHorseVerified.Bounds (552ms)
+trace: .> LEAN_PATH=/home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/EncloseHorseVerified/Bounds.lean -o /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Bounds.olean -i /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/Bounds.ilean -c /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Bounds.c --setup /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/Bounds.setup.json --json
+error: EncloseHorseVerified/Bounds.lean:264:60: unsolved goals
+b : Board
+mandatory walls : Placement
+hm : legal b mandatory
+hs : mandatory ⊆ walls
+ha : admissible b walls
+hb : List.length mandatory = b.budget
+hc : SameWalls (canonicalize b mandatory) mandatory
+hp : List.Perm (canonicalize b mandatory) mandatory
+⊢ b.budget ≤ b.budget
+Some required targets logged failures:
+- EncloseHorseVerified.Bounds
+error: build failed
