@@ -1,0 +1,71 @@
+Head: f21ab3fdc511516000c7a2fdd39f300315d033c4
+Run: 39474606276
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/24] Built EncloseHorseVerified.FiniteSearch (785ms)
+✔ [3/24] Built EncloseHorseVerified.FastSearch (809ms)
+✔ [4/24] Built EncloseHorseVerified.Reachability (985ms)
+✔ [5/24] Built EncloseHorseVerified.FastSearch:c.o (180ms)
+✔ [6/24] Built EncloseHorseVerified.FiniteSearch:c.o (219ms)
+✔ [7/24] Built EncloseHorseVerified.Reachability:c.o (223ms)
+✔ [8/24] Built EncloseHorseVerified.Game (655ms)
+✔ [9/24] Built EncloseHorseVerified.Solver (643ms)
+✔ [10/24] Built EncloseHorseVerified.Game:c.o (736ms)
+✔ [11/24] Built EncloseHorseVerified.Solver:c.o (157ms)
+✔ [12/24] Built EncloseHorseVerified.Levels (883ms)
+✔ [13/24] Built EncloseHorseVerified.Bounds (979ms)
+✔ [14/24] Built EncloseHorseVerified.Levels:c.o (201ms)
+✔ [15/24] Built EncloseHorseVerified.Bounds:c.o (154ms)
+✔ [16/24] Built EncloseHorseVerified.FastSolver (639ms)
+✔ [17/24] Built EncloseHorseVerified.FastSolver:c.o (500ms)
+✔ [18/24] Built Main (1.2s)
+✔ [19/24] Built EncloseHorseVerified.Tactic (1.3s)
+✔ [20/24] Built Main:c.o (270ms)
+✔ [21/24] Built EncloseHorseVerified.Widget (1.8s)
+✔ [22/24] Built encloseHorse:exe (739ms)
+✔ [23/24] Built EncloseHorseVerified (833ms)
+Build completed successfully (24 jobs).
+Build completed successfully (4 jobs).
+✔ [4/4] Built EncloseHorseVerified.DailyLevels (403ms)
+Build completed successfully (4 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (8 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (3 jobs).
+✔ [4/4] Built EncloseHorseVerified.Hardness (2.4s)
+Build completed successfully (4 jobs).
+Build completed successfully (4 jobs).
+Build completed successfully (2 jobs).
+Build completed successfully (5 jobs).
+Build completed successfully (9 jobs).
+Build completed successfully (9 jobs).
+'EncloseHorse.reach_antitone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.enclosed_monotone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.score_le_upperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.score_le_completionBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+[{"id":"daily-2026-01-07","score":66,"walls":[3,7,14,27,35,63,95,101,107,140,153,166]},{"id":"daily-2026-01-12","score":204,"walls":[37,114,133,151,169,228,283,287,301,312,319,337]},{"id":"daily-2026-03-10","score":99,"walls":[56,59,116,134,155,169,172,223,254,261]}]
+'daily20260107_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'daily20260112_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'daily20260310_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'fast_seeded_tutorial1_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+[{"id":"tutorial-1","score":15,"walls":[23]},{"id":"tutorial-2","score":17,"walls":[23,40,60]},{"id":"tutorial-3","score":12,"walls":[11,24,37,40,51]},{"id":"tutorial-4","score":31,"walls":[6,11,26,31,54,58]},{"id":"tutorial-5","score":39,"walls":[41,52,62]}]
+some [23]
+'tactic_finds_official_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_choices: [propext, Quot.sound]
+EncloseHorse.bestBy_spec: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal_physical: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_eq_none_iff: [propext, Quot.sound]
+EncloseHorse.exists_optimal_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_reach_iff: [propext, Quot.sound]
+EncloseHorse.reach_nodup: [propext, Classical.choice, Quot.sound]
+EncloseHorse.enclosed_iff: [propext, Quot.sound]
+EncloseHorse.BranchBound.search_spec: [propext, Quot.sound]
+EncloseHorse.solveFastWithSeed_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_optimal_physical: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_eq_none_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFastWithSeed_eq_none_iff: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solve_optimal_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
