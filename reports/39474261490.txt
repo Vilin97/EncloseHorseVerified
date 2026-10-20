@@ -1,0 +1,49 @@
+Head: fee5eb46c66f6375942a467883ff4ad5196f7c06
+Run: 39474261490
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/18] Built EncloseHorseVerified.FiniteSearch (631ms)
+✔ [3/18] Built EncloseHorseVerified.Reachability (734ms)
+✔ [4/18] Built EncloseHorseVerified.Reachability:c.o (310ms)
+✔ [5/18] Built EncloseHorseVerified.FiniteSearch:c.o (379ms)
+✔ [6/18] Built EncloseHorseVerified.Game (668ms)
+✔ [7/18] Built EncloseHorseVerified.Solver (545ms)
+✔ [8/18] Built EncloseHorseVerified.Solver:c.o (128ms)
+✔ [9/18] Built EncloseHorseVerified.Levels (744ms)
+✔ [10/18] Built EncloseHorseVerified.Game:c.o (807ms)
+✔ [11/18] Built EncloseHorseVerified.Levels:c.o (279ms)
+✔ [12/18] Built EncloseHorseVerified.Tactic (1.2s)
+✔ [13/18] Built Main (1.3s)
+✔ [14/18] Built EncloseHorseVerified.Widget (1.7s)
+✔ [15/18] Built Main:c.o (199ms)
+✔ [16/18] Built encloseHorse:exe (732ms)
+✔ [17/18] Built EncloseHorseVerified (1.0s)
+Build completed successfully (18 jobs).
+✔ [4/4] Built EncloseHorseVerified.Bounds (556ms)
+Build completed successfully (4 jobs).
+✔ [4/4] Built EncloseHorseVerified.DailyLevels (441ms)
+Build completed successfully (4 jobs).
+✔ [2/2] Built EncloseHorseVerified.FastSearch (553ms)
+Build completed successfully (2 jobs).
+✖ [8/8] Building EncloseHorseVerified.FastSolver (612ms)
+trace: .> LEAN_PATH=/home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/EncloseHorseVerified/FastSolver.lean -o /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/FastSolver.olean -i /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/lib/lean/EncloseHorseVerified/FastSolver.ilean -c /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/FastSolver.c --setup /home/runner/work/EncloseHorseVerified/EncloseHorseVerified/.lake/build/ir/EncloseHorseVerified/FastSolver.setup.json --json
+error: EncloseHorseVerified/FastSolver.lean:259:6: Type mismatch: After simplification, term
+  (problem b).bound_sound s w hw hv
+ has type
+  @LE.le Int Int.instLEInt ((problem b).score w) ((problem b).upper s)
+but is expected to have type
+  @LE.le Int Int.instLEInt (score b w) ((problem b).upper s)
+error: EncloseHorseVerified/FastSolver.lean:262:6: Type mismatch: After simplification, term
+  (problem b).leaf_cover s hs w hw hv
+ has type
+  And ((problem b).valid ((problem b).candidate s) = true)
+    ((problem b).score w ≤ (problem b).score ((problem b).candidate s))
+but is expected to have type
+  And ((problem b).valid ((problem b).candidate s) = true) (score b w ≤ score b ((problem b).candidate s))
+warning: EncloseHorseVerified/FastSolver.lean:303:14: declaration uses `sorry`
+warning: EncloseHorseVerified/FastSolver.lean:332:16: declaration uses `sorry`
+Some required targets logged failures:
+- EncloseHorseVerified.FastSolver
+error: build failed
