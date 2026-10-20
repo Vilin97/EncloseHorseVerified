@@ -26,6 +26,25 @@ jobs:
         run: |
           set -o pipefail
           python scripts/test_asp.py --daily --daily-timeout 180 --json-output /tmp/asp-results.json 2>&1 | tee /tmp/asp-reference.log
+      - name: Expose reference results in check annotations
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          def escaped(text):
+              return text.replace('%','%25').replace('\r','%0D').replace('\n','%0A')
+          path = Path('/tmp/asp-results.json')
+          if path.exists():
+              for result in json.loads(path.read_text()):
+                  summary = {key: result[key] for key in ('id','status','score','walls','total_seconds','search_exhausted','interrupted','lean_verified')}
+                  kind = 'notice' if result['status'] == 'optimal' else 'error'
+                  print(f'::{kind} title=External ASP reference::' + escaped(json.dumps(summary)))
+          else:
+              log = Path('/tmp/asp-reference.log')
+              text = log.read_text()[-12000:] if log.exists() else 'ASP test step produced no report'
+              print('::error title=External ASP reference failed::' + escaped(text))
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
