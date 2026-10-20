@@ -1,0 +1,7 @@
+Head: b1b9f714e78d63543b855cb860e0bf02756eb4b7
+Run: 39474539349
+
+info: downloading https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst
+error: could not download file from 'https://releases.lean-lang.org/lean4/v4.35.0/lean-4.35.0-linux.tar.zst' to '/home/runner/.elan/tmp/7rppkr1nzqkhc6hb_file'
+info: caused by: error during download
+info: caused by: [35] SSL connect error (TLS connect error: error:00000000:lib(0)::reason(0))
