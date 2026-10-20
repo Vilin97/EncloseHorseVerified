@@ -17,7 +17,7 @@ def testFastFixtures : IO Unit := do
       throw (IO.userError s!"fast solver mismatch for {f.id}: {walls}, score {score f.board walls}")
     IO.println s!"fast {f.id}: score={score f.board walls}, walls={walls}, elapsedMs={(← IO.monoMsNow) - start}"
 
-#eval testFastFixtures
+-- Run these checks through the native FastBench executable; avoid interpreting the search during compilation.
 
 #print axioms EncloseHorse.BranchBound.search_spec
 #print axioms EncloseHorse.solveFast_optimal
