@@ -18,6 +18,8 @@ structure GraphCache (b : Board) where
   horse_eq : horse = b.horse
   candidates : List Nat
   candidates_eq : candidates = b.candidates
+  cells : List Nat
+  cells_eq : cells = b.cells
 
 namespace GraphCache
 
@@ -32,7 +34,9 @@ def ofBoard (b : Board) : GraphCache b :=
     horse := b.horse
     horse_eq := rfl
     candidates := b.candidates
-    candidates_eq := rfl }
+    candidates_eq := rfl
+    cells := b.cells
+    cells_eq := rfl }
 
 def tileAt {b : Board} (c : GraphCache b) (i : Nat) : Tile :=
   c.tiles[i]?.getD .water
@@ -42,7 +46,7 @@ theorem tileAt_eq {b : Board} (c : GraphCache b) (i : Nat) :
   simp only [tileAt, c.tiles_eq, List.getElem?_toArray, Board.tileAt]
 
 private theorem edge_factor (b : Board) (walls : Placement) (i j : Nat) :
-    b.edge walls i j = b.edge [] i j && !walls.contains i && !walls.contains j := by
+    b.edge walls i j = (b.edge [] i j && !walls.contains i && !walls.contains j) := by
   simp [Board.edge, Board.openCell, Bool.and_assoc, Bool.and_comm, Bool.and_left_comm]
 
 /-- Constant-time static graph lookup, followed by the dynamic wall checks. -/
@@ -58,7 +62,7 @@ theorem edge_eq {b : Board} (c : GraphCache b) (walls : Placement) (i j : Nat) :
   by_cases hi : i < b.size
   · by_cases hj : j < b.size
     · have hg : c.graph[i][j] = b.edge [] i j := c.graph_eq ⟨i, hi⟩ ⟨j, hj⟩
-      simp only [edge, dif_pos hi, dif_pos hj, hg]
+      simp only [edge, dite_eq_left hi, dite_eq_left hj, hg]
       exact (edge_factor b walls i j).symm
     · simp [edge, hi, hj, Board.edge, Board.openCell]
   · simp [edge, hi, Board.edge, Board.openCell]
@@ -71,12 +75,12 @@ theorem openCell_eq {b : Board} (c : GraphCache b) (walls : Placement) (i : Nat)
   simp only [openCell, Board.openCell, c.tileAt_eq]
 
 def openCells {b : Board} (c : GraphCache b) (walls : Placement) : List Nat :=
-  b.cells.filter (c.openCell walls)
+  c.cells.filter (c.openCell walls)
 
 theorem openCells_eq {b : Board} (c : GraphCache b) (walls : Placement) :
     c.openCells walls = b.openCells walls := by
   have hc : c.openCell walls = b.openCell walls := funext (c.openCell_eq walls)
-  simp only [openCells, Board.openCells, hc]
+  simp only [openCells, Board.openCells, hc, c.cells_eq]
 
 def reach {b : Board} (c : GraphCache b) (walls : Placement) : List Nat :=
   Reachability.closure (c.openCells walls) (c.edge walls) c.horse
@@ -105,14 +109,17 @@ def legal {b : Board} (c : GraphCache b) (walls : Placement) : Bool :=
 
 theorem legal_eq {b : Board} (c : GraphCache b) (walls : Placement) :
     c.legal walls = decide (EncloseHorse.legal b walls) := by
-  simp only [legal, EncloseHorse.legal, c.candidates_eq]
+  apply Bool.eq_iff_iff.mpr
+  simp only [legal, decide_eq_true_eq, EncloseHorse.legal, c.candidates_eq]
 
 def admissible {b : Board} (c : GraphCache b) (walls : Placement) : Bool :=
   c.legal walls && c.enclosed walls
 
 theorem admissible_eq {b : Board} (c : GraphCache b) (walls : Placement) :
     c.admissible walls = decide (EncloseHorse.admissible b walls) := by
-  simp [admissible, c.legal_eq, c.enclosed_eq, EncloseHorse.admissible]
+  apply Bool.eq_iff_iff.mpr
+  simp only [admissible, Bool.and_eq_true, c.legal_eq, c.enclosed_eq,
+    decide_eq_true_eq, EncloseHorse.admissible]
 
 def positiveValue {b : Board} (c : GraphCache b) (cells : List Nat) : Int :=
   (cells.map (fun i => max (c.tileAt i).points 0)).sum
