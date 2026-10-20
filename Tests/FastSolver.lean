@@ -21,4 +21,5 @@ def testFastFixtures : IO Unit := do
 
 #print axioms EncloseHorse.BranchBound.search_spec
 #print axioms EncloseHorse.solveFast_optimal
+#print axioms EncloseHorse.solveFastWithSeed_optimal
 #print axioms EncloseHorse.solveFast_optimal_physical
