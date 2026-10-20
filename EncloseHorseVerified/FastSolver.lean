@@ -210,16 +210,38 @@ def initial (b : Board) : FastState := ⟨[], b.candidates⟩
 
 end FastSolver
 
+/-- An external or heuristic incumbent is accepted only after checking game legality. -/
+def checkedSeed (b : Board) (seed : Option Placement) : Option Placement :=
+  seed.filter (fun walls => decide (admissible b walls))
+
+theorem checkedSeed_valid (b : Board) (seed : Option Placement) :
+    BranchBound.ValidOption (fun w => decide (admissible b w)) (checkedSeed b seed) := by
+  intro w hw
+  cases seed with
+  | none => simp [checkedSeed] at hw
+  | some x =>
+    simp only [checkedSeed, Option.filter] at hw
+    split at hw
+    · rename_i hx
+      cases hw
+      exact hx
+    · contradiction
+
+/-- Exact branch-and-bound with an optionally supplied, independently checked incumbent.
+A strong seed speeds pruning; it cannot weaken the global optimality guarantee. -/
+def solveFastWithSeed (b : Board) (seed : Option Placement) : Option Placement :=
+  BranchBound.search (FastSolver.problem b) b.candidates.length (FastSolver.initial b)
+    (checkedSeed b seed)
+
 /-- Exact branch-and-bound using dynamic escape-path pivots and signed bounds. -/
-def solveFast (b : Board) : Option Placement :=
-  BranchBound.search (FastSolver.problem b) b.candidates.length (FastSolver.initial b) none
+def solveFast (b : Board) : Option Placement := solveFastWithSeed b none
 
 /-- Every answer returned by the practical solver is globally optimal. -/
-theorem solveFast_optimal (b : Board) (walls : Placement) (h : solveFast b = some walls) :
-    Optimal b walls := by
+theorem solveFastWithSeed_optimal (b : Board) (seed : Option Placement) (walls : Placement)
+    (h : solveFastWithSeed b seed = some walls) : Optimal b walls := by
   have hs := BranchBound.search_spec (FastSolver.problem b) b.candidates.length
-    (FastSolver.initial b) none (by simp [FastSolver.problem, FastSolver.initial])
-    (by intro w hw; contradiction)
+    (FastSolver.initial b) (checkedSeed b seed) (by simp [FastSolver.problem, FastSolver.initial])
+    (checkedSeed_valid b seed)
   constructor
   · have hv := hs.1 walls h
     simpa [FastSolver.problem] using hv
@@ -231,6 +253,9 @@ theorem solveFast_optimal (b : Board) (walls : Placement) (h : solveFast b = som
     obtain ⟨answer, he, hscore⟩ := hs.2.2 other hr (by simpa [FastSolver.problem] using ho)
     rw [show answer = walls from Option.some.inj (he.symm.trans h)] at hscore
     exact hscore
+
+theorem solveFast_optimal (b : Board) (walls : Placement) (h : solveFast b = some walls) :
+    Optimal b walls := solveFastWithSeed_optimal b none walls h
 
 theorem solveFast_optimal_physical (b : Board) (walls : Placement)
     (h : solveFast b = some walls) : PhysicalOptimal b walls :=
