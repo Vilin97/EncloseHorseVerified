@@ -30,11 +30,7 @@ jobs:
           {
             lean --version
             lake build encloseHorse fastBench EncloseHorseVerified
-            while IFS= read -r file; do
-              module="${file%.lean}"
-              module="${module//\//.}"
-              lake build "$module" || exit 1
-            done < <(find EncloseHorseVerified -name '*.lean' | sort)
+            python3 scripts/verify_lean.py
             for file in Tests/*.lean; do lake env lean "$file" || exit 1; done
             lake env lean Demo.lean
           } 2>&1 | tee /tmp/enclose-lean-checks.log

@@ -1,5 +1,8 @@
 import EncloseHorseVerified.Certificate.Clingo
 import EncloseHorseVerified.Certificate.Rup
+import EncloseHorseVerified.Certificate.RupFast
+import EncloseHorseVerified.Certificate.RupBits
+import EncloseHorseVerified.Certificate.PathForest
 import EncloseHorseVerified.Certificate.Selection
 import Lean
 
@@ -53,6 +56,39 @@ example : Rup.check [[(0, true)]] [.empty [2, 1]] = false := by decide +kernel
 example : Rup.check [[(0, true)]]
     [.add [(0, false)] [1], .empty [1, 2]] = false := by decide +kernel
 
+/-- Undersized assignment tries compare complete variable names after lookup. -/
+example : RupFast.falsified (.leaf [(0, false)]) 0 (1, true) = false := by decide +kernel
+example : RupFast.falsified (.leaf [(0, false)]) 0 (0, true) = true := by decide +kernel
+example : RupFast.remaining [(1, true)] (.leaf [(0, false)]) 0 = [(1, true)] :=
+  by decide +kernel
+
+/-- Bitsets keep both signs and each side of machine-word boundaries separate. -/
+def boundaryBits : RupBits.Assignment := RupBits.assignMany
+  [(0, true), (63, false), (64, true), (130, false), (4096, true)] RupBits.empty
+example : ([(0, false), (63, true), (64, false), (130, true), (4096, false),
+    (0, true), (62, true), (65, false), (4097, false)].map
+      (RupBits.falsified boundaryBits)) =
+    [true, true, true, true, true, false, false, false, false] := by decide +kernel
+
+/-- A collision modulo a machine word would incorrectly refute this formula. -/
+def bitsSatisfiable : Rup.ClauseTree :=
+  .node (.leaf [(0, true)]) (.leaf [(4096, false)])
+example : RupBits.checkTree [.empty [1, 2]] bitsSatisfiable 1 = false := by decide +kernel
+
+/-- Check an actual implication and reject a mutated sign, variable, or hint. -/
+def bitsImplication : Rup.ClauseTree :=
+  .node (.leaf [(0, true)]) (.leaf [(0, false), (4096, true)])
+example : RupBits.checkRup bitsImplication 1 [(4096, true)] [1, 2] = true :=
+  by decide +kernel
+example : RupBits.checkRup bitsImplication 1 [(4096, false)] [1, 2] = false :=
+  by decide +kernel
+example : RupBits.checkRup bitsImplication 1 [(4097, true)] [1, 2] = false :=
+  by decide +kernel
+example : RupBits.checkRup bitsImplication 1 [(4096, true)] [1] = false :=
+  by decide +kernel
+example : RupBits.runPrefix [.add 0 [(4096, false)] [1, 2]] bitsImplication 1 = none :=
+  by decide +kernel
+
 open Lean Elab Command
 
 /-- Fail the build if any generic certificate theorem acquires computational
@@ -68,6 +104,11 @@ elab "#audit_certificates_trust" : command => do
       ``Clingo.physicalOptimal_of_unsat, ``Rup.checkRup_sound,
       ``Rup.checkFrom_sound, ``Rup.check_sound, ``Rup.ClauseTree.put_sat,
       ``Rup.checkRupTree_sound, ``Rup.checkTree_sound, ``Rup.runPrefix_sound,
+      ``RupFast.assign_sat, ``RupFast.assignMany_sat, ``RupFast.checkRup_sound,
+      ``RupFast.checkTree_sound, ``RupFast.runPrefix_sound,
+      ``RupBits.agrees_empty, ``RupBits.assign_sat, ``RupBits.assignMany_sat,
+      ``RupBits.checkRup_sound, ``RupBits.checkTree_sound, ``RupBits.runPrefix_sound,
+      ``PathForest.checkSteps_sound, ``PathForest.check_sound,
       ``Selection.checkSelection_sound, ``Selection.unsat_of_checkSelection] do
     let axioms ← liftCoreM <| collectAxioms name
     for ax in axioms do
