@@ -72,7 +72,7 @@ The default Lean solver explores wall decisions on demand and builds a proved ca
 
 **NP-hardness is formalized in Lean** for the generalized game with unbounded portal labels and group sizes, even on width-five boards containing only grass, water, one horse, bees, and portals. [`encloseHorse_NP_hard`](EncloseHorseVerified/Hardness/Complexity.lean) uses the pinned descriptive-complexity library's Set Cover hardness theorem and a fixed first-order reduction. Every physical cell, movement edge, portal link, signed score, and both reduction directions are proved against the actual `Board` semantics. See the [formal proof guide](docs/NP_Hardness_Formal.md) for the encoding and exact scope. The separate [no-portal NP-completeness argument](docs/NP_Hardness_No_Portals.md) remains a mathematical proof.
 
-Thus a polynomial-time exact optimizer for every board in this family would imply P = NP. This leaves plenty of room for practical algorithms. The measured cached Lean search completed the five tutorials in **<1, 18, 150, 487, and 10 ms**. All three seeded daily cases still hit 90-second limits. [Full native benchmark records](docs/Performance.md) retain the exact source commits and timeouts; no daily Lean optimum certificate is claimed from those runs. The optional [Clingo exact solver](scripts/ASP_REFERENCE.md) completed three real daily levels:
+Thus a polynomial-time exact optimizer for every board in this family would imply P = NP. This leaves plenty of room for practical algorithms. The measured cached Lean search completed the five tutorials in **<1, 18, 150, 487, and 10 ms**. All three seeded daily cases still hit 90-second limits. [Full native benchmark records](docs/Performance.md) retain the exact source commits and timeouts. Separate external certificates prove the daily optima below. The optional [Clingo exact solver](scripts/ASP_REFERENCE.md) completed three real daily levels:
 
 | Daily level | Grid | Grass candidates | Wall budget | Score | Clingo time |
 |---|---:|---:|---:|---:|---:|
@@ -80,7 +80,9 @@ Thus a polynomial-time exact optimizer for every board in this family would impl
 | 2026-01-12 | 19 × 19 | 171 | 12 | 204 | 0.323 s |
 | 2026-03-10 | 17 × 17 | 184 | 10 | 99 | 1.406 s |
 
-These are measured results from one GitHub Actions runner. They are **external Clingo optimality results**, not Lean optimality certificates or Lean solver timings. Lean separately kernel-checks all three witnesses' legality, enclosure, and scores. The ASP implementation is tested against exhaustive search on 120 random boards and the official tutorials. It distinguishes completed searches, timeouts, and infeasibility.
+These timings measure Clingo on one GitHub Actions runner. **All three stored daily optima now have Lean kernel-checked global and physical optimality proofs**: [66](EncloseHorseVerified/Certificate/Generated/Daily20260107/Verified.lean), [204](EncloseHorseVerified/Certificate/Generated/Daily20260112/Verified.lean), and [99](EncloseHorseVerified/Certificate/Generated/Daily20260310/Verified.lean). Lean checks the actual placement, signed-score encoding, counter bounds, clause selection, and every refutation step. No correctness assumption about Clingo or the SAT solver occurs in the theorem. [Certificate guide](scripts/CLINGO_CERTIFICATES.md).
+
+On these fixtures, Clingo's search takes seconds; kernel checking the proof data takes minutes and substantially more memory. Compiled theorems can then be imported without repeating the search. The ASP implementation also passes exhaustive comparisons on 120 random boards and the official tutorials, distinguishing completed searches, timeouts, and infeasibility.
 
 ```sh
 python -m pip install -r scripts/requirements-asp.txt
@@ -93,6 +95,17 @@ lake exe fastBench --daily --seed
 All exact algorithms here retain an exponential worst case. Kernel certification can cost substantially more than compiled execution.
 
 ## Validation
+
+To check every proof, including the large daily certificates, use sequential module builds:
+
+```sh
+lake exe cache get
+python3 scripts/verify_lean.py
+lake env lean Tests/HardnessTrust.lean
+lake env lean Tests/DailyCertificatesTrust.lean
+```
+
+This can take tens of minutes on a fresh build. Gameplay-only checks remain smaller:
 
 ```sh
 lake build encloseHorse

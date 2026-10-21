@@ -50,3 +50,5 @@ adds 3 per cherry, 10 per apple, and subtracts 5 per bee. If any reachable tile
 lies on the rectangular boundary, the horse escapes and the score is zero.
 Matching portal labels connect even when far apart. Only standard single-horse
 mode is represented by these fixtures; optional bonus modes are separate rules.
+
+The three archived daily witnesses now have complete Lean global and physical optimality proofs in `Certificate/Generated/DailyYYYYMMDD/Verified.lean`. `sat-certificate-results.json` records the separately checked SAT refutations and their theorem names. The original ASP timing records retain their native solver trust fields; the Lean proof chain is documented in [the certificate guide](../scripts/CLINGO_CERTIFICATES.md).

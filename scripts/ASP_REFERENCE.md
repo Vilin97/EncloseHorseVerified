@@ -1,6 +1,6 @@
 # Independent ASP reference
 
-This optional reference solves standard enclose.horse levels with Clingo. It compares the verified Lean implementation with a separate practical exact optimization engine. **Its optimality claims are not Lean proofs.** Every JSON result states lean_verified=false.
+This optional reference solves standard enclose.horse levels with Clingo. It compares the verified Lean implementation with a separate practical exact optimization engine. Its runtime status flags are untrusted, and every native JSON result states lean_verified=false. The three stored daily witnesses now have separate [Lean kernel-checked optimality proofs](CLINGO_CERTIFICATES.md).
 
 ## Run it
 
@@ -18,7 +18,7 @@ The encoding chooses at most the wall budget from ordinary grass. It derives rea
 
 For each model, a separately implemented coordinate/queue BFS checks legality, the full reachable component, enclosure and score. This catches translation or witness errors, but does **not** establish an upper bound. Optimality is reported only when Clingo says the search is exhausted and uninterrupted. A timeout is incomplete, even if it found a good incumbent. Unsolvable and negative-optimum levels are handled separately from escape score 0.
 
-The repository's Lean solver and theorem are the verified implementation. This external reference is not called by the Lean tactic or the infoview solver. Tests/DailyLevels.lean checks the three reference witnesses' feasibility and scores in the Lean kernel; those checks alone do not certify global optimality.
+The repository's Lean solver and theorem are the verified implementation. This external reference is not called by the Lean tactic or the infoview solver. Tests/DailyLevels.lean checks the three reference witnesses' feasibility and scores in the Lean kernel; those checks alone do not certify global optimality. The additional Certificate/Generated/*/Verified.lean modules prove full global and physical optimality through checked UNSAT certificates, and Tests/DailyCertificatesTrust.lean audits their axioms.
 
 ## Daily fixtures and measured results
 

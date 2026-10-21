@@ -1,0 +1,19 @@
+{
+  "module": "EncloseHorseVerified.Certificate.Generated.Daily20260107",
+  "depth": 14,
+  "chunks": 99,
+  "chunkSize": 50,
+  "nodes": 67359,
+  "initialClauses": 4390,
+  "additions": 4910,
+  "checker": "RupBits",
+  "dataParts": 14,
+  "dataPartSize": 5000,
+  "keptPrefixChunks": 30,
+  "prefixChecker": "RupFast",
+  "status": "kernel-checked",
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ]
+}
