@@ -1,0 +1,271 @@
+{
+  "method": "Externally supplied branch tree; every bound is recomputed by the Lean checker",
+  "notes": [
+    "Only tutorial-1, tutorial-2 and tutorial-5 have retained kernel acceptance proofs in Tests/BranchTree.lean.",
+    "The combined five-tutorial kernel run exceeded memory; this report does not establish acceptance for tutorial-3 or tutorial-4.",
+    "Daily runs stop after 20 seconds and emit no complete certificate. Python search or replay is not a Lean proof."
+  ],
+  "results": [
+    {
+      "schema": "EncloseHorseVerified.branch-tree.v1",
+      "id": "tutorial-1",
+      "target": 15,
+      "witness": [
+        23
+      ],
+      "lean_verified": false,
+      "status": "complete",
+      "root": 8,
+      "seconds": 0.000326,
+      "visits": 11,
+      "stored_nodes": 9,
+      "leaves": {
+        "bound": 5,
+        "dead": 1
+      },
+      "flood_cache": {
+        "hits": 21,
+        "misses": 12,
+        "maxsize": 200000,
+        "currsize": 12
+      },
+      "python_replay_accepted": true,
+      "lean_kernel_acceptance": "accepted",
+      "certificate_json_bytes": 426
+    },
+    {
+      "schema": "EncloseHorseVerified.branch-tree.v1",
+      "id": "tutorial-2",
+      "target": 17,
+      "witness": [
+        23,
+        40,
+        60
+      ],
+      "lean_verified": false,
+      "status": "complete",
+      "root": 58,
+      "seconds": 0.001416,
+      "visits": 111,
+      "stored_nodes": 59,
+      "leaves": {
+        "bound": 40,
+        "dead": 12,
+        "budget": 4
+      },
+      "flood_cache": {
+        "hits": 227,
+        "misses": 112,
+        "maxsize": 200000,
+        "currsize": 112
+      },
+      "python_replay_accepted": true,
+      "lean_kernel_acceptance": "accepted",
+      "certificate_json_bytes": 1349
+    },
+    {
+      "schema": "EncloseHorseVerified.branch-tree.v1",
+      "id": "tutorial-3",
+      "target": 12,
+      "witness": [
+        11,
+        24,
+        37,
+        40,
+        51
+      ],
+      "lean_verified": false,
+      "status": "complete",
+      "root": 634,
+      "seconds": 0.013563,
+      "visits": 1263,
+      "stored_nodes": 635,
+      "leaves": {
+        "bound": 116,
+        "budget": 334,
+        "dead": 182
+      },
+      "flood_cache": {
+        "hits": 2612,
+        "misses": 1264,
+        "maxsize": 200000,
+        "currsize": 1264
+      },
+      "python_replay_accepted": true,
+      "lean_kernel_acceptance": "not_established",
+      "certificate_json_bytes": 12201
+    },
+    {
+      "schema": "EncloseHorseVerified.branch-tree.v1",
+      "id": "tutorial-4",
+      "target": 31,
+      "witness": [
+        6,
+        11,
+        26,
+        31,
+        54,
+        58
+      ],
+      "lean_verified": false,
+      "status": "complete",
+      "root": 1374,
+      "seconds": 0.047079,
+      "visits": 2743,
+      "stored_nodes": 1375,
+      "leaves": {
+        "bound": 622,
+        "dead": 329,
+        "budget": 421
+      },
+      "flood_cache": {
+        "hits": 5975,
+        "misses": 2766,
+        "maxsize": 200000,
+        "currsize": 2766
+      },
+      "python_replay_accepted": true,
+      "lean_kernel_acceptance": "not_established",
+      "certificate_json_bytes": 26593
+    },
+    {
+      "schema": "EncloseHorseVerified.branch-tree.v1",
+      "id": "tutorial-5",
+      "target": 39,
+      "witness": [
+        41,
+        52,
+        62
+      ],
+      "lean_verified": false,
+      "status": "complete",
+      "root": 61,
+      "seconds": 0.01308,
+      "visits": 117,
+      "stored_nodes": 62,
+      "leaves": {
+        "bound": 36,
+        "budget": 12,
+        "dead": 11
+      },
+      "flood_cache": {
+        "hits": 299,
+        "misses": 118,
+        "maxsize": 200000,
+        "currsize": 118
+      },
+      "python_replay_accepted": true,
+      "lean_kernel_acceptance": "accepted",
+      "certificate_json_bytes": 1403
+    },
+    {
+      "schema": "EncloseHorseVerified.branch-tree.v1",
+      "id": "daily-2026-01-07",
+      "target": 66,
+      "witness": [
+        3,
+        7,
+        14,
+        27,
+        35,
+        63,
+        95,
+        101,
+        107,
+        140,
+        153,
+        166
+      ],
+      "lean_verified": false,
+      "status": "incomplete",
+      "seconds": 20.014697,
+      "visits": 647936,
+      "stored_nodes": 323947,
+      "leaves": {
+        "bound": 53630,
+        "budget": 216910,
+        "dead": 53422
+      },
+      "flood_cache": {
+        "hits": 1956284,
+        "misses": 647991,
+        "maxsize": 200000,
+        "currsize": 200000
+      },
+      "python_replay_accepted": false,
+      "lean_kernel_acceptance": "not_established"
+    },
+    {
+      "schema": "EncloseHorseVerified.branch-tree.v1",
+      "id": "daily-2026-01-12",
+      "target": 204,
+      "witness": [
+        37,
+        114,
+        133,
+        151,
+        169,
+        228,
+        283,
+        287,
+        301,
+        312,
+        319,
+        337
+      ],
+      "lean_verified": false,
+      "status": "incomplete",
+      "seconds": 20.000333,
+      "visits": 294400,
+      "stored_nodes": 147183,
+      "leaves": {
+        "budget": 122018,
+        "dead": 18112,
+        "bound": 7064
+      },
+      "flood_cache": {
+        "hits": 1111026,
+        "misses": 294498,
+        "maxsize": 200000,
+        "currsize": 200000
+      },
+      "python_replay_accepted": false,
+      "lean_kernel_acceptance": "not_established"
+    },
+    {
+      "schema": "EncloseHorseVerified.branch-tree.v1",
+      "id": "daily-2026-03-10",
+      "target": 99,
+      "witness": [
+        56,
+        59,
+        116,
+        134,
+        155,
+        169,
+        172,
+        223,
+        254,
+        261
+      ],
+      "lean_verified": false,
+      "status": "incomplete",
+      "seconds": 20.004748,
+      "visits": 439552,
+      "stored_nodes": 219750,
+      "leaves": {
+        "budget": 190327,
+        "dead": 23554,
+        "bound": 5890
+      },
+      "flood_cache": {
+        "hits": 1695837,
+        "misses": 439635,
+        "maxsize": 200000,
+        "currsize": 200000
+      },
+      "python_replay_accepted": false,
+      "lean_kernel_acceptance": "not_established"
+    }
+  ]
+}
