@@ -1,0 +1,109 @@
+{
+  "schema": "enclose-horse-kernel-sat-certificates-v1",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "producer": {
+    "name": "CaDiCaL",
+    "version": "2.1.2",
+    "trusted": false
+  },
+  "verification": "Lean kernel reduction of RUP checkpoints and proved model-preserving composition",
+  "timingScope": "generatorSeconds includes solving, slicing, and data emission; excludes Lean proof checking.",
+  "results": [
+    {
+      "id": "daily-2026-01-07",
+      "width": 12,
+      "height": 14,
+      "wallBudget": 12,
+      "targetScore": 66,
+      "cnfVariables": 1802,
+      "fullCnfClauses": 11700,
+      "selectedCnfClauses": 4390,
+      "rupAdditions": 4910,
+      "rupHintCount": 127842,
+      "checkpointModules": 99,
+      "checkpointCheckers": [
+        {
+          "checker": "RupFast",
+          "firstChunk": 0,
+          "lastChunk": 29
+        },
+        {
+          "checker": "RupBits",
+          "firstChunk": 30,
+          "lastChunk": 98
+        }
+      ],
+      "generatorSeconds": 1.9477087760024006,
+      "solverOptions": [
+        "--elim=false"
+      ],
+      "kernelCheckedCnfUnsat": true,
+      "unsatTheorem": "EncloseHorse.Certificate.Generated.Daily20260107.unsat",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "gameBindingModule": "EncloseHorseVerified.Certificate.Generated.Daily20260107.Verified"
+    },
+    {
+      "id": "daily-2026-01-12",
+      "width": 19,
+      "height": 19,
+      "wallBudget": 12,
+      "targetScore": 204,
+      "cnfVariables": 3082,
+      "fullCnfClauses": 16282,
+      "selectedCnfClauses": 1985,
+      "rupAdditions": 850,
+      "rupHintCount": 12512,
+      "checkpointModules": 85,
+      "checkpointCheckers": [
+        {
+          "checker": "Rup",
+          "firstChunk": 0,
+          "lastChunk": 84
+        }
+      ],
+      "generatorSeconds": 0.25829085599980317,
+      "solverOptions": [],
+      "kernelCheckedCnfUnsat": true,
+      "unsatTheorem": "EncloseHorse.Certificate.Generated.Daily20260112.unsat",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "gameBindingModule": "EncloseHorseVerified.Certificate.Generated.Daily20260112.Verified"
+    },
+    {
+      "id": "daily-2026-03-10",
+      "width": 17,
+      "height": 17,
+      "wallBudget": 10,
+      "targetScore": 99,
+      "cnfVariables": 2696,
+      "fullCnfClauses": 17338,
+      "selectedCnfClauses": 5244,
+      "rupAdditions": 3645,
+      "rupHintCount": 117454,
+      "checkpointModules": 73,
+      "checkpointCheckers": [
+        {
+          "checker": "RupBits",
+          "firstChunk": 0,
+          "lastChunk": 72
+        }
+      ],
+      "generatorSeconds": 2.331096304998937,
+      "solverOptions": [
+        "--probe=false"
+      ],
+      "kernelCheckedCnfUnsat": true,
+      "unsatTheorem": "EncloseHorse.Certificate.Generated.Daily20260310.unsat",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "gameBindingModule": "EncloseHorseVerified.Certificate.Generated.Daily20260310.Verified"
+    }
+  ]
+}

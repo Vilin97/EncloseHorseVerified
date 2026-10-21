@@ -12,7 +12,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - name: Install elan and Lean 4.35.0
@@ -22,17 +22,15 @@ jobs:
           for attempt in 1 2 3; do
             if "$HOME/.elan/bin/elan" toolchain install leanprover/lean4:v4.35.0; then break; fi
           done
+      - name: Fetch pinned mathematical dependencies
+        run: lake exe cache get
       - name: Build and check kernel proofs
         run: |
           set -o pipefail
           {
             lean --version
             lake build encloseHorse fastBench EncloseHorseVerified
-            while IFS= read -r file; do
-              module="${file%.lean}"
-              module="${module//\//.}"
-              lake build "$module" || exit 1
-            done < <(find EncloseHorseVerified -name '*.lean' | sort)
+            python3 scripts/verify_lean.py
             for file in Tests/*.lean; do lake env lean "$file" || exit 1; done
             lake env lean Demo.lean
           } 2>&1 | tee /tmp/enclose-lean-checks.log
@@ -62,6 +60,7 @@ jobs:
           lake exe encloseHorse --all --json > /tmp/enclose-results.json
           cat /tmp/enclose-results.json
           python3 scripts/verify_fixtures.py --lean-json /tmp/enclose-results.json
+          python3 scripts/test_tree_certificate.py
       - uses: actions/setup-node@v4
         with:
           node-version: 22

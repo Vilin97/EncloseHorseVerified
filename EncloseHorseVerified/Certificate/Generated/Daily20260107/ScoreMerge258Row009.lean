@@ -1,0 +1,14 @@
+import EncloseHorseVerified.Certificate.Generated.Daily20260107.ScoreMerge258Row008
+import EncloseHorseVerified.Certificate.MergeRows
+
+open EncloseHorse.Certificate
+open Totalizer Clingo
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+namespace EncloseHorse.Certificate.Generated.Daily20260107.ScoreNodes
+
+def rows258_9 : List (Nat × Clause) := [(72,[(1266,false)])]
+def rowCNF258_9 : CNF := [[(1266,false),(1794,true)],[(1266,false),(1650,false),(1795,true)],[(1266,false),(1651,false),(1796,true)],[(1266,false),(1652,false),(1797,true)],[(1266,false),(1653,false),(1798,true)],[(1266,false),(1654,false),(1799,true)],[(1266,false),(1655,false),(1800,true)],[(1266,false),(1656,false),(1801,true)]]
+theorem rowEq258_9 : mergeRows rows258_9 t257.outputLits [1723,1724,1725,1726,1727,1728,1729,1730,1731,1732,1733,1734,1735,1736,1737,1738,1739,1740,1741,1742,1743,1744,1745,1746,1747,1748,1749,1750,1751,1752,1753,1754,1755,1756,1757,1758,1759,1760,1761,1762,1763,1764,1765,1766,1767,1768,1769,1770,1771,1772,1773,1774,1775,1776,1777,1778,1779,1780,1781,1782,1783,1784,1785,1786,1787,1788,1789,1790,1791,1792,1793,1794,1795,1796,1797,1798,1799,1800,1801] = rowCNF258_9 := by rfl
+
+end EncloseHorse.Certificate.Generated.Daily20260107.ScoreNodes
