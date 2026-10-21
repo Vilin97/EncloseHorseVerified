@@ -70,7 +70,7 @@ A solution **must enclose the horse**. The solver therefore optimizes among encl
 
 The default Lean solver explores wall decisions on demand and builds a proved cache of the board's static graph once per solve. It chooses a cell on an escape path, tries including or excluding it, and prunes using proved reachability bounds. Its signed upper bound retains penalties for bees that every completion must reach. Blocking all remaining candidates detects impossible branches. A checked incumbent, including the current placement in the infoview, can improve pruning without affecting the theorem. The original exhaustive solver remains available for comparison.
 
-The decision problem is **NP-complete for variable-size boards using only grass, water, one horse, cherries, and bees; no portals are required**. The [complete reduction from planar Steiner Tree](docs/NP_Hardness_No_Portals.md) gives both directions and an explicit polynomial board-size bound. A second [Set Cover reduction](docs/NP_Hardness.md) covers generalized portal groups. These are mathematical proofs; `Hardness.lean` checks the portal construction, arithmetic lemmas, and concrete examples, but the complete complexity reductions are **not fully formalized in Lean**. The solver's global optimality and pruning theorems are fully checked in Lean.
+**NP-hardness is formalized in Lean** for the generalized game with unbounded portal labels and group sizes, even on width-five boards containing only grass, water, one horse, bees, and portals. [`encloseHorse_NP_hard`](EncloseHorseVerified/Hardness/Complexity.lean) uses the pinned descriptive-complexity library's Set Cover hardness theorem and a fixed first-order reduction. Every physical cell, movement edge, portal link, signed score, and both reduction directions are proved against the actual `Board` semantics. See the [formal proof guide](docs/NP_Hardness_Formal.md) for the encoding and exact scope. The separate [no-portal NP-completeness argument](docs/NP_Hardness_No_Portals.md) remains a mathematical proof.
 
 Thus a polynomial-time exact optimizer for every board in this family would imply P = NP. This leaves plenty of room for practical algorithms. The measured cached Lean search completed the five tutorials in **<1, 18, 150, 487, and 10 ms**. All three seeded daily cases still hit 90-second limits. [Full native benchmark records](docs/Performance.md) retain the exact source commits and timeouts; no daily Lean optimum certificate is claimed from those runs. The optional [Clingo exact solver](scripts/ASP_REFERENCE.md) completed three real daily levels:
 
@@ -126,10 +126,12 @@ The compiled Lean solver is tested on all five unmodified real official tutorial
 | `FiniteSearch.lean` | Complete bounded-subset enumeration and maximum-selection proof |
 | `Solver.lean` | Exhaustive reference, global optimality, impossibility theorem |
 | `Bounds.lean`, `Cache.lean`, `FastSearch.lean`, `FastSolver.lean` | Proved pruning and dynamic exact search |
-| `Hardness.lean`, `docs/NP_Hardness*.md` | Reduction components and complete mathematical hardness proofs |
+| `Hardness/Complexity.lean`, `Hardness/` | Formal first-order NP-hardness and actual grid-game reduction |
+| `Hardness.lean`, `docs/NP_Hardness*.md` | Earlier construction and mathematical no-portal proof |
+| `Certificate/` | Kernel-checked counter encoding, RUP refutations, and external optimality theorem |
 | `DailyLevels.lean`, `scripts/solve_asp.py` | Archived daily fixtures and practical ASP reference |
 | `Tactic.lean` | `enclose_horse` and `#solve_enclosure` |
 | `Widget.lean`, `widget/encloseHorse.js` | Playable native infoview and Lean RPCs |
 | `Levels.lean`, `Tests/` | Official levels and regression/certificate tests |
 
-The Lean implementation has no external Lean package dependencies. The original game is by the enclose.horse team; this independent educational implementation uses its published rules, five small tutorial fixtures, three archived daily fixtures, and the original default-theme sprite atlas. No original game engine code is included. Original artwork remains third-party material outside the MIT software license. See [`NOTICE`](NOTICE).
+Gameplay, the infoview, and the exact Lean solver use Lean's standard library. The formal complexity proof additionally uses pinned descriptive-complexity and mathlib v4.35.0 dependencies. The original game is by the enclose.horse team; this independent educational implementation uses its published rules, five small tutorial fixtures, three archived daily fixtures, and the original default-theme sprite atlas. No original game engine code is included. Original artwork remains third-party material outside the MIT software license. See [`NOTICE`](NOTICE).
