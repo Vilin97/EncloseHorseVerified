@@ -1,0 +1,2373 @@
+Head: 09f3d706bd74bd90fff57b4305878788c2e39483
+Run: 39597831212
+
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+✔ [2/31] Built EncloseHorseVerified.FiniteSearch (932ms)
+✔ [3/31] Built EncloseHorseVerified.Reachability (1.1s)
+✔ [4/31] Built EncloseHorseVerified.FastSearch (1.1s)
+✔ [5/31] Built EncloseHorseVerified.FiniteSearch:c.o (270ms)
+✔ [6/31] Built EncloseHorseVerified.Reachability:c.o (272ms)
+✔ [7/31] Built EncloseHorseVerified.FastSearch:c.o (253ms)
+✔ [8/31] Built EncloseHorseVerified.Game (794ms)
+✔ [9/31] Built EncloseHorseVerified.Game:c.o (781ms)
+✔ [10/31] Built EncloseHorseVerified.Solver (970ms)
+✔ [11/31] Built EncloseHorseVerified.DailyLevels (924ms)
+✔ [12/31] Built EncloseHorseVerified.Solver:c.o (171ms)
+✔ [13/31] Built EncloseHorseVerified.Bounds (1.3s)
+✔ [14/31] Built EncloseHorseVerified.DailyLevels:c.o (303ms)
+✔ [15/31] Built EncloseHorseVerified.Bounds:c.o (192ms)
+✔ [16/31] Built EncloseHorseVerified.Levels (847ms)
+✔ [17/31] Built EncloseHorseVerified.Levels:c.o (170ms)
+✔ [18/31] Built EncloseHorseVerified.Cache (842ms)
+✔ [19/31] Built EncloseHorseVerified.Cache:c.o (249ms)
+✔ [20/31] Built EncloseHorseVerified.FastSolver (778ms)
+✔ [21/31] Built EncloseHorseVerified.FastSolver:c.o (569ms)
+✔ [22/31] Built Main (1.8s)
+✔ [23/31] Built EncloseHorseVerified.Tactic (1.9s)
+✔ [24/31] Built Main:c.o (263ms)
+✔ [25/31] Built FastBench (1.7s)
+✔ [26/31] Built EncloseHorseVerified.Widget (2.3s)
+✔ [27/31] Built FastBench:c.o (318ms)
+✔ [28/31] Built encloseHorse:exe (1.0s)
+✔ [29/31] Built fastBench:exe (884ms)
+✔ [30/31] Built EncloseHorseVerified (1.4s)
+Build completed successfully (31 jobs).
+[1/232] Checking EncloseHorseVerified.Reachability
+Build completed successfully (2 jobs).
+[2/232] Checking EncloseHorseVerified.Game
+Build completed successfully (3 jobs).
+[3/232] Checking EncloseHorseVerified.Bounds
+Build completed successfully (4 jobs).
+[4/232] Checking EncloseHorseVerified.Cache
+Build completed successfully (5 jobs).
+[5/232] Checking EncloseHorseVerified.FastSearch
+Build completed successfully (2 jobs).
+[6/232] Checking EncloseHorseVerified.FiniteSearch
+Build completed successfully (2 jobs).
+[7/232] Checking EncloseHorseVerified.Solver
+Build completed successfully (5 jobs).
+[8/232] Checking EncloseHorseVerified.FastSolver
+Build completed successfully (9 jobs).
+[9/232] Checking EncloseHorseVerified.Levels
+Build completed successfully (4 jobs).
+[10/232] Checking EncloseHorseVerified.Tactic
+Build completed successfully (10 jobs).
+[11/232] Checking EncloseHorseVerified.Widget
+Build completed successfully (10 jobs).
+[12/232] Checking EncloseHorseVerified
+Build completed successfully (14 jobs).
+[13/232] Checking EncloseHorseVerified.Certificate.BranchTree
+✔ [10/10] Built EncloseHorseVerified.Certificate.BranchTree (613ms)
+Build completed successfully (10 jobs).
+[14/232] Checking EncloseHorseVerified.Certificate.Totalizer
+✔ [2/2] Built EncloseHorseVerified.Certificate.Totalizer (1.2s)
+Build completed successfully (2 jobs).
+[15/232] Checking EncloseHorseVerified.Certificate.Encoding
+✔ [8/8] Built EncloseHorseVerified.Certificate.Encoding (761ms)
+Build completed successfully (8 jobs).
+[16/232] Checking EncloseHorseVerified.Certificate.Weighted
+✔ [9/9] Built EncloseHorseVerified.Certificate.Weighted (636ms)
+Build completed successfully (9 jobs).
+[17/232] Checking EncloseHorseVerified.Certificate.Clingo
+✔ [10/10] Built EncloseHorseVerified.Certificate.Clingo (530ms)
+Build completed successfully (10 jobs).
+[18/232] Checking EncloseHorseVerified.Certificate.StaticReach
+✔ [9/9] Built EncloseHorseVerified.Certificate.StaticReach (513ms)
+Build completed successfully (9 jobs).
+[19/232] Checking EncloseHorseVerified.DailyLevels
+Build completed successfully (4 jobs).
+[20/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.StaticData
+✔ [11/11] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.StaticData (597ms)
+Build completed successfully (11 jobs).
+[21/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base000
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base000 (1.2s)
+Build completed successfully (12 jobs).
+[22/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base001
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base001 (4.9s)
+Build completed successfully (12 jobs).
+[23/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base002
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base002 (4.8s)
+Build completed successfully (12 jobs).
+[24/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base003
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base003 (4.7s)
+Build completed successfully (12 jobs).
+[25/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base004
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base004 (4.8s)
+Build completed successfully (12 jobs).
+[26/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base005
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base005 (4.7s)
+Build completed successfully (12 jobs).
+[27/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base006
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base006 (4.9s)
+Build completed successfully (12 jobs).
+[28/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base007
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base007 (4.7s)
+Build completed successfully (12 jobs).
+[29/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base008
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base008 (4.8s)
+Build completed successfully (12 jobs).
+[30/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base009
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base009 (4.7s)
+Build completed successfully (12 jobs).
+[31/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base010
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base010 (4.6s)
+Build completed successfully (12 jobs).
+[32/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base011
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base011 (4.8s)
+Build completed successfully (12 jobs).
+[33/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base012
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base012 (4.8s)
+Build completed successfully (12 jobs).
+[34/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base013
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base013 (4.9s)
+Build completed successfully (12 jobs).
+[35/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base014
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base014 (4.9s)
+Build completed successfully (12 jobs).
+[36/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base015
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base015 (4.7s)
+Build completed successfully (12 jobs).
+[37/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base016
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base016 (4.7s)
+Build completed successfully (12 jobs).
+[38/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base017
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base017 (4.8s)
+Build completed successfully (12 jobs).
+[39/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base018
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base018 (4.8s)
+Build completed successfully (12 jobs).
+[40/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base019
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base019 (4.0s)
+Build completed successfully (12 jobs).
+[41/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base020
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base020 (4.9s)
+Build completed successfully (12 jobs).
+[42/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base021
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base021 (4.7s)
+Build completed successfully (12 jobs).
+[43/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base022
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base022 (4.4s)
+Build completed successfully (12 jobs).
+[44/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.BaseBlocks
+✔ [35/35] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.BaseBlocks (494ms)
+Build completed successfully (35 jobs).
+[45/232] Checking EncloseHorseVerified.Certificate.PathForest
+✔ [3/3] Built EncloseHorseVerified.Certificate.PathForest (522ms)
+Build completed successfully (3 jobs).
+[46/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Static
+✔ [13/13] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Static (12s)
+Build completed successfully (13 jobs).
+[47/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Base
+✔ [38/38] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Base (688ms)
+Build completed successfully (38 jobs).
+[48/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Counters
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Counters (9.7s)
+Build completed successfully (12 jobs).
+[49/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.BudgetClauses
+✔ [13/13] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.BudgetClauses (33s)
+Build completed successfully (13 jobs).
+[50/232] Checking EncloseHorseVerified.Certificate.Rup
+✔ [3/3] Built EncloseHorseVerified.Certificate.Rup (967ms)
+Build completed successfully (3 jobs).
+[51/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Data
+✔ [4/4] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Data (26s)
+Build completed successfully (4 jobs).
+[52/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk000
+✔ [5/5] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk000 (599ms)
+Build completed successfully (5 jobs).
+[53/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk001
+✔ [6/6] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk001 (600ms)
+Build completed successfully (6 jobs).
+[54/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk002
+✔ [7/7] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk002 (614ms)
+Build completed successfully (7 jobs).
+[55/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk003
+✔ [8/8] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk003 (597ms)
+Build completed successfully (8 jobs).
+[56/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk004
+✔ [9/9] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk004 (567ms)
+Build completed successfully (9 jobs).
+[57/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk005
+✔ [10/10] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk005 (611ms)
+Build completed successfully (10 jobs).
+[58/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk006
+✔ [11/11] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk006 (605ms)
+Build completed successfully (11 jobs).
+[59/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk007
+✔ [12/12] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk007 (611ms)
+Build completed successfully (12 jobs).
+[60/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk008
+✔ [13/13] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk008 (593ms)
+Build completed successfully (13 jobs).
+[61/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk009
+✔ [14/14] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk009 (601ms)
+Build completed successfully (14 jobs).
+[62/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk010
+✔ [15/15] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk010 (617ms)
+Build completed successfully (15 jobs).
+[63/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk011
+✔ [16/16] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk011 (602ms)
+Build completed successfully (16 jobs).
+[64/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk012
+✔ [17/17] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk012 (607ms)
+Build completed successfully (17 jobs).
+[65/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk013
+✔ [18/18] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk013 (593ms)
+Build completed successfully (18 jobs).
+[66/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk014
+✔ [19/19] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk014 (591ms)
+Build completed successfully (19 jobs).
+[67/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk015
+✔ [20/20] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk015 (619ms)
+Build completed successfully (20 jobs).
+[68/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk016
+✔ [21/21] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk016 (615ms)
+Build completed successfully (21 jobs).
+[69/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk017
+✔ [22/22] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk017 (626ms)
+Build completed successfully (22 jobs).
+[70/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk018
+✔ [23/23] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk018 (620ms)
+Build completed successfully (23 jobs).
+[71/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk019
+✔ [24/24] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk019 (611ms)
+Build completed successfully (24 jobs).
+[72/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk020
+✔ [25/25] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk020 (604ms)
+Build completed successfully (25 jobs).
+[73/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk021
+✔ [26/26] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk021 (630ms)
+Build completed successfully (26 jobs).
+[74/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk022
+✔ [27/27] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk022 (609ms)
+Build completed successfully (27 jobs).
+[75/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk023
+✔ [28/28] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk023 (607ms)
+Build completed successfully (28 jobs).
+[76/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk024
+✔ [29/29] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk024 (603ms)
+Build completed successfully (29 jobs).
+[77/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk025
+✔ [30/30] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk025 (1.4s)
+Build completed successfully (30 jobs).
+[78/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk026
+✔ [31/31] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk026 (1.1s)
+Build completed successfully (31 jobs).
+[79/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk027
+✔ [32/32] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk027 (2.1s)
+Build completed successfully (32 jobs).
+[80/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk028
+✔ [33/33] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk028 (3.6s)
+Build completed successfully (33 jobs).
+[81/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk029
+✔ [34/34] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk029 (4.5s)
+Build completed successfully (34 jobs).
+[82/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk030
+✔ [35/35] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk030 (1.6s)
+Build completed successfully (35 jobs).
+[83/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk031
+✔ [36/36] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk031 (1.9s)
+Build completed successfully (36 jobs).
+[84/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk032
+✔ [37/37] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk032 (1.3s)
+Build completed successfully (37 jobs).
+[85/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk033
+✔ [38/38] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk033 (1.0s)
+Build completed successfully (38 jobs).
+[86/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk034
+✔ [39/39] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk034 (2.4s)
+Build completed successfully (39 jobs).
+[87/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk035
+✔ [40/40] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk035 (2.3s)
+Build completed successfully (40 jobs).
+[88/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk036
+✔ [41/41] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk036 (1.8s)
+Build completed successfully (41 jobs).
+[89/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk037
+✔ [42/42] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk037 (1.0s)
+Build completed successfully (42 jobs).
+[90/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk038
+✔ [43/43] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk038 (2.0s)
+Build completed successfully (43 jobs).
+[91/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk039
+✔ [44/44] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk039 (641ms)
+Build completed successfully (44 jobs).
+[92/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk040
+✔ [45/45] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk040 (613ms)
+Build completed successfully (45 jobs).
+[93/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk041
+✔ [46/46] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk041 (627ms)
+Build completed successfully (46 jobs).
+[94/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk042
+✔ [47/47] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk042 (613ms)
+Build completed successfully (47 jobs).
+[95/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk043
+✔ [48/48] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk043 (610ms)
+Build completed successfully (48 jobs).
+[96/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk044
+✔ [49/49] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk044 (605ms)
+Build completed successfully (49 jobs).
+[97/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk045
+✔ [50/50] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk045 (1.6s)
+Build completed successfully (50 jobs).
+[98/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk046
+✔ [51/51] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk046 (3.1s)
+Build completed successfully (51 jobs).
+[99/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk047
+✔ [52/52] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk047 (4.1s)
+Build completed successfully (52 jobs).
+[100/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk048
+✔ [53/53] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk048 (2.1s)
+Build completed successfully (53 jobs).
+[101/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk049
+✔ [54/54] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk049 (1.5s)
+Build completed successfully (54 jobs).
+[102/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk050
+✔ [55/55] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk050 (1.9s)
+Build completed successfully (55 jobs).
+[103/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk051
+✔ [56/56] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk051 (4.5s)
+Build completed successfully (56 jobs).
+[104/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk052
+✔ [57/57] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk052 (4.1s)
+Build completed successfully (57 jobs).
+[105/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk053
+✔ [58/58] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk053 (2.9s)
+Build completed successfully (58 jobs).
+[106/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk054
+✔ [59/59] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk054 (1.9s)
+Build completed successfully (59 jobs).
+[107/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk055
+✔ [60/60] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk055 (1.3s)
+Build completed successfully (60 jobs).
+[108/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk056
+✔ [61/61] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk056 (3.0s)
+Build completed successfully (61 jobs).
+[109/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk057
+✔ [62/62] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk057 (7.2s)
+Build completed successfully (62 jobs).
+[110/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk058
+✔ [63/63] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk058 (1.9s)
+Build completed successfully (63 jobs).
+[111/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk059
+✔ [64/64] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk059 (3.4s)
+Build completed successfully (64 jobs).
+[112/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk060
+✔ [65/65] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk060 (3.5s)
+Build completed successfully (65 jobs).
+[113/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk061
+✔ [66/66] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk061 (4.5s)
+Build completed successfully (66 jobs).
+[114/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk062
+✔ [67/67] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk062 (3.8s)
+Build completed successfully (67 jobs).
+[115/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk063
+✔ [68/68] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk063 (3.9s)
+Build completed successfully (68 jobs).
+[116/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk064
+✔ [69/69] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk064 (3.2s)
+Build completed successfully (69 jobs).
+[117/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk065
+✔ [70/70] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk065 (2.3s)
+Build completed successfully (70 jobs).
+[118/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk066
+✔ [71/71] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk066 (2.1s)
+Build completed successfully (71 jobs).
+[119/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk067
+✔ [72/72] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk067 (1.7s)
+Build completed successfully (72 jobs).
+[120/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk068
+✔ [73/73] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk068 (2.2s)
+Build completed successfully (73 jobs).
+[121/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk069
+✔ [74/74] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk069 (1.5s)
+Build completed successfully (74 jobs).
+[122/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk070
+✔ [75/75] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk070 (1.8s)
+Build completed successfully (75 jobs).
+[123/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk071
+✔ [76/76] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk071 (4.2s)
+Build completed successfully (76 jobs).
+[124/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk072
+✔ [77/77] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk072 (9.1s)
+Build completed successfully (77 jobs).
+[125/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk073
+✔ [78/78] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk073 (6.8s)
+Build completed successfully (78 jobs).
+[126/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk074
+✔ [79/79] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk074 (5.0s)
+Build completed successfully (79 jobs).
+[127/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk075
+✔ [80/80] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk075 (7.0s)
+Build completed successfully (80 jobs).
+[128/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk076
+✔ [81/81] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk076 (6.8s)
+Build completed successfully (81 jobs).
+[129/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk077
+✔ [82/82] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk077 (762ms)
+Build completed successfully (82 jobs).
+[130/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk078
+✔ [83/83] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk078 (877ms)
+Build completed successfully (83 jobs).
+[131/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk079
+✔ [84/84] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk079 (757ms)
+Build completed successfully (84 jobs).
+[132/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk080
+✔ [85/85] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk080 (608ms)
+Build completed successfully (85 jobs).
+[133/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk081
+✔ [86/86] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk081 (643ms)
+Build completed successfully (86 jobs).
+[134/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk082
+✔ [87/87] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk082 (670ms)
+Build completed successfully (87 jobs).
+[135/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk083
+✔ [88/88] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk083 (664ms)
+Build completed successfully (88 jobs).
+[136/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk084
+✔ [89/89] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Chunk084 (1.2s)
+Build completed successfully (89 jobs).
+[137/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode000
+✔ [13/13] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode000 (786ms)
+Build completed successfully (13 jobs).
+[138/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode001
+✔ [14/14] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode001 (1.1s)
+Build completed successfully (14 jobs).
+[139/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode002
+✔ [15/15] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode002 (3.0s)
+Build completed successfully (15 jobs).
+[140/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode003
+✔ [16/16] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode003 (771ms)
+Build completed successfully (16 jobs).
+[141/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode004
+✔ [17/17] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode004 (1.1s)
+Build completed successfully (17 jobs).
+[142/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode005
+✔ [18/18] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode005 (3.1s)
+Build completed successfully (18 jobs).
+[143/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode006
+✔ [19/19] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode006 (9.7s)
+Build completed successfully (19 jobs).
+[144/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode007
+✔ [20/20] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode007 (1.1s)
+Build completed successfully (20 jobs).
+[145/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode008
+✔ [21/21] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode008 (1.3s)
+Build completed successfully (21 jobs).
+[146/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode009
+✔ [22/22] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode009 (2.6s)
+Build completed successfully (22 jobs).
+[147/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode010
+✔ [23/23] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode010 (1.2s)
+Build completed successfully (23 jobs).
+[148/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode011
+✔ [24/24] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode011 (903ms)
+Build completed successfully (24 jobs).
+[149/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode012
+✔ [25/25] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode012 (20s)
+Build completed successfully (25 jobs).
+[150/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode013
+✔ [26/26] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode013 (1.2s)
+Build completed successfully (26 jobs).
+[151/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode014
+✔ [27/27] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode014 (807ms)
+Build completed successfully (27 jobs).
+[152/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode015
+✔ [28/28] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode015 (3.0s)
+Build completed successfully (28 jobs).
+[153/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode016
+✔ [29/29] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode016 (1.2s)
+Build completed successfully (29 jobs).
+[154/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode017
+✔ [30/30] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode017 (877ms)
+Build completed successfully (30 jobs).
+[155/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode018
+✔ [31/31] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode018 (11s)
+Build completed successfully (31 jobs).
+[156/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode019
+✔ [32/32] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode019 (1.2s)
+Build completed successfully (32 jobs).
+[157/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode020
+✔ [33/33] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode020 (832ms)
+Build completed successfully (33 jobs).
+[158/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode021
+✔ [34/34] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode021 (2.0s)
+Build completed successfully (34 jobs).
+[159/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode022
+✔ [35/35] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode022 (1.3s)
+Build completed successfully (35 jobs).
+[160/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode023
+✔ [36/36] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode023 (830ms)
+Build completed successfully (36 jobs).
+[161/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode024
+✔ [37/37] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreNode024 (28s)
+Build completed successfully (37 jobs).
+[162/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreClauses
+✔ [38/38] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.ScoreClauses (507ms)
+Build completed successfully (38 jobs).
+[163/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.CounterClauses
+✔ [40/40] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.CounterClauses (484ms)
+Build completed successfully (40 jobs).
+[164/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Final
+ℹ [90/90] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Final (591ms)
+info: EncloseHorseVerified/Certificate/Generated/Daily20260112/Final.lean:105:0: 'EncloseHorse.Certificate.Generated.Daily20260112.unsat' depends on axioms: [propext, Quot.sound]
+Build completed successfully (90 jobs).
+[165/232] Checking EncloseHorseVerified.Certificate.SelectionTree
+✔ [3/3] Built EncloseHorseVerified.Certificate.SelectionTree (586ms)
+Build completed successfully (3 jobs).
+[166/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupBase
+✔ [71/71] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupBase (46s)
+Build completed successfully (71 jobs).
+[167/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode000
+✔ [72/72] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode000 (691ms)
+Build completed successfully (72 jobs).
+[168/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode001
+✔ [73/73] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode001 (961ms)
+Build completed successfully (73 jobs).
+[169/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode002
+✔ [74/74] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode002 (2.3s)
+Build completed successfully (74 jobs).
+[170/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode003
+✔ [75/75] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode003 (701ms)
+Build completed successfully (75 jobs).
+[171/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode004
+✔ [76/76] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode004 (966ms)
+Build completed successfully (76 jobs).
+[172/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode005
+✔ [77/77] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode005 (2.2s)
+Build completed successfully (77 jobs).
+[173/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode006
+✔ [78/78] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode006 (6.8s)
+Build completed successfully (78 jobs).
+[174/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode007
+✔ [79/79] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode007 (939ms)
+Build completed successfully (79 jobs).
+[175/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode008
+✔ [80/80] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode008 (1.1s)
+Build completed successfully (80 jobs).
+[176/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode009
+✔ [81/81] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode009 (1.8s)
+Build completed successfully (81 jobs).
+[177/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode010
+✔ [82/82] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode010 (1.0s)
+Build completed successfully (82 jobs).
+[178/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode011
+✔ [83/83] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode011 (844ms)
+Build completed successfully (83 jobs).
+[179/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode012
+✔ [84/84] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode012 (18s)
+Build completed successfully (84 jobs).
+[180/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode013
+✔ [85/85] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode013 (977ms)
+Build completed successfully (85 jobs).
+[181/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode014
+✔ [86/86] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode014 (737ms)
+Build completed successfully (86 jobs).
+[182/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode015
+✔ [87/87] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode015 (2.2s)
+Build completed successfully (87 jobs).
+[183/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode016
+✔ [88/88] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode016 (951ms)
+Build completed successfully (88 jobs).
+[184/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode017
+✔ [89/89] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode017 (777ms)
+Build completed successfully (89 jobs).
+[185/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode018
+✔ [90/90] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode018 (8.6s)
+Build completed successfully (90 jobs).
+[186/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode019
+✔ [91/91] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode019 (1.0s)
+Build completed successfully (91 jobs).
+[187/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode020
+✔ [92/92] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode020 (757ms)
+Build completed successfully (92 jobs).
+[188/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode021
+✔ [93/93] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode021 (2.2s)
+Build completed successfully (93 jobs).
+[189/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode022
+✔ [94/94] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode022 (1.1s)
+Build completed successfully (94 jobs).
+[190/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode023
+✔ [95/95] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode023 (758ms)
+Build completed successfully (95 jobs).
+[191/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode024
+✔ [96/96] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.LookupNode024 (26s)
+Build completed successfully (96 jobs).
+[192/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Lookup
+✔ [97/97] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Lookup (501ms)
+Build completed successfully (97 jobs).
+[193/232] Checking EncloseHorseVerified.Certificate.Selection
+✔ [3/3] Built EncloseHorseVerified.Certificate.Selection (514ms)
+Build completed successfully (3 jobs).
+[194/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Link
+✔ [101/101] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Link (10s)
+Build completed successfully (101 jobs).
+[195/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Witness
+✔ [13/13] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Witness (6.1s)
+Build completed successfully (13 jobs).
+[196/232] Checking EncloseHorseVerified.Certificate.Generated.Daily20260112.Verified
+ℹ [187/189] Replayed EncloseHorseVerified.Certificate.Generated.Daily20260112.Final
+info: EncloseHorseVerified/Certificate/Generated/Daily20260112/Final.lean:105:0: 'EncloseHorse.Certificate.Generated.Daily20260112.unsat' depends on axioms: [propext, Quot.sound]
+ℹ [189/189] Built EncloseHorseVerified.Certificate.Generated.Daily20260112.Verified (1.2s)
+info: EncloseHorseVerified/Certificate/Generated/Daily20260112/Verified.lean:37:0: EncloseHorse.Certificate.Generated.Daily20260112.selectionAccepted: []
+info: EncloseHorseVerified/Certificate/Generated/Daily20260112/Verified.lean:37:0: EncloseHorse.Certificate.Generated.Daily20260112.countersAccepted: [propext, Classical.choice, Quot.sound]
+info: EncloseHorseVerified/Certificate/Generated/Daily20260112/Verified.lean:37:0: EncloseHorse.Certificate.Generated.Daily20260112.incumbentChecked: [propext, Classical.choice, Quot.sound]
+info: EncloseHorseVerified/Certificate/Generated/Daily20260112/Verified.lean:37:0: EncloseHorse.Certificate.Generated.Daily20260112.full_unsat: [propext, Classical.choice, Quot.sound]
+info: EncloseHorseVerified/Certificate/Generated/Daily20260112/Verified.lean:37:0: EncloseHorse.Certificate.Generated.Daily20260112.optimal: [propext, Classical.choice, Quot.sound]
+info: EncloseHorseVerified/Certificate/Generated/Daily20260112/Verified.lean:37:0: EncloseHorse.Certificate.Generated.Daily20260112.physicalOptimal: [propext, Classical.choice, Quot.sound]
+Build completed successfully (189 jobs).
+[197/232] Checking EncloseHorseVerified.Certificate.MergeRows
+✔ [3/3] Built EncloseHorseVerified.Certificate.MergeRows (518ms)
+Build completed successfully (3 jobs).
+[198/232] Checking EncloseHorseVerified.Certificate.RupBits
+✔ [4/4] Built EncloseHorseVerified.Certificate.RupBits (663ms)
+Build completed successfully (4 jobs).
+[199/232] Checking EncloseHorseVerified.Certificate.RupFast
+✔ [4/4] Built EncloseHorseVerified.Certificate.RupFast (634ms)
+Build completed successfully (4 jobs).
+[200/232] Checking EncloseHorseVerified.Certificate.TutorialTrees
+✔ [11/11] Built EncloseHorseVerified.Certificate.TutorialTrees (2.1s)
+Build completed successfully (11 jobs).
+[201/232] Checking EncloseHorseVerified.Hardness
+✔ [4/4] Built EncloseHorseVerified.Hardness (3.0s)
+Build completed successfully (4 jobs).
+[202/232] Checking EncloseHorseVerified.Hardness.Geometry
+✔ [4/4] Built EncloseHorseVerified.Hardness.Geometry (1.5s)
+Build completed successfully (4 jobs).
+[203/232] Checking EncloseHorseVerified.Hardness.FOTokens
+✔ [1205/1209] Built DescriptiveComplexity.Interpretation (1.3s)
+✔ [1206/1209] Built DescriptiveComplexity.Ordered (1.4s)
+✔ [1207/1209] Built DescriptiveComplexity.Composition (1.8s)
+✔ [1208/1209] Built DescriptiveComplexity.OrderedComposition (1.4s)
+⚠ [1209/1209] Built EncloseHorseVerified.Hardness.FOTokens (7.1s)
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (1209 jobs).
+[204/232] Checking EncloseHorseVerified.Hardness.SetCover
+✔ [6/6] Built EncloseHorseVerified.Hardness.SetCover (534ms)
+Build completed successfully (6 jobs).
+[205/232] Checking EncloseHorseVerified.Hardness.SourceEncoding
+✔ [1087/1090] Built DescriptiveComplexity.Numbers.Unary (1.3s)
+✔ [1088/1090] Built DescriptiveComplexity.Vocabulary (1.9s)
+✔ [1089/1090] Built DescriptiveComplexity.Problems.SetFamily.Defs (1.3s)
+⚠ [1090/1090] Built EncloseHorseVerified.Hardness.SourceEncoding (1.7s)
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully (1090 jobs).
+[206/232] Checking EncloseHorseVerified.Hardness.BoardReduction
+✔ [5/5] Built EncloseHorseVerified.Hardness.BoardReduction (1.3s)
+Build completed successfully (5 jobs).
+[207/232] Checking EncloseHorseVerified.Hardness.CoverGraph
+⚠ [9/9] Built EncloseHorseVerified.Hardness.CoverGraph (581ms)
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (9 jobs).
+[208/232] Checking EncloseHorseVerified.Hardness.Weights
+⚠ [9/10] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [10/10] Built EncloseHorseVerified.Hardness.Weights (825ms)
+Build completed successfully (10 jobs).
+[209/232] Checking EncloseHorseVerified.Hardness.TokenPermutation
+⚠ [1209/1228] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1228] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1226/1228] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1228/1228] Built EncloseHorseVerified.Hardness.TokenPermutation (6.1s)
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (1228 jobs).
+[210/232] Checking EncloseHorseVerified.Hardness.TokenCardinality
+⚠ [1209/1229] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1229] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1226/1229] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1228/1229] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [1229/1229] Built EncloseHorseVerified.Hardness.TokenCardinality (2.1s)
+Build completed successfully (1229 jobs).
+[211/232] Checking EncloseHorseVerified.Hardness.AbstractPermutation
+⚠ [1209/1230] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1230] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1226/1230] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1228/1230] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1230/1230] Built EncloseHorseVerified.Hardness.AbstractPermutation (2.9s)
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.FinRange` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.Nodup` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.ProdSigma` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:16:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:20:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:24:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:170:38: This simp argument is unused:
+  familyIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [families, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:179:38: This simp argument is unused:
+  elementIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [elements, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:219:58: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [costs, sumList, Cost, Nat.card_sum, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (1230 jobs).
+[212/232] Checking EncloseHorseVerified.Hardness.BoardEncoding
+⚠ [1085/1085] Built EncloseHorseVerified.Hardness.BoardEncoding (2.1s)
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (1085 jobs).
+[213/232] Checking EncloseHorseVerified.Hardness.BoardScore
+⚠ [9/11] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [11/11] Built EncloseHorseVerified.Hardness.BoardScore (909ms)
+warning: EncloseHorseVerified/Hardness/BoardScore.lean:48:61: This simp argument is unused:
+  Int.mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Gadget.tile, Tile.points, Gadget.isGate, baseWeight, ite_true, h0, h2, conditional_eq_bit_mul,
+    Int.mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (11 jobs).
+[214/232] Checking EncloseHorseVerified.Hardness.ChosenWalls
+⚠ [9/11] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [11/11] Built EncloseHorseVerified.Hardness.ChosenWalls (633ms)
+Build completed successfully (11 jobs).
+[215/232] Checking EncloseHorseVerified.Hardness.FOEncoding
+⚠ [1085/1224] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1219/1224] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [1222/1224] Built DescriptiveComplexity.Padding (1.5s)
+✔ [1223/1224] Built DescriptiveComplexity.OrderWalk (2.0s)
+⚠ [1224/1224] Built EncloseHorseVerified.Hardness.FOEncoding (2.3s)
+warning: EncloseHorseVerified/Hardness/FOEncoding.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (1224 jobs).
+[216/232] Checking EncloseHorseVerified.Hardness.OrderedCells
+⚠ [730/730] Built EncloseHorseVerified.Hardness.OrderedCells (1.8s)
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (730 jobs).
+[217/232] Checking EncloseHorseVerified.Hardness.OrderedRelations
+⚠ [730/771] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [771/771] Built EncloseHorseVerified.Hardness.OrderedRelations (1.9s)
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (771 jobs).
+[218/232] Checking EncloseHorseVerified.Hardness.OrderedRepresentation
+⚠ [729/1053] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [770/1053] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1091/1093] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [1093/1093] Built EncloseHorseVerified.Hardness.OrderedRepresentation (1.6s)
+Build completed successfully (1093 jobs).
+[219/232] Checking EncloseHorseVerified.Hardness.FOCellModel
+⚠ [1085/1229] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1219/1229] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1229] Replayed EncloseHorseVerified.Hardness.FOEncoding
+warning: EncloseHorseVerified/Hardness/FOEncoding.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1225/1229] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1226/1229] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [1229/1229] Built EncloseHorseVerified.Hardness.FOCellModel (1.9s)
+Build completed successfully (1229 jobs).
+[220/232] Checking EncloseHorseVerified.Hardness.FOCellRelations
+⚠ [1085/1230] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1219/1230] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1230] Replayed EncloseHorseVerified.Hardness.FOEncoding
+warning: EncloseHorseVerified/Hardness/FOEncoding.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1225/1230] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1226/1230] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [1230/1230] Built EncloseHorseVerified.Hardness.FOCellRelations (5.6s)
+Build completed successfully (1230 jobs).
+[221/232] Checking EncloseHorseVerified.Hardness.FOCellTerrain
+⚠ [1085/1237] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1219/1237] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1237] Replayed EncloseHorseVerified.Hardness.FOEncoding
+warning: EncloseHorseVerified/Hardness/FOEncoding.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1225/1237] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1226/1237] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1233/1237] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1234/1237] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1236/1237] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1237/1237] Built EncloseHorseVerified.Hardness.FOCellTerrain (6.1s)
+warning: EncloseHorseVerified/Hardness/FOCellTerrain.lean:93:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EncloseHorseVerified/Hardness/FOCellTerrain.lean:93:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (1237 jobs).
+[222/232] Checking EncloseHorseVerified.Hardness.GameTransport
+⚠ [1085/1088] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [1088/1088] Built EncloseHorseVerified.Hardness.GameTransport (1.6s)
+Build completed successfully (1088 jobs).
+[223/232] Checking EncloseHorseVerified.Hardness.Reduction
+⚠ [9/13] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [11/13] Replayed EncloseHorseVerified.Hardness.BoardScore
+warning: EncloseHorseVerified/Hardness/BoardScore.lean:48:61: This simp argument is unused:
+  Int.mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Gadget.tile, Tile.points, Gadget.isGate, baseWeight, ite_true, h0, h2, conditional_eq_bit_mul,
+    Int.mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [13/13] Built EncloseHorseVerified.Hardness.Reduction (658ms)
+Build completed successfully (13 jobs).
+[224/232] Checking EncloseHorseVerified.Hardness.OrderedReduction
+⚠ [729/1043] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [770/1043] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1091/1103] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1097/1103] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1099/1103] Replayed EncloseHorseVerified.Hardness.BoardScore
+warning: EncloseHorseVerified/Hardness/BoardScore.lean:48:61: This simp argument is unused:
+  Int.mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Gadget.tile, Tile.points, Gadget.isGate, baseWeight, ite_true, h0, h2, conditional_eq_bit_mul,
+    Int.mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [1103/1103] Built EncloseHorseVerified.Hardness.OrderedReduction (1.3s)
+Build completed successfully (1103 jobs).
+[225/232] Checking EncloseHorseVerified.Hardness.SortedTokens
+⚠ [1209/1232] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1232] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1226/1232] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1228/1232] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1230/1232] Replayed EncloseHorseVerified.Hardness.AbstractPermutation
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.FinRange` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.Nodup` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.ProdSigma` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:16:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:20:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:24:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:170:38: This simp argument is unused:
+  familyIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [families, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:179:38: This simp argument is unused:
+  elementIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [elements, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:219:58: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [costs, sumList, Cost, Nat.card_sum, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1231/1232] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [1232/1232] Built EncloseHorseVerified.Hardness.SortedTokens (1.4s)
+Build completed successfully (1232 jobs).
+[226/232] Checking EncloseHorseVerified.Hardness.OrderedRoot
+⚠ [730/731] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [731/731] Built EncloseHorseVerified.Hardness.OrderedRoot (1.5s)
+Build completed successfully (731 jobs).
+[227/232] Checking EncloseHorseVerified.Hardness.TokenRoot
+⚠ [1209/1212] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1210/1212] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1212/1212] Built EncloseHorseVerified.Hardness.TokenRoot (2.3s)
+warning: EncloseHorseVerified/Hardness/TokenRoot.lean: imports `Mathlib.Tactic.SplitIfs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (1212 jobs).
+[228/232] Checking EncloseHorseVerified.Hardness.FOGameBridge
+⚠ [1209/1243] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1243] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1226/1243] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1228/1243] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1230/1243] Replayed EncloseHorseVerified.Hardness.AbstractPermutation
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.FinRange` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.Nodup` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.ProdSigma` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:16:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:20:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:24:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:170:38: This simp argument is unused:
+  familyIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [families, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:179:38: This simp argument is unused:
+  elementIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [elements, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:219:58: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [costs, sumList, Cost, Nat.card_sum, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1231/1243] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1234/1243] Replayed EncloseHorseVerified.Hardness.TokenRoot
+warning: EncloseHorseVerified/Hardness/TokenRoot.lean: imports `Mathlib.Tactic.SplitIfs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1235/1243] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1236/1243] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1238/1243] Replayed EncloseHorseVerified.Hardness.BoardScore
+warning: EncloseHorseVerified/Hardness/BoardScore.lean:48:61: This simp argument is unused:
+  Int.mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Gadget.tile, Tile.points, Gadget.isGate, baseWeight, ite_true, h0, h2, conditional_eq_bit_mul,
+    Int.mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [1243/1243] Built EncloseHorseVerified.Hardness.FOGameBridge (1.5s)
+Build completed successfully (1243 jobs).
+[229/232] Checking EncloseHorseVerified.Hardness.TokenCounters
+⚠ [1209/1230] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1230] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1226/1230] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1228/1230] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1230/1230] Built EncloseHorseVerified.Hardness.TokenCounters (2.1s)
+warning: EncloseHorseVerified/Hardness/TokenCounters.lean:39:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.plusRaw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenCounters.lean:102:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.minusRaw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (1230 jobs).
+[230/232] Checking EncloseHorseVerified.Hardness.FONumeric
+⚠ [1085/1239] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1219/1239] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1239] Replayed EncloseHorseVerified.Hardness.FOEncoding
+warning: EncloseHorseVerified/Hardness/FOEncoding.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1225/1239] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1226/1239] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1233/1239] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1234/1239] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1236/1239] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1238/1239] Replayed EncloseHorseVerified.Hardness.TokenCounters
+warning: EncloseHorseVerified/Hardness/TokenCounters.lean:39:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.plusRaw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenCounters.lean:102:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.minusRaw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [1239/1239] Built EncloseHorseVerified.Hardness.FONumeric (1.5s)
+Build completed successfully (1239 jobs).
+[231/232] Checking EncloseHorseVerified.Hardness.FOModel
+⚠ [1085/1252] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1219/1252] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1252] Replayed EncloseHorseVerified.Hardness.FOEncoding
+warning: EncloseHorseVerified/Hardness/FOEncoding.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1225/1252] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1226/1252] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1233/1252] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1234/1252] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1236/1252] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1237/1252] Replayed EncloseHorseVerified.Hardness.FOCellTerrain
+warning: EncloseHorseVerified/Hardness/FOCellTerrain.lean:93:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EncloseHorseVerified/Hardness/FOCellTerrain.lean:93:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [1240/1252] Replayed EncloseHorseVerified.Hardness.TokenCounters
+warning: EncloseHorseVerified/Hardness/TokenCounters.lean:39:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.plusRaw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenCounters.lean:102:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.minusRaw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1242/1252] Replayed EncloseHorseVerified.Hardness.AbstractPermutation
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.FinRange` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.Nodup` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.ProdSigma` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:16:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:20:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:24:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:170:38: This simp argument is unused:
+  familyIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [families, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:179:38: This simp argument is unused:
+  elementIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [elements, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:219:58: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [costs, sumList, Cost, Nat.card_sum, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1245/1252] Replayed EncloseHorseVerified.Hardness.TokenRoot
+warning: EncloseHorseVerified/Hardness/TokenRoot.lean: imports `Mathlib.Tactic.SplitIfs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1246/1252] Replayed EncloseHorseVerified.Hardness.BoardScore
+warning: EncloseHorseVerified/Hardness/BoardScore.lean:48:61: This simp argument is unused:
+  Int.mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Gadget.tile, Tile.points, Gadget.isGate, baseWeight, ite_true, h0, h2, conditional_eq_bit_mul,
+    Int.mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1252/1252] Built EncloseHorseVerified.Hardness.FOModel (1.5s)
+warning: EncloseHorseVerified/Hardness/FOModel.lean:49:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/FOModel.lean:50:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (1252 jobs).
+[232/232] Checking EncloseHorseVerified.Hardness.Complexity
+⚠ [1085/1283] Replayed EncloseHorseVerified.Hardness.BoardEncoding
+warning: EncloseHorseVerified/Hardness/BoardEncoding.lean: imports `Mathlib.Order.Fin.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1219/1283] Replayed EncloseHorseVerified.Hardness.FOTokens
+warning: EncloseHorseVerified/Hardness/FOTokens.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/FOTokens.lean:168:61: This simp argument is unused:
+  Role.value
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [decode, slot, Geometry.Gadget.tile, Terrain.value, h0, h1, h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1224/1283] Replayed EncloseHorseVerified.Hardness.FOEncoding
+warning: EncloseHorseVerified/Hardness/FOEncoding.lean: imports `Mathlib.Data.Fintype.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1225/1283] Replayed EncloseHorseVerified.Hardness.OrderedCells
+warning: EncloseHorseVerified/Hardness/OrderedCells.lean: imports `Mathlib.Data.Finset.Sort` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1226/1283] Replayed EncloseHorseVerified.Hardness.OrderedRelations
+warning: EncloseHorseVerified/Hardness/OrderedRelations.lean: imports `Mathlib.Order.SuccPred.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1233/1283] Replayed EncloseHorseVerified.Hardness.SourceEncoding
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:46:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [encode]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:69:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: EncloseHorseVerified/Hardness/SourceEncoding.lean:97:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [1234/1283] Replayed EncloseHorseVerified.Hardness.CoverGraph
+warning: EncloseHorseVerified/Hardness/CoverGraph.lean:143:31: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1236/1283] Replayed EncloseHorseVerified.Hardness.TokenPermutation
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:22:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:26:38: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:36:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:86:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.raw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:130:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:142:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.costDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:164:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardCode_decode`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenPermutation.lean:175:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.rewardDecode_code`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1237/1283] Replayed EncloseHorseVerified.Hardness.FOCellTerrain
+warning: EncloseHorseVerified/Hardness/FOCellTerrain.lean:93:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: EncloseHorseVerified/Hardness/FOCellTerrain.lean:93:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [1240/1283] Replayed EncloseHorseVerified.Hardness.TokenCounters
+warning: EncloseHorseVerified/Hardness/TokenCounters.lean:39:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.plusRaw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: EncloseHorseVerified/Hardness/TokenCounters.lean:102:0: automatically included section variable(s) unused in theorem `EncloseHorse.Hardness.TokenPermutation.minusRaw_valid`:
+  [Finite A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1242/1283] Replayed EncloseHorseVerified.Hardness.AbstractPermutation
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.FinRange` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.Nodup` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean: imports `Mathlib.Data.List.ProdSigma` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:16:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:20:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:24:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:170:38: This simp argument is unused:
+  familyIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [families, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:179:38: This simp argument is unused:
+  elementIndex_enum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [elements, List.map_ofFn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: EncloseHorseVerified/Hardness/AbstractPermutation.lean:219:58: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [costs, sumList, Cost, Nat.card_sum, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1245/1283] Replayed EncloseHorseVerified.Hardness.TokenRoot
+warning: EncloseHorseVerified/Hardness/TokenRoot.lean: imports `Mathlib.Tactic.SplitIfs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1246/1283] Replayed EncloseHorseVerified.Hardness.BoardScore
+warning: EncloseHorseVerified/Hardness/BoardScore.lean:48:61: This simp argument is unused:
+  Int.mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Gadget.tile, Tile.points, Gadget.isGate, baseWeight, ite_true, h0, h2, conditional_eq_bit_mul,
+    Int.mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1252/1283] Replayed EncloseHorseVerified.Hardness.FOModel
+warning: EncloseHorseVerified/Hardness/FOModel.lean:49:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: EncloseHorseVerified/Hardness/FOModel.lean:50:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [1256/1283] Built DescriptiveComplexity.Relativized (1.8s)
+✔ [1257/1283] Built DescriptiveComplexity.Problems.CliqueFamily.Defs (1.9s)
+✔ [1258/1283] Built DescriptiveComplexity.Syntax (2.9s)
+✔ [1259/1283] Built DescriptiveComplexity.Complexity (2.2s)
+✔ [1260/1283] Built DescriptiveComplexity.RelComposition (3.7s)
+✔ [1261/1283] Built DescriptiveComplexity.Problems.CliqueFamily.Reductions (2.7s)
+✔ [1262/1283] Built DescriptiveComplexity.Problems.SetFamily.FromGraphs (2.8s)
+✔ [1263/1283] Built DescriptiveComplexity.Problems.SetFamily.Reductions (2.2s)
+✔ [1264/1283] Built DescriptiveComplexity.SecondOrder (1.4s)
+✔ [1265/1283] Built DescriptiveComplexity.SecondOrderHorn (2.4s)
+✔ [1266/1283] Built DescriptiveComplexity.SecondOrderLift (2.0s)
+✔ [1267/1283] Built DescriptiveComplexity.SecondOrderPull (3.1s)
+✔ [1268/1283] Built DescriptiveComplexity.SecondOrderHornPull (2.2s)
+✔ [1269/1283] Built DescriptiveComplexity.SecondOrderOrdered (2.6s)
+✔ [1270/1283] Built DescriptiveComplexity.Block (3.9s)
+✔ [1271/1283] Built DescriptiveComplexity.Hierarchy (2.1s)
+✔ [1272/1283] Built DescriptiveComplexity.Problems.Sat.Tseitin (8.2s)
+✔ [1273/1283] Built DescriptiveComplexity.Problems.CliqueFamily.Membership (2.9s)
+✔ [1274/1283] Built DescriptiveComplexity.Problems.SetFamily.Membership (3.2s)
+✔ [1275/1283] Built DescriptiveComplexity.Problems.Sat (2.1s)
+✔ [1276/1283] Built DescriptiveComplexity.OccurrenceOrder (1.8s)
+✔ [1277/1283] Built DescriptiveComplexity.Problems.Sat.TseitinFormulas (4.1s)
+✔ [1278/1283] Built DescriptiveComplexity.OccurrenceFormulas (1.6s)
+✔ [1279/1283] Built DescriptiveComplexity.Problems.Sat.Hardness (1.9s)
+✔ [1280/1283] Built DescriptiveComplexity.Problems.CliqueFamily.FromSat (2.3s)
+✔ [1281/1283] Built DescriptiveComplexity.Problems.CliqueFamily (1.1s)
+✔ [1282/1283] Built DescriptiveComplexity.Problems.SetFamily (1.1s)
+⚠ [1283/1283] Built EncloseHorseVerified.Hardness.Complexity (1.5s)
+warning: EncloseHorseVerified/Hardness/Complexity.lean:32:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (1283 jobs).
+'EncloseHorse.reach_antitone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.enclosed_monotone' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.score_le_upperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.score_le_completionBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.BranchTree.checkAt_sound: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.BranchTree.check_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.BranchTree.check_optimal_physical: [propext, Classical.choice, Quot.sound]
+BranchTreeTests.tutorial1_optimal: [propext, Classical.choice, Quot.sound]
+BranchTreeTests.tutorial2_optimal: [propext, Classical.choice, Quot.sound]
+BranchTreeTests.tutorial5_optimal: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.GraphCache.reach_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.GraphCache.score_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.GraphCache.completionBound_eq' depends on axioms: [propext, Quot.sound]
+EncloseHorse.Certificate.Totalizer.checkVars_sound: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Totalizer.extend_base: [propext, Quot.sound]
+EncloseHorse.Certificate.Totalizer.extend_aux: [propext, Quot.sound]
+EncloseHorse.Certificate.Totalizer.output_correct: [propext, Quot.sound]
+EncloseHorse.Certificate.Totalizer.clauses_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.Totalizer.atMost_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.Totalizer.two_atMost_sat: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.baseClauses_sat_of_agrees: [propext, Quot.sound]
+EncloseHorse.Certificate.Clingo.budget_count: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.tileInputs_count: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.score_as_cell_sum: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.score_complement_count: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.better_count_bound: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.better_has_model: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.optimal_of_unsat: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.physicalOptimal_of_unsat: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Rup.checkRup_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Rup.checkFrom_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Rup.check_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Rup.ClauseTree.put_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.Rup.checkRupTree_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Rup.checkTree_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Rup.runPrefix_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupFast.assign_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.RupFast.assignMany_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.RupFast.checkRup_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupFast.checkTree_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupFast.runPrefix_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.agrees_empty: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.assign_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.assignMany_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.checkRup_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.checkTree_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.runPrefix_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.PathForest.checkSteps_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.PathForest.check_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Selection.checkSelection_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Selection.unsat_of_checkSelection: [propext, Quot.sound]
+EncloseHorse.Certificate.Generated.Daily20260112.optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Generated.Daily20260112.physicalOptimal: [propext, Classical.choice, Quot.sound]
+[{"id":"daily-2026-01-07","score":66,"walls":[3,7,14,27,35,63,95,101,107,140,153,166]},{"id":"daily-2026-01-12","score":204,"walls":[37,114,133,151,169,228,283,287,301,312,319,337]},{"id":"daily-2026-03-10","score":99,"walls":[56,59,116,134,155,169,172,223,254,261]}]
+'daily20260107_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'daily20260112_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'daily20260310_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Certificate.Clingo.baseClauses_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.Clingo.baseClauses_sat_of_agrees: [propext, Quot.sound]
+EncloseHorse.Certificate.Clingo.reach_open: [propext, Quot.sound]
+EncloseHorse.Certificate.Clingo.reach_static_step: [propext, Quot.sound]
+'EncloseHorse.GraphCache.edge_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.GraphCache.reach_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.FastSolver.cachedScore_eq' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.solveFastWithSeed_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFastWithSeed_eq_none_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'fast_seeded_tutorial1_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.BranchBound.search_spec' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.solveFast_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFastWithSeed_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFast_optimal_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFastWithSeed_eq_none_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solveFast_eq_none_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+[{"id":"tutorial-1","score":15,"walls":[23]},{"id":"tutorial-2","score":17,"walls":[23,40,60]},{"id":"tutorial-3","score":12,"walls":[11,24,37,40,51]},{"id":"tutorial-4","score":31,"walls":[6,11,26,31,54,58]},{"id":"tutorial-5","score":39,"walls":[41,52,62]}]
+'EncloseHorse.Hardness.BoardReduction.cover_iff_actual_winning' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EncloseHorse.Hardness.BoardReduction.cover_iff_reducedBoard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.Hardness.OrderedCells.SemanticModel.represents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.Hardness.OrderedCells.SemanticModel.gameYES_iff_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+EncloseHorse.Hardness.SourceEncoding.coverYES_encode_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.rawEquiv: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.raw_fromRaw: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.fromRaw_raw: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.incidenceEquiv_encode: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.card_incidence_encode: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.card_cost_encode: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.card_reward_encode: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.plusEquiv: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.minusEquiv: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.ncard_plus: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.TokenPermutation.ncard_minus: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.FOTokens.sortedTokens_perm: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.BoardReduction.actual_to_label: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.BoardReduction.score_eq_base_plus_bonus: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.BoardReduction.constructed_score: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.BoardReduction.cover_iff_actual_winning: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.BoardReduction.cover_iff_reducedBoard: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.BoardEncoding.Represents.admissible_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.BoardEncoding.Represents.score_eq: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.BoardEncoding.Represents.gameYES_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.OrderedCells.SemanticModel.represents: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.OrderedCells.SemanticModel.gameYES_iff_cover: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.FOTokens.gameYES_iff_encodedCover: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.FOEncoding.cells_portalLinked_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.FOEncoding.out_budget_count: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.FOEncoding.out_threshold: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.FOEncoding.semanticModel: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.FOEncoding.interpreted_game_iff_cover: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.setCover_fo_reduction_encloseHorse: [propext, Classical.choice, Quot.sound]
+EncloseHorse.Hardness.encloseHorse_NP_hard: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.Certificate.Rup.check_sound' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.Certificate.Rup.checkTree_sound' depends on axioms: [propext, Quot.sound]
+'EncloseHorse.Certificate.Tests.contradiction_unsat' depends on axioms: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.checkTree_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.runPrefix_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupBits.assignMany_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.RupFast.checkTree_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupFast.runPrefix_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.RupFast.assignMany_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.PathForest.check_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Selection.selectClauses_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.Selection.checkSelection_sound: [propext, Quot.sound]
+EncloseHorse.Certificate.Selection.checkSelection_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.Selection.unsat_of_checkSelection: [propext, Quot.sound]
+EncloseHorse.Certificate.SelectionTree.Tree.mem_of_get: [propext]
+EncloseHorse.Certificate.SelectionTree.check_sound: []
+EncloseHorse.Certificate.SelectionTree.check_sat: [propext, Quot.sound]
+EncloseHorse.Certificate.SelectionTree.unsat_of_check: [propext, Quot.sound]
+some [23]
+'tactic_finds_official_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.Certificate.Totalizer.two_atMost_sat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.Certificate.Totalizer.clauses_sat' depends on axioms: [propext, Quot.sound]
+EncloseHorse.mem_choices: [propext, Quot.sound]
+EncloseHorse.bestBy_spec: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_optimal_physical: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solve_eq_none_iff: [propext, Quot.sound]
+EncloseHorse.exists_optimal_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.mem_reach_iff: [propext, Quot.sound]
+EncloseHorse.reach_nodup: [propext, Classical.choice, Quot.sound]
+EncloseHorse.enclosed_iff: [propext, Quot.sound]
+EncloseHorse.BranchBound.search_spec: [propext, Quot.sound]
+EncloseHorse.solveFastWithSeed_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_optimal: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_optimal_physical: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFast_eq_none_iff: [propext, Classical.choice, Quot.sound]
+EncloseHorse.solveFastWithSeed_eq_none_iff: [propext, Classical.choice, Quot.sound]
+'EncloseHorse.solve_optimal_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
